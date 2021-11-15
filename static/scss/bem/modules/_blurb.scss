@@ -1,0 +1,15 @@
+.blurb { @include border-radius; background-color:$color-gray-lightest; color:$color-black;
+    display:grid; padding:24px 20px 8px;
+    @include mq(md_down) { margin-bottom:64px; };
+    &--purple { background-color:$color-purple-light; color:$color-white; }
+    &--white { background-color:$color-white; }
+}
+.blurb__text { font-size:15px; margin:0 auto 16px; }
+.blurb__likes { align-self:end; font-size:15px; margin:0 auto 16px; }
+.blurb__likes__emojis { font-size:24px; display:block; letter-spacing:.1em; margin-top:8px; }
+.blurb__link { align-self:end; color:$color-teal; font-weight:$font-weight-bold; margin-bottom:16px;
+    &:hover { color:$color-teal-dark; }
+    &--violet { color:$color-violet !important;
+        &:hover { color:$color-violet-dark !important; }
+    }
+}

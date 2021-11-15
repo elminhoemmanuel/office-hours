@@ -1,0 +1,21 @@
+.stat { margin:0 auto;
+    &--left { margin:0; justify-self:start; text-align:left; }
+}
+.stat__grid { align-items:center; display:grid; grid-column-gap:24px; grid-template-columns:auto auto;
+    justify-content:center;
+    &--graduate { @include transform(translateX(-13px)); }
+}
+.stat__title { color:$color-violet-light; line-height:1.3; margin:24px auto 0; text-align:center;
+    &--top { margin:0 0 16px; text-align:left; }
+    &--lg { font-size:18px; margin:0 0 8px; text-align:left; }
+}
+.stat__icon { min-width:80px;
+    &--top { align-self:start; margin:6px 0 16px; }
+}
+.stat__number { color:$color-teal; font-size:72px; line-height:1; margin:0; text-align:left;
+    &--lg { font-size:96px; }
+    &--shrink-xs {
+      @include mq(md_down) { font-size:56px; }
+      @include mq(xxs) { font-size:48px; }
+    }
+}

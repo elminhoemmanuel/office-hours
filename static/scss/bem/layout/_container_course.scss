@@ -1,0 +1,20 @@
+.l-container { margin:0 auto; max-width:100%; padding:24px 32px; text-align:center;
+    @include mq(md_up) { padding:32px 0; max-width:$container-width; }
+    @include mq(xxs) { padding-left:16px!important; padding-right:16px !important; }
+    &--narrow { max-width:$container-width-narrow;
+        @include mq(sm_up) {
+            padding:32px 0;
+        }
+    }
+    &--raised { background-color:$color-white; margin-top:-48px;
+        @include mq(md_up) { @include border-radius(8px); box-shadow:0 4px 16px rgba(0,0,0,.1);
+            margin-top:-288px; padding-top:0;
+        }
+    }
+    &--grid-2-auto { display:grid; grid-column-gap:$container-grid-gutter; grid-row-gap:$container-grid-gutter;
+        @include mq(sm_up) { grid-template-columns:auto auto; }
+    }
+    &--gutter-lg {
+        @include mq(sm_up) { grid-column-gap:$container-grid-gutter-lg; grid-row-gap:$container-grid-gutter-lg; }
+    }
+}

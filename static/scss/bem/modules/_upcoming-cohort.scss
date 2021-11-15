@@ -1,0 +1,33 @@
+.upcoming-cohort { @include border-radius; background-color:$color-white; padding:32px 32px 16px; text-align:left; }
+.upcoming-cohort__label { color:$color-gray; margin:0; }
+.upcoming-cohort__cohort-name { color:$color-black; font-size:24px; font-weight:$font-weight-semibold;
+    margin:0 0 16px;
+    @include mq(md_up) { font-size:24px; font-weight:$font-weight-normal; margin:0; }
+}
+.upcoming-cohort__date { color:$color-black; font-weight:$font-weight-semibold; margin:0 0 16px; }
+.upcoming-cohort__timeline { display:grid; grid-column-gap:32px; grid-template-columns:8px auto;
+    margin:24px 0 0;
+    @include mq(md_up) { grid-auto-flow:column; grid-column-gap:0; grid-row-gap:24px;
+        grid-template-columns:repeat(5, 1fr); grid-template-rows:auto auto; }
+}
+.upcoming-cohort__timeline__group { margin:-8px 0 16px;
+    @include mq(md_up) { margin:0; }
+}
+.upcoming-cohort__date-marker { position:relative;
+    &:before { @include border-radius(100%); background-color:$color-violet; content:""; display:block;
+        height:8px; width:8px; }
+    &:after { @include transform(translateX(-50%)); content:""; display:block; left:50%; height:100%;
+        position:absolute; top:0;
+        @include mq(md_up) { @include transform(translate(0, -50%)); height:auto; left:0; top:50%; width:100%; }
+    }
+    &--solid {
+        &:after { border-left:2px solid $color-violet;
+            @include mq(md_up) { border-top:2px solid $color-violet; border-left:none; }
+        }
+    }
+    &--dashed {
+        &:after { border-left:2px dashed $color-violet;
+            @include mq(md_up) { border-top:2px dashed $color-violet; border-left:none; }
+        }
+    }
+}

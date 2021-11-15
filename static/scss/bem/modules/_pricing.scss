@@ -1,0 +1,14 @@
+.pricing { @include border-radius; background-color:$color-white; margin:0 auto 24px; padding:40px; }
+.pricing__text { font-size:20px; font-weight:$font-weight-bold; margin:0 auto 8px; }
+.pricing__new-price { display:inline-block; font-size:48px; margin:0 4px 0 12px; }
+.pricing__new-price__symbol { display:inline-block; font-size:28px; margin:0 4px 20px 0;
+    vertical-align:bottom;
+}
+.pricing__old-price { display:inline-block; font-size:24px; margin:0 4px 0 4px; position:relative;
+    :after { @include transform(rotate(-20deg)); background-color:$color-red; content:''; display:block;
+        height:2px; margin:0; position:absolute; right:-3px; top:44%; width:88%;
+    }
+}
+.pricing__old-price__symbol { display:inline-block; font-size:16px; margin:0 2px 8px 0;
+    vertical-align:bottom;
+}

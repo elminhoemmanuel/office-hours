@@ -1,0 +1,15 @@
+.search { position:relative;
+    input { @include border-radius(24px); border:2px solid $color-white; box-sizing:border-box;
+        color:$color-black; font-weight:$font-weight-semibold; margin:0; padding:12px 12px 12px 40px; width:100%;
+        -webkit-appearance:none;
+        &:focus { border:2px solid $color-orange; outline:none; }
+        &[type="submit"] { display:none; }
+    }
+    &:before { color:$color-gray; content:"\1F50D"; font-family:"entypo"; font-size:20px; left:16px;
+        line-height:0; position:absolute; text-align:center; top:50%; z-index:1; }
+}
+::-webkit-input-placeholder { color:$color-gray; }
+:-ms-input-placeholder { color:$color-gray; }
+::-moz-placeholder { color:$color-gray; }
+input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:focus {
+    -webkit-box-shadow:0 0 0px 1000px $color-gray-lightest inset; }

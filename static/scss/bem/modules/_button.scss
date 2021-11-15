@@ -1,0 +1,56 @@
+.button { @include border-radius(30px); @include smooth-hover; background-color:$color-orange;
+    border:2px solid $color-orange; box-sizing:border-box; color:$color-white; cursor:pointer;
+    display:inline-block; font-size:$base-font-size; font-weight:$font-weight-semibold; margin:8px 0;
+    padding:6px 16px; text-align:center; text-decoration:none;
+    &:hover { background-color:$color-orange-dark; border:2px solid $color-orange-dark; color:$color-white; }
+    &--black-hollow { background-color:transparent; border:2px solid $color-black; color:$color-black;
+        &:hover { background-color:transparent; border:2px solid $color-violet-dark; color:$color-violet-dark; }
+    }
+    &--blue { background-color:$color-blue-dark; border:2px solid $color-blue-dark;
+        &:hover { background-color:$color-blue-darkest; border:2px solid $color-blue-darkest; }
+    }
+    &--blue-hollow { background-color:transparent; border:2px solid $color-blue-dark; color:$color-blue-dark;
+        &:hover { background-color:transparent; border:2px solid $color-blue-darkest;
+            color:$color-blue-darkest; }
+    }
+    &--gray-hollow { background-color:transparent; border:2px solid $color-gray; color:$color-gray;
+        &:hover { background-color:transparent; border:2px solid $color-black; color:$color-black; }
+    }
+    &--social-facebook { background-color:$color-blue-facebook; border:2px solid $color-blue-facebook;
+        color:$color-white;
+        &:hover { background-color:$color-blue-facebook; border:2px solid $color-blue-facebook;
+            color:$color-white; }
+    }
+    &--social-twitter { background-color:$color-blue-twitter; border:2px solid $color-blue-twitter;
+        color:$color-white;
+        &:hover { background-color:$color-blue-twitter; border:2px solid $color-blue-twitter;
+            color:$color-white; }
+    }
+    &--teal-hollow { background-color:transparent; border:2px solid $color-teal; color:$color-teal;
+        &:hover { background-color:transparent; border:2px solid $color-teal-dark; color:$color-teal-dark; }
+    }
+    &--violet { background-color:$color-violet; border:2px solid $color-violet;
+        &:hover { background-color:$color-violet-dark; border:2px solid $color-violet-dark; }
+    }
+    &--violet-hollow { background-color:transparent; border:2px solid $color-violet; color:$color-violet;
+        &:hover { background-color:transparent; border:2px solid $color-violet-dark;
+            color:$color-violet-dark;
+        }
+    }
+    &--white { background-color:$color-white; border:2px solid $color-white; color:$color-black;
+        &:hover { background-color:$color-white-transparent; border:2px solid $color-gray-light;
+            color:$color-black; }
+    }
+    &--white-hollow { background-color:transparent; border:2px solid $color-white; color:$color-white;
+        &:hover { background-color:$color-white-transparent; border:2px solid $color-white; color:$color-black; }
+    }
+    &--lg { @include border-radius(48px); font-size:20px; margin:16px 0; padding:10px 32px; }
+    &--sm { font-size:14px; padding:4px 16px; }
+    &--form { align-self:end; font-size:18px; line-height:1; margin:0; padding:12px 16px;
+        @include mq(xs_up) { height:48px; white-space:nowrap; }
+    }
+    &--loading, &--disabled { opacity:0.5; pointer-events:none; }
+    &--hidden { cursor:default; opacity:0; pointer-events:none; }
+    &--block { display:block; width:100%; }
+}
+.button__icon { font-size:14px; margin:0 8px 0 0; }

@@ -1,0 +1,51 @@
+/* This module uses HTML elements because it is meant to style markdown */
+.policy { overflow-x:auto; }
+.policy__markdown { margin:0 auto; text-align:left;
+    &--scroll { border-top:1px solid $color-gray-light; padding:20 0 100px;
+        @include mq(sm_up) { max-height:800px; padding-bottom:48px; overflow:scroll; overflow-x:auto; }
+    }
+    h2, h3, h4, h5, p, ul, ol { max-width:600px; }
+    h2 { font-size:24px; font-weight:$font-weight-bold; line-height:1.3; margin:48px auto 16px; }
+    h3 { font-size:20px; font-weight:$font-weight-bold; line-height:1.3; margin:32px auto 16px; }
+    h4 { font-size:18px; font-weight:$font-weight-semibold; line-height:1.3; margin:16px auto 8px; }
+    h5 { font-size:16px; color:$color-gray; line-height:1.3; margin:16px auto 8px; }
+    p { font-size:16px; }
+    ul { margin:0 auto 16px;
+        li { background-image:dl-url('main', 'images/bem-modules/list/list--diamond.svg');
+            background-repeat:no-repeat; background-position:left 6px; background-size:10px;
+            list-style:none; margin:0 0 8px; padding:0 0 0 24px; }
+    }
+    ol { margin:16px auto; padding:0 0 0 32px;
+        li { margin:0 0 8px; }
+    }
+    table { background-color:$color-white; border-collapse:collapse; border-spacing:0; display:table;
+        margin:32px auto 48px; max-width:720px;
+        @include mq(sm_down) { overflow:scroll; }
+        h4 { margin:8px 0; }
+        p { margin:8px 0; line-height:1.4; }
+    }
+    th, td { border:2px solid $color-gray-light; color:$color-black; padding:16px 32px; text-align:left;
+        vertical-align:top;
+        @include mq (xs_down) { padding:16px; }
+        strong { display:block; font-size:18px; font-weight:$font-weight-semibold; margin-bottom:8px; }
+        &[align="center"] { text-align:center; vertical-align:middle; }
+    }
+    th { background-color:$color-gray-lightest; font-size:14px; font-weight:$font-weight-semibold; }
+    .icon-ok { color:$color-teal-dark; font-size:24px; }
+}
+.policy__heading { margin:32px auto;
+    @include mq(sm_up) { margin-top:64px; }
+}
+.policy__updated { color:$color-gray; font-size:18px; margin:48px auto 16px; max-width:600px;
+    text-align:left; }
+.policy__cta { border-top:2px solid $color-gray-lightest; padding-top:16px;
+    @include mq(sm_down) { background-color:$color-white; bottom:0; left:0; margin:0 auto;
+        padding:8px 32px 0; position:fixed; right:0;
+    }
+}
+.policy__cta__heading { font-size:24px; font-weight:$font-weight-bold; line-height:1.2; margin:16px auto;
+    max-width:$text-width-max; }
+.policy__button { margin:0 auto; }
+.policy__disclaimer { color:$color-gray;
+    @include mq(sm_down) { font-size:14px; }
+}

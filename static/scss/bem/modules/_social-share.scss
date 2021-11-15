@@ -1,0 +1,4 @@
+.social-share { color:$color-white; font-size:16px; margin-right:5px; opacity:0.6; text-decoration:none;
+    &:hover { color:$color-white; opacity:1; }
+    &--lg { font-size:24px; margin:10px; }
+}

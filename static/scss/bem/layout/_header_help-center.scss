@@ -1,0 +1,4 @@
+.l-header { background-color:$color-purple; color:$color-white; overflow:hidden; position:relative; z-index:1;
+    &--image-bg { background-position:center center; background-repeat:no-repeat;
+      background-size:862px 178px; }
+}

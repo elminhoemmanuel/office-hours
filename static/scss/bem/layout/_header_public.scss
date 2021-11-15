@@ -1,0 +1,129 @@
+.l-header { background-color:$color-purple; color:$color-white; overflow:hidden; position:relative; z-index:1;
+    &--ocean { background-color:$color-blue-ocean; }
+    &--black { background-color:$color-black; }
+    &--little-dude { overflow:visible;
+        &:after { @include transform(translateX(-50%));
+            background-image:dl-url('main', 'images/ui/little-dude.svg'); background-position:top center;
+            background-repeat:no-repeat; background-size:contain; bottom:-5px; content:""; display:block;
+            height:58px; left:50%; position:absolute; width:104px;
+        }
+    }
+    &--little-tina { overflow:visible;
+        &:after { @include transform(translateX(-50%));
+            background-image:dl-url('main', 'images/ui/little-tina--gold.svg'); background-position:top center;
+            background-repeat:no-repeat; background-size:contain; bottom:-11px; content:""; display:block;
+            height:100px; left:50%; position:absolute; width:130px;
+        }
+    }
+    &--starburst {
+        background-image:dl-url('main', 'images/bem-modules/header/header--starburst--left.svg'),
+        dl-url('main', 'images/bem-modules/header/header--starburst--right.svg');
+        background-position:0 240px, right bottom; background-repeat:no-repeat, no-repeat;
+        background-size: 200px 400px, 200px 400px;
+        @include mq(md_down) { background-position:left 180px, right bottom;
+            background-size:144px 288px, 144px 288px;
+        }
+        @include mq(sm_down) {
+            background-image:dl-url('main', 'images/bem-modules/header/header--starburst.svg');
+            background-position:center bottom; background-size:320px 160px; padding-bottom:160px;
+        }
+    }
+    &--404 { background-image:dl-url('main', 'images/bem-modules/header/header--404.svg');
+        background-repeat:no-repeat; background-position:center 152px; background-size:849px 301px;
+        min-height:456px;
+        @include mq(md_down) { background-position:center 104px; }
+        @include mq(xs_down) {
+            background-image:dl-url('main', 'images/bem-modules/header/header--404--sm.svg');
+            background-size:326px 277px; min-height:384px; }
+    }
+    &--courses { background-image:dl-url('main', 'images/bem-modules/header/header--courses--xs.svg');
+        background-position:center 88px; background-repeat:no-repeat; background-size:270px 106px;
+        padding:0 0 8px;
+        @include mq(xs_up) {
+            background-image:dl-url('main', 'images/bem-modules/header/header--courses--sm.svg');
+            background-position:center 104px; background-size:734px 248px; padding:0 0 104px;
+        }
+        @include mq(md_up) { background-image:dl-url('main', 'images/bem-modules/header/header--courses.svg');
+            background-position:center 128px; background-size:1120px 280px;
+        }
+    }
+    &--perks { background-image:dl-url('main', 'images/bem-modules/header/header--perks--xs.svg');
+        background-position:center 72px; background-repeat:no-repeat; background-size:260px 96px;
+        padding:0 0 8px;
+        @include mq(sm_up) {
+            background-image:dl-url('main', 'images/bem-modules/header/header--perks--sm.svg');
+            background-position:center 88px; background-size:578px 344px; padding:0 0 104px;
+        }
+        @include mq(md_up) { background-image:dl-url('main', 'images/bem-modules/header/header--perks.svg');
+            background-position:center 144px; background-size:880px 350px; padding:0 0 120px;
+        }
+    }
+    &--outcomes { background-image:dl-url('main', 'images/bem-modules/header/header--outcomes--sm.svg');
+        background-position:center 88px; background-repeat:no-repeat;
+        @include mq(md_up) {
+            background-image:dl-url('main', 'images/bem-modules/header/header--outcomes.svg');
+            background-position:center 124px;
+        }
+    }
+    &--policy { background-image:dl-url('main', 'images/bem-modules/header/header--policy--xs.svg');
+        background-position:center 104px; background-repeat:no-repeat; background-size:239px 66px;
+        height:400px;
+        @include mq(sm_up) {
+            background-image:dl-url('main', 'images/bem-modules/header/header--policy--sm.svg');
+            background-position:center 88px; background-size:434px 178px; height:320px;
+        }
+        @include mq(md_up) { background-image:dl-url('main', 'images/bem-modules/header/header--policy.svg');
+            background-position:center 96px; background-size:1301px 276px; height:400px;
+        }
+    }
+    &--resources { background-image:dl-url('main', 'images/bem-modules/header/header--resources--xs.svg');
+        background-position:center 80px; background-repeat:no-repeat; background-size:247px 80px;
+        padding:0 0 8px;
+        @include mq(sm_up) {
+            background-image:dl-url('main', 'images/bem-modules/header/header--resources--sm.svg');
+            background-position:center 80px; background-size:538px 336px; padding:0 0 80px;
+        }
+        @include mq(md_up) { background-image:dl-url('main', 'images/bem-modules/header/header--resources.svg');
+            background-position:center 144px; background-size:841px 352px; padding:0 0 104px;
+        }
+    }
+    &--terms {
+        background-image:dl-url('main', 'images/bem-modules/header/header--terms--xs.svg');
+        background-position:center 88px; background-repeat:no-repeat; background-size:252px 100px;
+        height:400px;
+        @include mq(sm_up) {
+            background-image:dl-url('main', 'images/bem-modules/header/header--terms--sm.svg');
+            background-position:center 56px; background-size:482px 212px; height:320px;
+        }
+        @include mq(md_up) { background-image:dl-url('main', 'images/bem-modules/header/header--terms.svg');
+            background-position:center 96px; background-size:1301px 276px; height:400px;
+        }
+    }
+    &--ux-design {
+        @include mq(md_up) {
+            background-image:dl-url('main', 'images/bem-modules/header/header--ux-design.svg');
+            background-repeat:no-repeat; background-position:center top; background-size:1325px 488px; }
+    }
+    &--uxa {
+        @include mq(md_up) {
+            background-image:dl-url('main', 'images/bem-modules/header/header--uxa.svg');
+            background-repeat:no-repeat; background-position:center 40%; background-size:1280px 312px; }
+    }
+    &--overlap-image { padding-bottom:72px;
+        @include mq(sm_up) { padding-bottom:288px; }
+    }
+    &--cyber {
+        @include mq(md_up) { background-image:dl-url('main', 'images/bem-modules/header/header--cyber.svg');
+        background-repeat:no-repeat; background-position:center center; background-size:1400px; }
+    }
+}
+
+.l-header__anim-bg { @include animation(slideup, 75s, linear, infinite); background-position:center 0;
+    background-repeat:repeat-y; bottom:0; left:0; opacity:0.1; position:absolute; right:0; top:0; z-index:-1;
+    &--mentors {
+        background-image:dl-url('main', 'images/bem-modules/header/header__anim-bg--mentors.png');
+    }
+    &--partners {
+        background-image:dl-url('main', 'images/bem-modules/header/header__anim-bg--partners.png'); opacity:1;
+    }
+}

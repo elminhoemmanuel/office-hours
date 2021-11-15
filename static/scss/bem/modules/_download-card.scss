@@ -1,0 +1,4 @@
+.download-card { @include border-radius; background-color:$color-white; display:grid; }
+.download-card__image { @include border-radius(4px 4px 0 0); }
+.download-card__text { padding:40px 24px 0; text-align:left; }
+.download-card__footer { align-self:end; margin:0 auto 24px; }

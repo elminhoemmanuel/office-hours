@@ -1,0 +1,10 @@
+.course-card { @include border-radius; background-color:$color-white; display:block; overflow:hidden;
+    margin:0 auto; max-width:$text-width-max-narrow; text-decoration:none;
+    &:hover { margin-bottom:6px; margin-top:-6px; }
+}
+.course-card__header { color:$color-white; padding:48px 24px; background-color:$color-purple; }
+.course-card__header__icon { margin:0 auto 24px; width:96px;
+    &--lg { width:auto; }
+}
+.course-card__course-name { font-size:18px; font-weight:$font-weight-semibold; margin:0 auto; }
+.course-card__description { color:$color-black; padding:24px 24px 8px; text-align:left; }

@@ -1,0 +1,11 @@
+.form-progress { margin:8px auto; max-width:228px; position:relative; width:100%;
+    &:before { @include transform(translateY(-50%)); border-top:2px solid $color-gray-light; content:"";
+        left:0; position:absolute; top:50%; width:100%; }
+}
+.form-progress__steps { display:flex; justify-content:space-between; position:relative; }
+.form-progress__step { @include border-radius(50%); align-content:center; background-color:$color-white;
+    border:2px solid $color-gray-light; box-sizing:border-box; color:$color-gray; display:grid;
+    font-size:14px; height:24px; justify-content:center; width:24px;
+    &--current { background-color:$color-teal-dark; border:2px solid $color-teal-dark; color:$color-white; }
+}
+.form-progress__step__icon {}

@@ -1,0 +1,26 @@
+.person { padding-bottom:16px; text-align:center;
+    &--block { @include border-radius; @include transition(margin, .3s); background-color:$color-white;
+        display:block; padding:32px 24px; }
+    &--block-gray { background-color:$color-gray-lightest; }
+    &--block-gray-border { border:1px solid $color-gray-light; }
+    &--link { cursor:pointer; text-decoration:none;
+        &:hover { margin-bottom:6px; margin-top:-6px; }
+    }
+    &--hidden { display:none; padding:0; }
+    &--hidden-xs {
+        @include mq(xs_down) { display:none; padding:0; }
+    }
+    &--loading { @include animation(fadein, 2s, ease-in); }
+    &--grid { align-items:center; display:grid; grid-column-gap:16px; grid-template-columns:48px auto;
+        margin:16px auto; max-width:600px; padding:0;
+    }
+}
+.person__name { color:$color-black; display:block; font-size:18px; font-weight:$font-weight-semibold;
+    line-height:1.1; margin:0 auto; text-decoration:none; }
+.person__role { color:$color-blue-dark; display:block; font-size:14px; font-weight:$font-weight-semibold;
+    margin:4px auto 0; }
+.person__long { display:block; font-size:14px; margin:0 auto; }
+.person__bio { color:$color-black; display:block; font-size:16px; line-height:1.3; margin:16px auto 0; }
+.person__location { color:$color-gray; display:block; }
+.person__link { display:block; margin:4px auto; }
+.person__grid-text { text-align:left; }

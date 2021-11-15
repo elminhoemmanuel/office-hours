@@ -1,0 +1,26 @@
+.topbar { background-color:$color-white; border-bottom:2px solid $color-gray-light; box-sizing:content-box;
+    display:grid; grid-template-columns:1fr 2fr 1fr; height:64px; position:fixed; top:0; width:100%; z-index:12;
+    @include mq(xs_down) { grid-template-columns:auto auto auto; padding:8px 0; }
+}
+.topbar__left { align-self:center; justify-self:start; padding-left:32px; }
+.topbar__center { align-self:center; justify-self:center; padding:0 16px; text-align:center; }
+.topbar__right { align-self:center; display:grid; grid-template-columns:auto auto; justify-self:end;
+    padding-right:32px; }
+.topbar__full { align-self:center; grid-column: 1/4; justify-self:center; padding:0 24px; }
+.topbar__back { color:$color-black; font-size:0; }
+.topbar__info { color:$color-black; cursor:pointer; font-size:0; }
+.topbar__time { font-size:0; margin-left:16px;
+    @include mq(md_up) { margin-left:48px; }
+}
+.topbar__label { font-size:16px; font-weight:$font-weight-semibold; display:inline-block;
+    line-height:1.5;
+    @include mq(sm_down) { font-size:14px; }
+}
+.topbar__icon { margin:0 8px -3px 0; width:16px;
+    @include mq(sm_down) { width:14px; }
+    &--back { margin:0 16px -2px 0; width:8px; }
+}
+.topbar__nanobar-container { position:fixed; top:64px; width:100%;
+    @include mq(xs_down) { top:80px; }
+    .bar { background:$color-teal-dark; }
+}

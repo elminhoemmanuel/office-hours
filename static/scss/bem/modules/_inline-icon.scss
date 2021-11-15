@@ -1,0 +1,14 @@
+.inline-icon { align-items:center; display:grid; font-weight:$font-weight-semibold; grid-column-gap:16px;
+    grid-template-columns:32px auto; justify-content:start; text-align:left; text-decoration:none;
+    &--sm { grid-template-columns:24px auto;
+        @include mq(sm_up) { font-size:24px; grid-template-columns:32px auto; }
+    }
+    &--stack-sm {
+      @include mq(sm_down) { grid-row-gap:16px; grid-template-columns:1fr; justify-items:center;
+          margin:16px auto 8px; }
+    }
+}
+.inline-icon__icon {}
+.inline-icon__heading { font-size:32px; font-weight:$font-weight-semibold;
+    @include mq(sm_down) { font-size:24px; grid-template-columns:32px auto; }
+}

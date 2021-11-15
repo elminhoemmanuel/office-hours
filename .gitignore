@@ -1,0 +1,13 @@
+# npm
+/node_modules
+package-lock.json
+
+# react
+/react/dist
+
+# compiled CSS
+static/css/packages/**/*.css
+
+# vim
+*.swp
+*.un~

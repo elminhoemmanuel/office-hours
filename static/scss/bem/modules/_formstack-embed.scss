@@ -1,0 +1,48 @@
+.formstack-embed {
+    @include mq(md_up) { padding:0 80px; }
+    @include mq(sm_down) { margin:0 -32px; }
+    @include mq(xxs) { margin:0 -16px; }
+    .fsBody { padding:0;
+        .fsForm { @include border-radius(4px !important); margin:0 auto !important;
+            padding:32px !important; text-align:left;
+            @include mq(sm_down) { @include border-radius(0px !important); padding:24px !important; }
+            /* text at top of each form section */
+            .fsSectionHeader {
+                @include mq(sm_down) { padding:24px 0; }
+            }
+            .fsSectionHeading { line-height:1.2 !important; margin:0 auto; }
+            .fsSectionText p { margin:16px auto 0; max-width:none; }
+            ol { margin:16px 0 16px 16px;
+                li { margin:8px 0; }
+            }
+            /* form elements */
+            .fsLabel, label { font-weight:$font-weight-semibold; }
+            .fsSupporting { margin-top:4px !important; }
+            .fsUpload { font-size:14px; }
+            div.fsProgressText { display:none !important; }
+            .fsRowBody input[type="radio"], .fsRowBody input[type="checkbox"] { height:auto; top:1px; }
+            .fsRowBody input[type=radio] { @include border-radius(0); }
+            /* buttons */
+            .fsSubmit input, button.fsPreviousButton, button.fsSubmitButton, button.fsNextButton {
+                @include border-radius(32px !important); font-size:16px !important; }
+            /* recording input mobile */
+            #hdfvr-content { overflow:scroll;
+                .pipeRecordRTC { margin:0 auto; }
+                /* success message after upload */
+                #output { color:$color-teal-dark !important; font-weight:$font-weight-semibold; }
+            }
+            #hdfvr-file-input::before { box-sizing:border-box; }
+            /* hide input for auto-gen link for video record */
+            #fsCell75278143 { display:none !important; }
+        }
+    }
+}
+.formstack-embed__header-image { margin:8px auto 40px;
+    @include mq(sm_down) { margin:8px auto 32px; width:120px; }
+}
+.formstack-embed__block { background-color:$color-white; color:$color-black; margin:0 auto;
+    max-width:$container-width-narrow; padding:48px 32px 32px;
+    @include mq(sm_up){ @include border-radius; padding:48px 80px 32px; }
+    img { margin:0 auto 32px; }
+    h1 { align-self:center; font-size:32px; font-weight:$font-weight-semibold; margin:0 auto 16px; }
+}

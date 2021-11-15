@@ -1,0 +1,15 @@
+.filter { margin:0 auto; max-width:$text-width-max; }
+.filter__button-wrap { margin:0 -16px 16px;
+    @include mq(xs_up) { margin:0 auto 24px; }
+}
+.filter__button { @include border-radius; @include smooth-hover; background-color:$color-white;
+    border:none; box-sizing:border-box; color:$color-black; cursor:pointer;
+    font-weight:$font-weight-semibold; margin:0 8px 16px; padding:14px 16px; text-align:center;
+    white-space:nowrap;
+    @include mq(xs_up) { margin:0 4px 8px; padding:14px 24px; }
+    &:hover { background-color:$color-blue-light; }
+    &--selected { background-color:$color-blue-dark; color:$color-white; outline:none;
+        &:hover { background-color:$color-blue-dark; color:$color-white; cursor:auto; }
+    }
+}
+.filter__section {}

@@ -1,0 +1,22 @@
+.testimonial { @include border-radius; align-items:center; background-color:$color-white;
+    border:2px solid $color-white; color:$color-black; display:grid; margin:0 0 32px; padding:24px; position:relative;
+    &:after { background-color:$color-white; content:""; display:block; height:34px; left: 50%;
+        position:absolute; top:100%; -webkit-transform: translateX(-50%); transform: translateX(-50%);
+        width:2px;
+    }
+    @include mq(md_down) { margin-top:32px; }
+    &--ocean { background-color:transparent; border-color:$color-blue-ocean-light; color:$color-white;
+        &:after { background-color:$color-blue-ocean-light; }
+    }
+    &--blue-light { background-color:$color-white; border-color:$color-blue-light;
+        &:after { background-color:$color-blue-light; }
+    }
+    &--blue-light-fill { background-color:$color-blue-light; border-color:$color-blue-light;
+        color:$color-black;
+        &:after { background-color:$color-blue-light; }
+    }
+    &--cyber { background-color:transparent; border-color:$color-cyber; color:$color-white;
+        &:after { background-color:$color-cyber; }
+    }
+}
+.testimonial__text { margin:8px auto; }

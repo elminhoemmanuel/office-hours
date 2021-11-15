@@ -1,0 +1,20 @@
+.footer-nav { display:grid; grid-column-gap:$container-grid-gutter; grid-template-columns:repeat(6, 1fr);
+    @include mq(sm_down) { grid-template-columns:1fr; margin-top:16px; }
+}
+.footer-nav__list { align-self:start; justify-self:start; list-style:none; margin:0; text-align:left;
+    @include mq(sm_down) { justify-self:center; }
+}
+.footer-nav__list__item { line-height:1.2; margin:0 0 16px 0;
+    @include mq(sm_down) { text-align:center; }
+}
+.footer-nav__link { color:$color-white; font-size:12px; letter-spacing:.1em; opacity:.6;
+    text-decoration:none; text-transform:uppercase;
+    &:hover { color:$color-white; opacity:1; }
+}
+.footer-nav__logo { margin-top:5px; width:90px; }
+.footer-nav__badge { justify-self:end;
+    @include mq(sm_down) { justify-self:center; }
+}
+.footer-nav__badge__image { margin:0 auto 32px; width:120px;
+    @include mq(sm_down) { margin:32px auto 0; }
+}

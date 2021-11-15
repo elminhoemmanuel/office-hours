@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400px" height="400px" viewBox="0 0 400 400" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.2 (57519) - http://www.bohemiancoding.com/sketch -->
+    <title>DL Logo white</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="DL-Logo-white" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group">
+            <polygon id="Fill-1-Copy-2" fill="#090305" points="0 400 400 400 400 0 0 0"></polygon>
+            <path d="M130.798167,249.560052 C162.708045,249.560052 183.075094,228.020321 183.075094,200.19069 L183.075094,199.831694 C183.075094,172.009542 162.708045,150.103336 130.798167,150.103336 L101.23891,150.103336 L101.23891,249.560052 L130.798167,249.560052 Z M87,137 L130.798167,137 C170.458338,137 197.854723,164.11164 197.854723,199.480178 L197.854723,199.831694 C197.854723,235.192752 170.458338,262.663388 130.798167,262.663388 L87,262.663388 L87,137 Z" id="Fill-15" fill="#FEFEFE"></path>
+            <polygon id="Fill-21" fill="#FEFEFE" points="222 137 249.764373 137 249.764373 237.526223 312.675423 237.526223 312.675423 262.663388 222 262.663388"></polygon>
+        </g>
+    </g>
+</svg>

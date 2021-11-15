@@ -1,0 +1,27 @@
+.course-spec { box-sizing:border-box; display:block; text-decoration:none; width:100%;
+    @include mq(md_down) { margin:0 auto; }
+    &--block { @include border-radius; background-color:$color-white; padding:24px;
+      @include mq(md_down) { padding:40px 32px 24px; }
+    }
+    &--gray { background-color:$color-gray-lightest; }
+}
+.course-spec__inner-block { @include border-radius; align-items:center;
+    background-color:$color-gray-lightest; display:grid; justify-items:center; min-height:92px; padding:24px;
+}
+.course-spec__title { color:$color-black; font-size:18px; font-weight:$font-weight-semibold; line-height:1.4;
+    margin:0 auto 8px; }
+.course-spec__subtext { color:$color-gray; display:inline-block; margin:8px auto 0;
+    @include mq(md_down) { margin:8px auto 16px; }
+}
+.course-spec__rating, .course-spec__text-lg { font-size:24px; font-weight:$font-weight-semibold;
+    margin:8px auto;
+}
+.course-spec__rating { color:$color-gold; }
+.course-spec__text-lg {}
+.course-spec__image { height:32px; margin:8px auto 16px;
+    @include mq(md_down) { margin:0 auto 24px; }
+}
+.course-spec__level { height:32px; margin:0 auto;
+    @include mq(md_down) { margin-bottom:24px; }
+}
+.course-spec__badge { width:112px; }

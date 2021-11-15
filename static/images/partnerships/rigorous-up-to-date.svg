@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="92px" height="100px" viewBox="0 0 92 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51 (57462) - http://www.bohemiancoding.com/sketch -->
+    <title>rigorous-up-to-date</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <polygon id="path-1" points="88 32 90 32 90 64 88 64"></polygon>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Talent-Page" transform="translate(-286.000000, -913.000000)">
+            <g id="rigorous-up-to-date" transform="translate(288.000000, 915.000000)">
+                <path d="M14.668,40 L14.668,96" id="Stroke-1" stroke="#9A66FE" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                <path d="M44,32 L44,56" id="Stroke-3" stroke="#9A66FE" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                <path d="M29.332,36 L29.332,80" id="Stroke-4" stroke="#4C5EFF" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                <path d="M0,32 L0,64" id="Stroke-5" stroke="#4C5EFF" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                <path d="M73.332,72 L73.332,0" id="Stroke-7" stroke="#9A66FE" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                <path d="M58.668,64 L58.668,16" id="Stroke-10" stroke="#4C5EFF" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <g id="Clip-12"></g>
+                <path d="M88,64 L88,32" id="Stroke-11" stroke="#4C5EFF" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"></path>
+            </g>
+        </g>
+    </g>
+</svg>

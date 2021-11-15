@@ -1,0 +1,9 @@
+.l-header { background-color:$color-gray-lightest; overflow:hidden;
+    &--purple { background-color:$color-purple; color:$color-white; }
+    &--lowered {
+        @include mq(md_up) { padding-bottom:240px; }
+    }
+}
+.l-header__logo { margin:0 auto 32px;
+    @include mq(sm_down) { max-height:72px; }
+}

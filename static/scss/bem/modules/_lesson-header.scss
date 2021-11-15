@@ -1,0 +1,21 @@
+.lesson-header { background-color:$color-white; padding:144px 32px 32px 32px; text-align:center;
+    &--background { background-position:center center; background-repeat:no-repeat; background-size:cover;
+        padding:216px 32px 312px 32px;
+    }
+}
+.lesson-header__lesson-type { color:$color-gray; }
+.lesson-header__lesson-type__icon { display:inline-block; height:32px; margin:0 16px -4px 0; width:32px;
+    vertical-align:bottom;
+    &--white {
+        & [stroke="none"] { stroke: none !important; }
+        & [stroke] { stroke:$color-white; }
+        & [fill="none"] { fill: none !important; }
+        & [fill] { fill:$color-white; }
+    }
+}
+.lesson-header__title { font-size:48px; font-weight:$font-weight-semibold; line-height:56px;
+    margin:0 auto 24px; max-width:600px; text-align:center; }
+.lesson-header__byline { font-size:18px; font-weight:$font-weight-semibold; margin:0 auto; }
+.lesson-header__description { font-size:18px; line-height:26px; margin:0 auto; max-width:400px;
+    &--wide { max-width:530px; }
+}

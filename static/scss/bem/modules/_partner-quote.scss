@@ -1,0 +1,12 @@
+.partner-quote { margin:0 auto; max-width:704px;
+    @include mq(sm_up) { display:grid; grid-column-gap:64px; grid-template-columns:auto auto; }
+}
+.partner-quote__logo { margin:0 auto 40px;
+    @include mq(sm_up) { @include border-radius(100%); align-content:center; background-color:$color-white;
+        display:grid; height:224px; justify-content:center; margin:0 auto; width:224px; }
+}
+.partner-quote__text-box { margin:0 auto; max-width:416px; text-align:left;
+    @include mq(sm_up) { @include border-radius; background-color:$color-white;
+        padding:32px 24px 32px 32px; }
+}
+.partner-quote__attribution { font-size:18px; font-weight:$font-weight-semibold; margin:0 auto; }

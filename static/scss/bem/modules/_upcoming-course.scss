@@ -1,0 +1,10 @@
+.upcoming-course { @include animation(fadein, 1s, ease-in); @include border-radius;
+    background-color:$color-white; display:inline-block; margin:0 auto 16px; padding:16px 24px;
+    @include mq(xxs) { padding:16px; width:100%; }
+}
+.upcoming-course__grid { align-items:center; display:grid; grid-column-gap:16px;
+    grid-template-columns:104px 13px 104px; justify-content:center; margin:8px auto 16px;
+    @include mq(xs_up) { grid-template-columns:104px 13px 104px 72px; margin:0 auto; }
+}
+.upcoming-course__arrow {}
+.upcoming-course__date { margin:0; }

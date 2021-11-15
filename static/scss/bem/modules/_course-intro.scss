@@ -1,0 +1,21 @@
+.course-intro {
+    @include mq(sm_up) { display:grid; grid-auto-flow:column; grid-column-gap:40px;
+      grid-template-columns:auto; justify-content:start; text-align:left;
+    }
+}
+.course-intro__icon { margin:0 auto 32px; height:168px; width:168px; }
+.course-intro__text-block { @include mq(sm_up) { text-align:left; }}
+.course-intro__heading { font-size:40px; font-weight:$font-weight-semibold; margin:0 0 24px; max-width:100%;
+    @include mq(sm_up) { margin:0 0 8px; }
+}
+.course-intro__inner-grid {
+    @include mq(md_up) { display:grid; grid-column-gap:24px; grid-template-columns:auto 104px; }
+}
+.course-intro__description { font-size:18px; line-height:28px; margin:8px 0 24px; max-width:100%; }
+.course-intro__badge { background-image:dl-url('main', 'images/bem-modules/course-intro/course-intro__badge.svg');
+    background-repeat:no-repeat; background-size:contain; color:$color-white; margin:16px 0; padding:20px 8px;
+    text-align:center;
+    @include mq(md_down) { display:none; }
+}
+.course-intro__badge__icon { font-size:20px; }
+.course-intro__badge__text { font-size:14px; line-height:1.2; margin:4px auto 0; }

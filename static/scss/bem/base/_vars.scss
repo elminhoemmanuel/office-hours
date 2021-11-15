@@ -1,0 +1,79 @@
+/*********
+ Spacing
+*********/
+$container-width: 960px;
+$container-width-narrow: 640px;
+$container-width-narrowest: 480px;
+$container-width-wide: 1200px;
+$container-grid-gutter: 32px;
+$container-grid-gutter-lg: 48px;
+$container-grid-gutter-sm: 16px;
+
+/*************
+ Media queries
+**************/
+$break-xxs: 375px;
+$break-xs: 560px;
+$break-sm: 768px;
+$break-md: 1040px;
+$break-lg: 1400px;
+$break-xl: 1600px;
+
+/*******
+ Text
+*******/
+$base-font: 'proxima-nova', 'Gotham', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$base-font-serif: 'freight-text-pro', Georgia, serif;
+$base-font-size: 16px;
+$text-width-max: 530px;
+$text-width-max-narrow: 420px;
+$text-width-max-wide: 720px;
+
+$font-weight-light: 300;
+$font-weight-normal: 400;
+$font-weight-medium: 500;
+$font-weight-semibold: 600;
+$font-weight-bold: 700;
+
+/********
+Colors
+********/
+$color-white: #FFFFFF;
+$color-white-transparent: rgba(255,255,255,0.5);
+$color-black: #1B212D;
+$color-black-transparent: rgba(0,0,0,0.3);
+$color-gray: #8D9096;
+$color-gray-darkest: #313742;
+$color-gray-light: #E9E9E9;
+$color-gray-lightest: #F1F1F1;
+
+$color-orange: #F15B2A;
+$color-orange-dark: #CC491E;
+$color-violet: #9A66FF;
+$color-violet-dark: #6B47B2;
+$color-violet-light: #8A86FF;
+$color-purple: #2C2B4C;
+$color-purple-light: #36305E;
+$color-purple-lightest: #3E3C88;
+$color-teal: #3BF2DC;
+$color-teal-dark: #38C0B8;
+$color-blue: #287EB9;
+$color-blue-dark: #4C5EFF;
+$color-blue-darkest: #3D4BCF;
+$color-blue-light: #E0E6FF;
+$color-gold: #F8B100;
+$color-red: #FF3050;
+
+/* Email Courses */
+$color-blue-ocean: #1F2453;
+$color-blue-ocean-light: #2C326B;
+
+/* Photoshop 101 */
+$color-salmon: #FF9E99;
+
+/* Social */
+$color-blue-facebook: #3E5795;
+$color-blue-twitter: #5097F7;
+
+/* Cyber Monday */
+$color-cyber: #78F7FF;

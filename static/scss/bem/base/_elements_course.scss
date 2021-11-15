@@ -1,0 +1,40 @@
+/***************
+  Variables
+****************/
+$color-text: $color-black;
+$color-background: $color-white;
+$color-link: $color-orange;
+$color-link-hover: $color-orange-dark;
+
+/***********************
+  Base Element Styles
+************************/
+html,body { background-color:$color-background; color:$color-text; font-family:$base-font; }
+
+h1,h2,h3,h4,h5,h6 { @include base-text($base-font-size, 1.2, $font-weight-normal);
+    max-width:$text-width-max; }
+p { @include base-text($base-font-size, 1.5, $font-weight-normal); margin:0 auto 16px;
+    max-width:$text-width-max; }
+a { @include base-text(inherit, inherit, inherit); @include smooth-hover; color:$color-link;
+    cursor:pointer; font-family:inherit; font-style:inherit; text-decoration:none; word-break:break-word;
+    &:hover { color:$color-link-hover; text-decoration:none; }
+}
+span { @include base-text(inherit, inherit, inherit); font-family:inherit; }
+*:before, *:after { @include smooth-text; }
+button, label, input, textarea, select { @include base-text(inherit, inherit, inherit); }
+strong, b { font-weight:$font-weight-bold; }
+em { font-style:italic; }
+
+hr { border:0; border-top:2px solid $color-gray-light; border-bottom:1px solid $color-white; }
+
+ul { list-style:disc; margin:0; padding:0; text-align:left; }
+ol { list-style:decimal; margin:0; padding:0; text-align:left; }
+li { @include base-text($base-font-size, 1.5, $font-weight-normal); }
+dl { margin:0; padding:0; text-align:left; }
+dt, dd { @include base-text($base-font-size, 1.5, $font-weight-normal); display:block; }
+table { @include base-text($base-font-size, 1.25, $font-weight-normal); display:table; }
+figcaption { @include base-text(inherit, inherit, inherit); }
+
+img { max-width:100%; }
+form { margin:0; }
+div { box-sizing:border-box; }

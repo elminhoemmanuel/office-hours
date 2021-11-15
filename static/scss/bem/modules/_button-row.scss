@@ -1,0 +1,4 @@
+.button-row { display:grid; grid-column-gap:$container-grid-gutter;
+    grid-template-columns:repeat(2, 1fr); margin:0 auto; max-width:$text-width-max;
+    @include mq(xs_down) { grid-row-gap:8px; grid-template-columns:1fr; }
+}

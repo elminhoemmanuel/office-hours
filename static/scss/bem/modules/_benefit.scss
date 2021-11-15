@@ -1,0 +1,29 @@
+.benefit { align-items:center; display:grid; grid-column-gap:16px; grid-template-columns:64px auto;
+    margin:0 auto 24px;
+    @include mq(md_down) { grid-row-gap:16px; grid-template-columns:1fr; }
+}
+.benefit__image {}
+.benefit__text-box { color:$color-gray; text-align:left; }
+.benefit__title { font-weight:$font-weight-semibold; }
+.benefit__text { font-size:14px; margin:0; }
+.benefit__icon { background-repeat:no-repeat; background-position:center center; background-size:contain;
+    height:64px; width:64px;
+    &--curriculum {
+        background-image:dl-url('main', 'images/bem-modules/benefit/benefit__icon--curriculum.svg');
+    }
+    &--deposit {
+        background-image:dl-url('main', 'images/bem-modules/benefit/benefit__icon--deposit.svg');
+    }
+    &--guarantee {
+        background-image:dl-url('main', 'images/bem-modules/benefit/benefit__icon--guarantee.svg');
+    }
+    &--mentor {
+        background-image:dl-url('main', 'images/bem-modules/benefit/benefit__icon--mentor.svg');
+    }
+    &--online {
+        background-image:dl-url('main', 'images/bem-modules/benefit/benefit__icon--online.svg');
+    }
+    &--timeline {
+        background-image:dl-url('main', 'images/bem-modules/benefit/benefit__icon--timeline.svg');
+    }
+}

@@ -1,0 +1,16 @@
+.l-main { background-color:$color-gray-lightest; margin:0 auto; padding:48px 0;
+    &--white { background-color:$color-white; }
+    &--purple { background-color:$color-purple; color:$color-white; }
+    &--lesson { min-height:calc(100vh - -172px); /* footer height */ padding:64px 0 0; position:relative;
+        @include mq(xs_down) { padding:80px 0 66px; }
+    }
+    &--iframe { height:calc(100vh - 8px); padding:64px 0 0;
+        @include mq(xs_down) { padding:80px 0 66px; }
+    }
+    &--typeform { height:calc(100vh - 8px); padding:0;
+        @include mq(xs_down) { padding:0; }
+    }
+    &--slideshow, &--lynda { min-height:calc(100vh - 8px); position:relative;
+        @include mq(xs_down) { padding:80px 0 66px; }
+    }
+}

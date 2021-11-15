@@ -1,0 +1,19 @@
+.nav { align-items:center; display:grid; grid-column-gap:32px; grid-template-columns:130px auto auto;
+    margin:0 auto;
+    @include mq(md_down) { grid-template-columns:1fr; max-width:130px; }
+    &--simple { grid-template-columns:1fr; max-width:130px; }
+}
+.nav__list { display:grid; grid-auto-flow:column; grid-column-gap:32px; justify-self:start; list-style:none;
+    margin:0;
+    @include mq(md_down) { display:none; }
+}
+.nav__list__item { white-space:nowrap; }
+.nav__logo { font-size:0; }
+.nav__link { color:$color-white; font-size:13px; font-weight:$font-weight-semibold; letter-spacing:.1em;
+    opacity:.6; text-decoration:none; text-transform:uppercase;
+    &:hover { color:$color-white; opacity:1; }
+    &.active { opacity:1; }
+}
+.nav__cta { justify-self:end; white-space:nowrap;
+    @include mq(md_down) { display:none; }
+}

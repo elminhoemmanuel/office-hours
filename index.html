@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html class="webp webp-alpha webp-animation webp-lossless">
+  <head>
+    <title>Designlab | Learn UX Design and UI Design Online | UX Bootcamp</title>
+
+    <meta name="viewport" content="width=device-width">
+    <meta name="description" content="Learn UI/UX design through hands-on projects and 1-on-1 mentorship from expert designers. Add design to your resume and level up your career.">
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+
+    <script type="text/javascript" src="react/dist/hybrid.js"></script>
+    <script src="https://use.typekit.net/rso4xgq.js" async=""></script>
+    <script>
+      (function(d) {
+        var config = {
+          kitId: 'rso4xgq',
+          scriptTimeout: 3000,
+          async: true
+        },
+          h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+      })(document);
+    </script>
+
+    <link href="/static/css/vendors/font-awesome.css" rel="stylesheet">
+    <link type="text/css" href="/static/css/packages/public/public.css" rel="stylesheet">
+
+    <link rel="icon" type="image/png" href="/static/images/logos/favicon.ico">
+  </head>
+  <body>
+    <a class="topbar-login u-hide-md-up" href="">
+      <p class="topbar-login__text" class="u-text-white">Login to course <i class="icon-arrow-right topbar-login__text__icon"></i></p>
+    </a>
+
+    <header class="l-header l-header--ux-design">
+
+      <div class="l-container">
+
+        <nav class="nav">
+          <a class="nav__logo" href="/">
+            <img src="/static/images/logos/logo-designlab.svg" alt="Designlab">
+          </a>
+          <ul class="nav__list">
+            <li class="nav__list__item">
+              <a class="nav__link " href="" dl-mp-track="Static page: Top link clicked" properties="{'link': 'uxa', 'onPage': 'homepage'}">UX Academy</a>
+            </li>
+            <li class="nav__list__item">
+              <a class="nav__link " href="" dl-mp-track="Static page: Top link clicked" properties="{'link': 'outcomes', 'onPage': 'homepage'}">Outcomes</a>
+            </li>
+            <li class="nav__list__item">
+              <a class="nav__link " href="" dl-mp-track="Static page: Top link clicked" properties="{'link': 'courses', 'onPage': 'homepage'}">Courses</a>
+            </li>
+            <li class="nav__list__item">
+              <a class="nav__link " href="" dl-mp-track="Static page: Top link clicked" properties="{'link': 'blog', 'onPage': 'homepage'}">Blog</a>
+            </li>
+            <li class="nav__list__item">
+              <a class="nav__link " href="" dl-mp-track="Static page: Top link clicked" properties="{'link': 'mentors', 'onPage': 'homepage'}">Mentors</a>
+            </li>
+            <li class="nav__list__item">
+              <a class="nav__link " href="" dl-mp-track="Static page: Top link clicked" properties="{'link': 'about', 'onPage': 'homepage'}">About</a>
+            </li>
+            <li class="nav__list__item">
+              <a class="nav__link" href="" dl-mp-track="Static page: Top link clicked">Help</a>
+            </li>
+          </ul>
+          <div class="nav__cta">
+            <a href="" class="button button--sm button--white-hollow">Login</a>
+          </div>
+        </nav>
+      </div>
+
+      <div class="l-container u-pad-bottom-rm">
+        <h1 class="display-lg u-text-100 u-hide-sm-down u-pad-top-md">Build your new career in <span class="u-text-semibold u-text-nobreak">UX design</span></h1>
+        <h1 class="display-md u-hide-sm-up">Build your new career in <span class="u-text-semibold u-text-nobreak">UX design</span></h1>
+        <p>UX Academy students receive world-class 1-on-1 online training in UX design, access to a vibrant community, and help landing that first product&nbsp;design job.</p>
+      </div>
+
+      <div class="l-container l-container--narrow u-pad-top-rm u-pad-bottom-lg">
+        <p class="u-text-teal display-sm u-text-wide u-pad-bottom-sm">Learn more about UX Academy and how to take your first step! <br>Next cohort begins on <span class="u-text-nobreak">May 18th.</span></p>
+        <div class="form form--dark">
+          <div class="form__block form__block--purple">
+            <form dl-form="" on-submit="saveSignup()" name="signupForm" novalidate="">
+              <div class="form__grid form__grid--2">
+                <div class="form__form-group">
+                  <label class="form__label">Full Name</label>
+                  <label class="form__label form__label--error" dl-form-error="errorMessages.name" form-name="signupForm" field-name="name" style="display: none;"></label>
+                  <input class="form__input" dl-form-field="" type="text" name="name" placeholder="e.g. Robin Buckley" required="">
+                </div>
+                <div class="form__form-group">
+                  <label class="form__label">Email Address</label>
+                  <label class="form__label form__label--error" dl-form-error="errorMessages.email" form-name="signupForm" field-name="email" style="display: none;"></label>
+                  <input class="form__input" dl-form-field="" type="email" name="email" placeholder="e.g. robin@trydesignlab.com" required="">
+                </div>
+              </div>
+              <div class="form__form-group">
+                <label class="form__label form__label--wraptext u-text-align-center" for="experience">Have you worked as a UX/UI, digital, or web designer?<br><span class="u-text-normal">Don’t worry, this isn’t a requirement.</span></label>
+                <div class="form__radio">
+                  <div class="form__radio__option">
+                    <input type="radio" id="yes" name="experience" required="" value="true">
+                    <label class="form__radio__label" for="yes">Yes</label>
+                  </div>
+                  <div class="form__radio__option">
+                    <input type="radio" id="no" name="experience" required="" value="false">
+                    <label class="form__radio__label" for="no">No</label>
+                  </div>
+                </div>
+              </div>
+              <button class="button button--violet button--form ladda-button" type="submit" dl-ladda-button="" ladda-loading="loading" data-style="slide-down"><span class="ladda-label">Get Application Pack</span><span class="ladda-spinner"></span></button>
+            </form>
+          </div>
+        </div>
+        <div class="u-test-b">
+          <a class="u-link-violet" href="" dl-mp-track="Homepage: Explore UX Academy clicked"><p class="u-text-semibold u-pad-top-sm">Learn more about UX Academy <i class="icon-arrow-right u-inline-icon"></i></p></a>
+        </div>
+      </div><!-- end ngIf: (root.getCta() == 'info' || root.getCta() == 'preLeadCall') || root.justSignedUp -->
+
+    </header>
+
+
+
+    <div class="l-main l-main--white u-pad-top-rm-xxs">
+      <div class="l-container l-container--grid-2">
+        <div class="u-hide-sm-down u-text-align-left">
+          <h2 class="heading">Design beginner? Start here.</h2>
+          <p>No design experience? Join our rigorous 4-week Design 101 online course! You’ll embark on a 1-on-1 journey with your Designlab mentor to learn the fundamentals of design. This is the first step for product design beginners, and a prerequisite for enrollment in UX Academy.</p>
+          <p class="u-text-semibold">The next Design 101 cohort begins on June 5th.</p>
+          <a class="button button--blue" href="" dl-mp-track="Homepage: Start with Design 101 clicked">Start with Design 101</a>
+        </div>
+        <div class="u-grid-image u-image-full-width-sm">
+          <img src="/static/images/homepage/working-designer.svg" alt="Working Designer">
+        </div>
+        <div class="u-hide-sm-up u-pad-top-md">
+          <h2 class="heading">Design beginner? <span class="u-text-nobreak">Start here.</span></h2>
+          <p>No design experience? Join our rigorous 4-week Design 101 online course! You’ll embark on a 1-on-1 journey with your Designlab mentor to learn the fundamentals of design. This is the necessary first step for beginners who hope to pursue a career in <span class="u-text-nobreak">product design.</span></p>
+          <p class="u-text-semibold">The next Design 101 cohort begins on June 5th.</p>
+          <a class="button button--blue" href="" dl-mp-track="Homepage: Start with Design 101 clicked">Start with Design 101</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="l-main l-main--purple">
+      <div class="l-container l-container--mentors">
+        <h2 class="heading">A top designer will be <span class="u-text-nobreak">your mentor.</span></h2>
+        <p>Our powerful network of Designlab mentors is our secret weapon. When you enroll, we’ll pair you with an experienced professional designer. They’ll guide your progress and prepare you to succeed in your new <span class="u-text-nobreak">UX design career.</span></p>
+      </div>
+      <div class="l-container l-container--grid-4-3-2-1">
+
+        <a class="person person--block person--link" href="" target="_blank" dl-mp-track="Homepage: Mentor avatar clicked" properties="{mentorUsername: 'GeorgeVisan'}">
+
+          <div class="avatar">
+            <picture>
+              <source srcset="/static/images/avatars/mentor-george.webp" type="image/webp">
+              <source srcset="/static/images/avatars/mentor-george.jpg" type="image/jpeg">
+              <img class="avatar__img" src="/static/images/avatars/mentor-george.jpg" alt="mentor George Visan avatar">
+            </picture>
+            <picture>
+              <source srcset="/static/images/logos-external/logo-neo-financial.webp" type="image/webp">
+              <source srcset="/static/images/logos-external/logo-neo-financial.png" type="image/png">
+              <img class="avatar__logo" src="/static/images/logos-external/logo-neo-financial.png" alt="Neo Financial logo">
+            </picture>
+          </div>
+          <div class="person__title-block">
+            <p class="person__name">George Visan</p>
+            <p class="person__role">Product Designer at <span class="u-text-nobreak">Neo Financial</span></p>
+          </div>
+        </a>
+
+        <a class="person person--block person--link" href="" target="_blank" dl-mp-track="Homepage: Mentor avatar clicked" properties="{mentorUsername: 'allegraposchman'}">
+
+          <div class="avatar">
+            <picture>
+              <source srcset="/static/images/avatars/mentor-allegra.webp" type="image/webp">
+              <source srcset="/static/images/avatars/mentor-allegra.jpg" type="image/jpeg">
+              <img class="avatar__img" src="/static/images/avatars/mentor-allegra.jpg" alt="mentor Allegra Poschmann avatar">
+            </picture>
+          </div>
+          <div class="person__title-block">
+            <p class="person__name">Allegra Poschmann</p>
+            <p class="person__role">Creative Director</p>
+          </div>
+        </a>
+
+        <a class="person person--block person--link" href="" target="_blank" dl-mp-track="Homepage: Mentor avatar clicked" properties="{mentorUsername: 'alicjasuska'}">
+
+          <div class="avatar">
+            <picture>
+              <source srcset="/static/images/avatars/mentor-alicja.webp" type="image/webp">
+              <source srcset="/static/images/avatars/mentor-alicja.jpg" type="image/jpeg">
+              <img class="avatar__img" src="/static/images/avatars/mentor-alicja.jpg" alt="mentor Alicja Suska avatar">
+            </picture>
+            <picture>
+              <source srcset="/static/images/logos-external/logo-toggl.webp" type="image/webp">
+              <source srcset="/static/images/logos-external/logo-toggl.png" type="image/png">
+              <img class="avatar__logo" src="/static/images/logos-external/logo-toggl.png" alt="Toggl logo">
+            </picture>
+          </div>
+          <div class="person__title-block">
+            <p class="person__name">Alicja Suska</p>
+            <p class="person__role">UX/UI Designer at Toggl</p>
+          </div>
+        </a>
+
+        <a class="person person--block person--link" href="" target="_blank" dl-mp-track="Homepage: Mentor avatar clicked" properties="{mentorUsername: 'charmanttan'}">
+
+          <div class="avatar">
+            <picture>
+              <source srcset="/static/images/avatars/mentor-charmant.webp" type="image/webp">
+              <source srcset="/static/images/avatars/mentor-charmant.jpg" type="image/jpeg">
+              <img class="avatar__img" src="/static/images/avatars/mentor-charmant.jpg" alt="mentor Charmant Tan avatar">
+            </picture>
+            <picture>
+              <source srcset="/static/images/logos-external/logo-y-media-labs.webp" type="image/webp">
+              <source srcset="/static/images/logos-external/logo-y-media-labs.png" type="image/png">
+              <img class="avatar__logo" src="/static/images/logos-external/logo-y-media-labs.png" alt="Y Media Labs logo">
+            </picture>
+          </div>
+          <div class="person__title-block">
+            <p class="person__name">Charmant Tan</p>
+            <p class="person__role">Senior Designer at <span class="u-text-nobreak">Y Media Labs</span></p>
+          </div>
+        </a>
+
+        <a class="person person--block person--link" href="" target="_blank" dl-mp-track="Homepage: Mentor avatar clicked" properties="{mentorUsername: 'ChrisDjango'}">
+
+          <div class="avatar">
+            <picture>
+              <source srcset="/static/images/avatars/mentor-chris.webp" type="image/webp">
+              <source srcset="/static/images/avatars/mentor-chris.jpg" type="image/jpeg">
+              <img class="avatar__img" src="/static/images/avatars/mentor-chris.jpg" alt="mentor Chris Django Bögner avatar">
+            </picture>
+            <picture>
+              <source srcset="/static/images/logos-external/logo-tundra.webp" type="image/webp">
+              <source srcset="/static/images/logos-external/logo-tundra.png" type="image/png">
+              <img class="avatar__logo" src="/static/images/logos-external/logo-tundra.png" alt="Tundra logo">
+            </picture>
+          </div>
+          <div class="person__title-block">
+            <p class="person__name">Chris Django Bögner</p>
+            <p class="person__role">Design Lead at Tundra</p>
+          </div>
+        </a>
+
+        <a class="person person--block person--link" href="" target="_blank" dl-mp-track="Homepage: Mentor avatar clicked" properties="{mentorUsername: 'elhamali'}">
+
+          <div class="avatar">
+            <picture>
+              <source srcset="/static/images/avatars/mentor-elham.webp" type="image/webp">
+              <source srcset="/static/images/avatars/mentor-elham.jpg" type="image/jpeg">
+              <img class="avatar__img" src="/static/images/avatars/mentor-elham.jpg" alt="mentor Elham Ali avatar">
+            </picture>
+            <picture>
+              <source srcset="/static/images/logos-external/logo-jumana.webp" type="image/webp">
+              <source srcset="/static/images/logos-external/logo-jumana.jpg" type="image/jpeg">
+              <img class="avatar__logo" src="/static/images/logos-external/logo-jumana.jpg" alt="Jumana Design logo">
+            </picture>
+          </div>
+          <div class="person__title-block">
+            <p class="person__name">Elham Ali</p>
+            <p class="person__role">Owner and CEO at Elham Design Consultancy</p>
+          </div>
+        </a>
+
+        <a class="person person--block person--link" href="" target="_blank" dl-mp-track="Homepage: Mentor avatar clicked" properties="{mentorUsername: 'Lehel'}">
+
+          <div class="avatar">
+            <picture>
+              <source srcset="/static/images/avatars/mentor-lehel.webp" type="image/webp">
+              <source srcset="/static/images/avatars/mentor-lehel.jpg" type="image/jpeg">
+              <img class="avatar__img" src="/static/images/avatars/mentor-lehel.jpg" alt="mentor Lehel Babos avatar">
+            </picture>
+            <picture>
+              <source srcset="/static/images/logos-external/logo-tablecheck.webp" type="image/webp">
+              <source srcset="/static/images/logos-external/logo-tablecheck.png" type="image/png">
+              <img class="avatar__logo" src="/static/images/logos-external/logo-tablecheck.png" alt="Tablecheck logo">
+            </picture>
+          </div>
+          <div class="person__title-block">
+            <p class="person__name">Lehel Babos</p>
+            <p class="person__role">Design Lead at TableCheck</p>
+          </div>
+        </a>
+
+        <a class="person person--block person--link" href="" target="_blank" dl-mp-track="Homepage: Mentor avatar clicked" properties="{mentorUsername: 'veronicaswords'}">
+
+          <div class="avatar">
+            <picture>
+              <source srcset="/static/images/avatars/mentor-veronica.webp" type="image/webp">
+              <source srcset="/static/images/avatars/mentor-veronica.jpg" type="image/jpeg">
+              <img class="avatar__img" src="/static/images/avatars/mentor-veronica.jpg" alt="mentor Veronica Swords avatar">
+            </picture>
+          </div>
+          <div class="person__title-block">
+            <p class="person__name">Veronica Swords</p>
+            <p class="person__role">UX/UI Designer</p>
+          </div>
+        </a>
+      </div>
+      <div class="l-container">
+        <a href="" class="button button--blue" dl-mp-track="Homepage: Meet our mentors clicked">Meet our mentors</a>
+      </div>
+    </div>
+
+    <div class="l-main">
+      <div class="l-container u-pad-bottom-sm">
+        <h2 class="heading">Looking for a quick power-up?</h2>
+        <p>Improve on specific UX/UI skills with these specialized 4-week <span class="u-text-nobreak">Designlab courses.</span></p>
+      </div>
+      <div class="l-container l-container--grid-3x2 u-pad-bottom-sm">
+        <a class="course-card" href="" dl-mp-track="Homepage: Course card clicked" properties="{courseType: 'UX Research &amp; Strategy'}">
+          <div class="course-card__header">
+            <img class="course-card__header__icon" src="https://storage.trydesignlab.com/content_icons/course-types/ux-research-strategy.png" alt="UX Research &amp; Strategy Course">
+            <h2 class="course-card__course-name">UX Research &amp; Strategy</h2>
+          </div>
+          <p class="course-card__description">Discover how to make better products through user insight and understanding. Learn the key principles of human-centered design and how to turn user research findings into concrete product features. Perfect for aspiring UX professionals, project managers, entrepreneurs, and more.</p>
+        </a>
+        <p class="u-pad-top-sm u-pad-bottom-sm">Next course: <b>June 5th</b></p>
+        <a class="course-card" href="" dl-mp-track="Homepage: Course card clicked" properties="{courseType: 'UI Design'}">
+          <div class="course-card__header">
+            <img class="course-card__header__icon" src="https://storage.trydesignlab.com/content_icons/course-types/ui-design-icon_OM4nxwm.png" alt="UI Design Course">
+            <h2 class="course-card__course-name">UI Design</h2>
+          </div>
+          <p class="course-card__description">Once you’ve mastered the basics, dive deeper into creating pixel-perfect user interfaces through an in-depth study of layout, color, typography, and more. You’ll finish the course with a polished prototype to add to your portfolio. Perfect for mid-level designers and those hoping to hone their existing skills.</p>
+        </a>
+        <p class="u-pad-top-sm u-pad-bottom-sm">Next course: <b>June 5th</b></p>
+        <a class="course-card" href="" dl-mp-track="Homepage: Course card clicked" properties="{courseType: 'UX: Interaction Design'}">
+          <div class="course-card__header">
+            <img class="course-card__header__icon" src="https://storage.trydesignlab.com/content_icons/course-types/ux-interaction-design.png" alt="Interaction Design Course">
+            <h2 class="course-card__course-name">UX: Interaction Design</h2>
+          </div>
+          <p class="course-card__description">Design isn’t just about making something beautiful, but also making it easy to use.
+          Learn key interaction design principles, how to structure the design of products around the goals of users, and how to sketch and wireframe your design ideas. Perfect for product managers and developers who want to work better with designers.
+          </p>
+        </a>
+        <p class="u-pad-top-sm">Next course: <b>June 5th</b></p>
+      </div>
+      <div class="l-container u-pad-top-rm">
+        <a href="" class="button button--blue" dl-mp-track="Homepage: View all courses clicked">View all courses</a>
+      </div>
+    </div>
+
+    <div class="l-main l-main--purple">
+      <div class="l-container">
+        <h2 class="heading">Why Designlab?</h2>
+        <p>We believe that online education should be rigorous <span class="u-text-nobreak">yet affordable.</span></p>
+      </div>
+      <div class="l-container l-container--grid-3 u-hide-sm-down">
+        <div class="accordion accordion--purple">
+          <div class="accordion__image">
+            <img src="/static/images/homepage/affordable.svg" alt="Wallet illustration">
+          </div>
+          <h3 class="accordion__heading accordion__heading--inner">Affordable education</h3>
+          <p class="accordion__text">We don’t believe that a great education should have to completely drain your bank account. We are proud to offer one of the most affordable options in the UX bootcamp space, and we offer convenient payment plans to fit anyone’s budget.</p>
+        </div>
+        <div class="accordion accordion--purple">
+          <div class="accordion__image">
+            <img src="/static/images/homepage/curriculum.svg" alt="Curriculum illustration">
+          </div>
+          <h3 class="accordion__heading accordion__heading--inner">Challenging curriculum</h3>
+          <p class="accordion__text">Our courses are designed to push you. Whether your goal is to pick up a few new skills or to launch yourself into a new career in UX design, our mentor-led process will give you the tools and motivation that you need to achieve your desired goal.</p>
+        </div>
+        <div class="accordion accordion--purple u-move-column-center-sm">
+          <div class="accordion__image">
+            <img src="/static/images/homepage/community.svg" alt="Community illustration">
+          </div>
+          <h3 class="accordion__heading accordion__heading--inner">Mentorship and community</h3>
+          <p class="accordion__text">Great education is built on human connection. In all of our courses, you’ll develop a relationship with a top designer through one-on-one mentoring sessions and collaborate with a vibrant community of students from across the globe. You’ll never feel alone in a Designlab course.</p>
+        </div>
+      </div>
+
+
+      <div class="l-container u-hide-sm-up l-container--narrow">
+        <div class="accordion">
+          <div class="accordion__trigger">
+            <h3 class="accordion__heading">Affordable education</h3>
+          </div>
+          <div class="accordion__content u-hide">
+            <div class="accordion__image"><img src="/static/images/homepage/affordable.svg" alt="Wallet illustration"></div>
+            <h3 class="accordion__heading accordion__heading--inner">Affordable education</h3>
+            <p class="accordion__text">We don’t believe that a great education should have to completely drain your bank account. We are proud to offer one of the most affordable options in the UX bootcamp space, and we offer convenient payment plans to fit anyone’s budget.</p>
+          </div>
+        </div>
+        <div class="accordion">
+          <div class="accordion__trigger">
+            <h3 class="accordion__heading">Challenging curriculum</h3>
+          </div>
+          <div class="accordion__content u-hide">
+            <div class="accordion__image"><img src="/static/images/homepage/curriculum.svg" alt="Curriculum illustration"></div>
+            <h3 class="accordion__heading accordion__heading--inner">Challenging curriculum</h3>
+            <p class="accordion__text">Our courses are designed to push you. Whether your goal is to pick up a few new skills or to launch yourself into a new career in UX design, our mentor-led process will give you the tools and motivation that you need to achieve your desired goal.</p>
+          </div>
+        </div>
+        <div class="accordion">
+          <div class="accordion__trigger">
+            <h3 class="accordion__heading">Mentorship and community</h3>
+          </div>
+          <div class="accordion__content u-hide">
+            <div class="accordion__image"><img src="/static/images/homepage/community.svg" alt="Community illustration"></div>
+            <h3 class="accordion__heading">Mentorship and community</h3>
+            <p class="accordion__text">Great education is built on human connection. In all of our courses, you’ll develop a relationship with a top designer through one-on-one mentoring sessions and collaborate with a vibrant community of students from across the globe. You’ll never feel alone in a Designlab course.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="l-main l-main--white">
+      <div class="l-container">
+        <h2 class="heading">Real outcomes</h2>
+        <p>At Designlab, we believe that if you put in the work, you’ll see the results. That’s why we offer our <a href="" target="_blank" dl-mp-track="Homepage: Tuition reimbursement clicked">Tuition Reimbursement Guarantee</a>. Here are just a few of the industry-leading companies our graduates have <span class="u-text-nobreak">found work with:</span></p>
+      </div>
+      <div class="l-container l-container--grid-4-3-2">
+        <div class="u-grid-image">
+          <img src="/static/images/logos-external/logo-microsoft--black.svg" alt="Microsoft">
+        </div>
+        <div class="u-grid-image">
+          <img src="/static/images/logos-external/logo-accenture.svg" alt="Accenture">
+        </div>
+        <div class="u-grid-image">
+          <img src="/static/images/logos-external/logo-facebook--black.svg" alt="Facebook">
+        </div>
+        <div class="u-grid-image">
+          <img src="/static/images/logos-external/logo-deloitte.svg" alt="Deloitte">
+        </div>
+        <div class="u-grid-image">
+          <img src="/static/images/logos-external/logo-rga.svg" alt="RGA">
+        </div>
+        <div class="u-grid-image">
+          <img src="/static/images/logos-external/logo-cisco.svg" alt="Cisco">
+        </div>
+        <div class="u-grid-image">
+          <img src="/static/images/logos-external/logo-samsung.svg" alt="Samsung">
+        </div>
+        <div class="u-grid-image">
+          <img src="/static/images/logos-external/logo-paypal.svg" alt="Paypal">
+        </div>
+        <div class="u-grid-image">
+          <img src="/static/images/logos-external/logo-adidas.svg" alt="Adidas">
+        </div>
+        <div class="u-grid-image">
+          <img src="/static/images/logos-external/logo-huge.svg" alt="Huge">
+        </div>
+        <div class="u-grid-image">
+          <img src="/static/images/logos-external/logo-ibm.svg" alt="IBM">
+        </div>
+        <div class="u-grid-image">
+          <img src="/static/images/logos-external/logo-american-express.svg" alt="American Express">
+        </div>
+      </div>
+    </div>
+
+    <div class="l-main l-main--purple">
+      <div class="l-container l-container--alumni">
+        <h2 class="heading">You’re in great company.</h2>
+        <p>Hundreds of UX Academy graduates have<br class="u-hide-xxs">landed amazing UX design roles!</p>
+      </div>
+      <div class="l-container l-container--grid-4x2">
+        <div class="person">
+          <div class="avatar">
+            <picture>
+              <source srcset="/static/images/avatars/student-peter--blue.webp" type="image/webp">
+              <source srcset="/static/images/avatars/student-peter--blue.jpg" type="image/jpeg">
+              <img class="avatar__img" src="/static/images/avatars/student-peter--blue.jpg" alt="student avatar">
+            </picture>
+            <picture>
+              <source srcset="/static/images/logos-external/logo-adidas.webp" type="image/webp">
+              <source srcset="/static/images/logos-external/logo-adidas.png" type="image/png">
+              <img class="avatar__logo" src="/static/images/logos-external/logo-adidas.png" alt="adidas logo">
+            </picture>
+          </div>
+          <p class="person__name u-text-white">Peter Javorkai</p>
+          <p class="person__role u-text-violet-light">UI Designer at Adidas</p>
+        </div>
+        <div class="blurb blurb--purple">
+          <p class="blurb__text">“I got a job offer from Adidas just before I started my second capstone project on UX Academy!”</p>
+
+          <a class="blurb__link" href="" dl-mp-track="Homepage: Success story clicked" properties="{successStorySlug: 'meet-peter-javorkai-ui-designer-adidas'}">Read Peter's story</a>
+
+        </div>
+        <div class="person">
+          <div class="avatar">
+            <picture>
+              <source srcset="/static/images/avatars/student-sammy.webp" type="image/webp">
+              <source srcset="/static/images/avatars/student-sammy.jpg" type="image/jpeg">
+              <img class="avatar__img" src="/static/images/avatars/student-sammy.jpg" alt="student avatar">
+            </picture>
+            <picture>
+              <source srcset="/static/images/logos-external/logo-comrade.webp" type="image/webp">
+              <source srcset="/static/images/logos-external/logo-comrade.png" type="image/png">
+              <img class="avatar__logo" src="/static/images/logos-external/logo-comrade.png" alt="comrade logo">
+            </picture>
+          </div>
+          <p class="person__name u-text-white">Sammy de Joya</p>
+          <p class="person__role u-text-violet-light">UX Designer at Comrade Agency</p>
+        </div>
+        <div class="blurb blurb--purple">
+          <p class="blurb__text">“UX Academy was great. It helped give me the kick start that I needed to learn all the basic design concepts.”</p>
+
+          <a class="blurb__link" href="" dl-mp-track="Homepage: Success story clicked" properties="{successStorySlug: 'meet-sammy-ux-academy-ux-design'}">Read Sammy's story</a>
+
+        </div>
+        <div class="person">
+          <div class="avatar">
+            <picture>
+              <source srcset="/static/images/avatars/student-wendy.webp" type="image/webp">
+              <source srcset="/static/images/avatars/student-wendy.jpg" type="image/jpeg">
+              <img class="avatar__img" src="/static/images/avatars/student-wendy.jpg" alt="student avatar">
+            </picture>
+            <picture>
+              <source srcset="/static/images/logos-external/logo-microsoft.webp" type="image/webp">
+              <source srcset="/static/images/logos-external/logo-microsoft.png" type="image/png">
+              <img class="avatar__logo" src="/static/images/logos-external/logo-microsoft.png" alt="microsoft logo">
+            </picture>
+          </div>
+          <p class="person__name u-text-white">Wendy Pei</p>
+          <p class="person__role u-text-violet-light">Product Designer at Microsoft</p>
+        </div>
+        <div class="blurb blurb--purple">
+          <p class="blurb__text">“The confidence I came out with really propelled me into the job hunt. I received several offers in just a month.”</p>
+
+          <a class="blurb__link" href="" dl-mp-track="Homepage: Success story clicked" properties="{successStorySlug: 'from-customer-service-to-ux-designer-at-microsoft'}">Read Wendy's story</a>
+
+        </div>
+        <div class="person">
+          <div class="avatar">
+            <picture>
+              <source srcset="/static/images/avatars/student-celeste.webp" type="image/webp">
+              <source srcset="/static/images/avatars/student-celeste.jpg" type="image/jpeg">
+              <img class="avatar__img" src="/static/images/avatars/student-celeste.jpg" alt="student avatar">
+            </picture>
+            <picture>
+              <source srcset="/static/images/logos-external/logo-backbase.webp" type="image/webp">
+              <source srcset="/static/images/logos-external/logo-backbase.png" type="image/png">
+              <img class="avatar__logo" src="/static/images/logos-external/logo-backbase.png" alt="backbase logo">
+            </picture>
+          </div>
+          <p class="person__name u-text-white">Celeste North</p>
+          <p class="person__role u-text-violet-light">UX Designer at Backbase</p>
+        </div>
+        <div class="blurb blurb--purple">
+          <p class="blurb__text">“I learned sketching, wireframing, prototyping, UI kits, personas, and user flows. These are all key skills for my work.”</p>
+
+          <a class="blurb__link" href="" dl-mp-track="Homepage: Success story clicked" properties="{successStorySlug: 'ux-academy-success-story-celeste-north'}">Read Celeste's story</a>
+
+        </div>
+      </div>
+    </div>
+
+    <footer class="l-footer">
+      <div class="l-container">
+        <nav class="footer-nav">
+          <ul class="footer-nav__list">
+            <li class="footer-nav__list__item">
+              <a class="footer-nav__link" href="">
+                <img src="/static/images/logos/logo-designlab.svg" class="footer-nav__logo" alt="Designlab">
+              </a>
+            </li>
+            <li class="footer-nav__list__item">
+              <a href="" class="social-share"><i class="icon-twitter"></i></a>
+              <a href="" class="social-share"><i class="icon-facebook"></i></a>
+            </li>
+          </ul>
+          <ul class="footer-nav__list">
+            <li class="footer-nav__list__item">
+              <a class="footer-nav__link" href="">UX Academy</a>
+            </li>
+            <li class="footer-nav__list__item">
+              <a class="footer-nav__link" href="">Outcomes</a>
+            </li>
+            <li class="footer-nav__list__item">
+              <a class="footer-nav__link" href="">Courses</a>
+            </li>
+            <li class="footer-nav__list__item">
+              <a class="footer-nav__link" href="">Mentors</a>
+            </li>
+            <li class="footer-nav__list__item">
+              <a class="footer-nav__link u-text-nobreak" href="">Testimonials</a>
+            </li>
+            <li class="footer-nav__list__item">
+              <a class="footer-nav__link" href="">Blog</a>
+            </li>
+          </ul>
+          <ul class="footer-nav__list">
+            <li class="footer-nav__list__item">
+              <a class="footer-nav__link" href="">Learn Photoshop</a>
+            </li>
+            <li class="footer-nav__list__item">
+              <a class="footer-nav__link" href="">Learn Sketch</a>
+            </li>
+            <li class="footer-nav__list__item">
+              <a class="footer-nav__link" href="">Learn Figma</a>
+            </li>
+            <li class="footer-nav__list__item">
+              <a class="footer-nav__link" href="">Design Resources</a>
+            </li>
+            <li class="footer-nav__list__item">
+              <a class="footer-nav__link" href="">Perks</a>
+            </li>
+          </ul>
+          <ul class="footer-nav__list">
+            <li class="footer-nav__list__item">
+              <a class="footer-nav__link" href="">Become a Mentor</a>
+            </li>
+            <li class="footer-nav__list__item">
+              <a class="footer-nav__link" href="">Become an Affiliate</a>
+            </li>
+            <li class="footer-nav__list__item">
+              <a class="footer-nav__link" href="">Talent</a>
+            </li>
+          </ul>
+          <ul class="footer-nav__list">
+            <li class="footer-nav__list__item">
+              <a class="footer-nav__link" href="">Privacy Policy</a>
+            </li>
+            <li class="footer-nav__list__item">
+              <a class="footer-nav__link" href="">Terms of Service</a>
+            </li>
+            <li class="footer-nav__list__item">
+              <a class="footer-nav__link" href="">About</a>
+            </li>
+            <li class="footer-nav__list__item">
+              <a class="footer-nav__link" href="">Help</a>
+            </li>
+          </ul>
+          <div class="footer-nav__badge">
+            <a href="">
+              <picture>
+                <source srcset="/static/images/ui/badge-switchup.webp" type="image/webp">
+                <source srcset="/static/images/ui/badge-switchup.png" type="image/png">
+                <img class="footer-nav__badge__image" src="/static/images/ui/badge-switchup.png" alt="SwitchUp Best Web Design Course">
+              </picture>
+            </a>
+          </div>
+        </nav>
+        <p class="u-text-white-transparent u-pad-top-md u-text-wide">Questions about UX Academy? <span class="u-text-nobreak">We've got answers!</span> <a class="u-link-white-transparent u-text-nobreak" href="">Schedule a call with Admissions</a></p>
+      </div>
+    </footer>
+  </body>
+</html>

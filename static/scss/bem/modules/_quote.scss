@@ -1,0 +1,13 @@
+.quote { align-self:start; display:grid; grid-column-gap:32px; grid-template-columns:48px auto;
+    @include mq(sm_down) { grid-template-columns:1fr; }
+}
+.quote__image {
+    @include mq(sm_down) { justify-self:center; margin:24px; width:48px; }
+}
+.quote__text-block { align-self:center; }
+.quote__text { margin-bottom:8px; text-align:left;
+    @include mq(sm_down) { text-align:center; }
+}
+.quote__author { font-size:18px; font-weight:$font-weight-semibold; margin-bottom:0; text-align:left;
+    @include mq(sm_down) { margin-bottom:32px; text-align:center; }
+}

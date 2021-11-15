@@ -1,0 +1,27 @@
+.mark-as-complete { background-color:#fff; border-top:2px solid $color-gray-light; bottom:0; display:grid;
+    grid-template-columns:auto auto; padding:16px 24px; position:absolute; right:0; width:100%; z-index:1000;
+    @include mq(xs_up) { @include border-radius; border:2px solid $color-gray-light; bottom:48px;
+        right:48px; width:308px; }
+}
+.mark-as-complete__link { @include smooth-hover; background-color:#fff;
+    background-image:dl-url('main', 'images/bem-modules/mark-as-complete/mark-as-complete__link.svg');
+    background-position:top left; background-repeat:no-repeat; background-size:32px; border:none;
+    color:$color-gray; font-weight:$font-weight-semibold; line-height:32px; padding:0 0 0 48px;
+    text-align:left;
+    &:hover, &:active {
+        background-image:dl-url('main', 'images/bem-modules/mark-as-complete/mark-as-complete__link--hover.svg');
+        color:$color-gray; }
+    &:focus {
+        background-image:dl-url('main', 'images/bem-modules/mark-as-complete/mark-as-complete__link--hover.svg');
+        color:$color-teal-dark; outline:none; }
+    &.completed {
+        background-image:dl-url('main', 'images/bem-modules/mark-as-complete/mark-as-complete__link--completed.svg');
+        color:$color-teal-dark; }
+    &:disabled {
+        background-image:dl-url('main', 'images/bem-modules/mark-as-complete/mark-as-complete__link--disabled.svg');
+        color:$color-gray; }
+}
+.mark-as-complete__next { color:$color-gray; font-weight:$font-weight-semibold;
+    line-height:32px; justify-self:end;
+    &:hover, &:active { color:$color-orange; }
+}

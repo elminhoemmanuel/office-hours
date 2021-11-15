@@ -1,0 +1,7 @@
+.quote-block { margin:0 auto 32px;
+    &--hidden { display:none; margin:0; }
+    &--loading { @include animation(fadein, 1s, ease-in); }
+}
+.quote-block__text { @include border-radius; background-color:$color-gray-lightest;
+    padding:24px 40px 8px; text-align:left; }
+.quote-block__attribution { margin:8px 0 0; max-width:100%; text-align:right; }

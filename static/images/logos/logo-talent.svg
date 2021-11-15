@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="57px" height="74px" viewBox="0 0 57 74" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51 (57462) - http://www.bohemiancoding.com/sketch -->
+    <title>talen-logo</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Talent-Copy" transform="translate(-671.000000, -162.000000)">
+            <g id="talen-logo" transform="translate(674.000000, 165.000000)">
+                <g id="Group-23" stroke-linecap="round" stroke-linejoin="round" stroke-width="4.5">
+                    <polyline id="Stroke-4-Copy" stroke="#00A787" points="14.1768856 44 8 65.0307416 15.0020682 63.5092524 20.4633389 68.0190147 25.0788831 46.8754436"></polyline>
+                    <polyline id="Stroke-5-Copy" stroke="#00A787" points="37.9054216 44 44.0788831 65.0307416 37.076815 63.5092524 31.6155442 68.0190147 27 46.8754436"></polyline>
+                    <polygon id="Stroke-3-Copy" stroke="#FFFFFF" points="51.3599132 24.8566885 45.6623868 18.2510321 46.4533295 9.50503358 38.0268797 7.55615979 33.6133512 0 25.6799566 3.47036298 17.743138 0 13.3296095 7.55615979 4.90315971 9.48110005 5.69410237 18.2270986 0 24.8566885 5.69410237 31.462345 4.90315971 40.232277 13.3296095 42.1777318 17.743138 49.7338916 25.6799566 46.2430141 33.6133512 49.7133771 38.0268797 42.1572173 46.4533295 40.2083435 45.6623868 31.462345"></polygon>
+                </g>
+                <g id="Group-6" transform="translate(18.000000, 18.000000)" fill="#FFFFFF" fill-rule="nonzero">
+                    <rect id="Rectangle-2" x="0" y="0" width="16" height="4" rx="2"></rect>
+                    <rect id="Rectangle-7" x="6" y="0" width="4" height="16" rx="2"></rect>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

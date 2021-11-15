@@ -1,0 +1,10 @@
+.resource { margin:0 auto 48px; text-align:left;
+    @include mq(sm_down) { padding-left:56px; }
+    &--no-icon { @include mq(sm_down) { padding-left:0; } }
+}
+.resource__heading { font-size:18px; font-weight:$font-weight-semibold; line-height:30px; margin: 0 auto 8px !important; position:relative;
+    .youtube, .vimeo { background:none !important; }
+}
+.resource__icon { display:inline-block !important; left:-56px; margin:0 32px 0 0 !important; position:absolute; top:6px; width:24px; }
+.resource__link { border-bottom:2px solid $color-orange; color:$color-black; text-decoration:none; }
+.resource__description p { margin:0 auto 16px; }

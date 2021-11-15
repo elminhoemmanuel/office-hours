@@ -1,0 +1,16 @@
+.article-info {}
+.article-info__image { @include border-radius; margin:-80px auto 24px; position:relative; z-index:2;
+    @include mq(sm_up) { margin:-256px auto 48px; }
+}
+.article-info__date { display:inline-block; margin:0 0 8px;
+    @include mq(sm_up) { font-size:20px; }
+}
+.article-info__read-time { display:inline-block; margin:0 0 8px;
+    @include mq(sm_up) { font-size:20px; }
+}
+.article-info__tags { margin:0 auto 24px;
+    @include mq(sm_up) { font-size:20px; margin:0 auto 64px; }
+}
+.article-info__description { font-size:18px;
+    @include mq(sm_up) { font-size:24px; margin-bottom:48px; }
+}

@@ -1,0 +1,18 @@
+.review { @include border-radius; background-color:$color-white; display:grid; grid-column-gap:16px;
+    grid-template-columns:64px auto; margin:0; padding:24px;
+    @include mq(sm_down) { grid-template-columns:1fr; }
+}
+.review__image { margin:4px 0 0;
+    @include mq(sm_down) { display:inline-block; margin:16px auto 24px; width:96px; }
+}
+.review__text-box { text-align:left;
+    @include mq(sm_down) { text-align:center; }
+}
+.review__name { color:$color-black; font-size:18px; font-weight:$font-weight-bold; margin:0 auto 8px; }
+.review__rating { color:$color-blue-dark; font-size:12px; }
+.review__quote { color:$color-blue-dark; font-weight:$font-weight-semibold; quotes:"“" "”" "‘" "’";
+    &:before, &:after { color:$color-blue-dark; font-size:36px; line-height:1px; opacity:0.4; position:relative; }
+    &:before { content:open-quote; left:-4px; top:12px; }
+    &:after { content:close-quote; right:-2px; top:10px; }
+}
+.review__link { font-size:14px; font-weight:$font-weight-bold; }

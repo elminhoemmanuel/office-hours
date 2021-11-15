@@ -1,0 +1,43 @@
+.success-story { margin:0 auto; text-align:left; }
+.success-story__grid { align-items:center; display:grid; grid-column-gap:32px;
+    grid-template-columns:192px auto; margin:0 auto 64px; max-width:700px;
+    @include mq(xs_down) { grid-template-columns:1fr; text-align:center; }
+    &--md { align-items:start; grid-template-columns:128px auto; margin:64px auto 32px;
+        @include mq(xs_down) { grid-template-columns:1fr; margin:24px auto 0; }
+    }
+    &--sm { align-items:start; grid-template-columns:96px auto; justify-content:start; margin:0 auto;
+        @include mq(xs_down) { grid-column-gap:16px; grid-template-columns:96px auto; text-align:left; }
+    }
+    &--xs { grid-column-gap:16px; grid-template-columns:64px auto; margin:0 auto;
+        .success-story__text-box { margin:0; }
+        .success-story__image { margin:0; }
+        @include mq(xs_down) { margin:8px auto; text-align:left; }
+    }
+}
+.success-story__image { @include border-radius(100%); display:block; overflow:hidden;
+    @include mq(xs_down) { margin:0 auto 24px; width:192px; }
+    &--md {
+        @include mq(xs_down) { width:96px; }
+    }
+}
+.success-story__text-box { margin:0 0 16px; }
+.success-story__name { color:$color-black; display:block; font-size:24px; font-weight:$font-weight-semibold;
+    line-height:1.2; margin:0 0 4px; text-decoration:none;
+    @include mq(xs_down) { font-size:18px; }
+    &--xs { font-size:16px; }
+}
+.success-story__link { display:block; font-size:14px; font-weight:$font-weight-bold; margin:0; }
+.success-story__role { color:$color-gray; font-weight:$font-weight-semibold; line-height:1.2;
+    margin:0 0 4px; }
+.success-story__experience { color:$color-gray; font-weight:$font-weight-semibold; line-height:1.2;
+    margin:0 0 4px; }
+.success-story__flavor-text { color:$color-teal-dark; font-size:24px; font-weight:$font-weight-semibold;
+    line-height:1.2; }
+.success-story__quote { font-size:14px; margin:0;
+    &--md { font-size:18px; font-weight:$font-weight-semibold; margin:0 auto 24px;
+        @include mq(xs_up) { font-size:24px; }
+    }
+}
+.success-story__attrib { margin:0 auto;
+    @include mq(xs_up) { font-size:20px; }
+}

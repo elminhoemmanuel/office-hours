@@ -1,0 +1,7 @@
+.breadcrumbs { margin:-48px 0 0; max-width:100%; overflow:hidden; padding:0; text-overflow:ellipsis;
+  white-space:nowrap; }
+.breadcrumbs li { color:$color-gray; display:inline-block; font-weight:$font-weight-semibold; }
+.breadcrumbs li + li:before { content:"\e762"; font-family:"entypo"; margin:0 4px; }
+.breadcrumbs li a { color:$color-gray; font-weight:$font-weight-normal;
+    &:hover { color:$color-orange-dark; }
+}

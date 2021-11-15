@@ -1,0 +1,74 @@
+.enroll { background-color:$color-white; color:$color-black; margin:0 -32px 32px;
+    @include mq(sm_up) { @include border-radius(4px); margin:0 auto 32px; }}
+.enroll__header { border-bottom:2px solid $color-gray-lightest; padding:0 32px;
+    @include mq(sm_up) { display:grid; grid-column-gap:32px; grid-template-columns:auto auto; padding:0; }
+}
+.enroll__body {
+    &--grid { @include mq(sm_up) { display:grid; grid-template-columns:2fr 1fr; }}
+    &--grid-reverse { @include mq(sm_up) { display:grid; grid-template-columns:1fr 2fr; }}
+    &--typeform { height:72vh; margin:0 32px; }
+}
+.enroll__body__column { padding:32px;
+    @include mq(md_up){ padding:40px 32px 40px; }
+    &--border-right { @include mq(sm_up){ border-right:2px solid $color-gray-lightest; }}
+    &--border-left { @include mq(sm_up){ border-left:2px solid $color-gray-lightest; }}
+    &--wide { @include mq(md_up){ padding:40px 56px 40px; }}
+    &--narrow { margin:0 auto; max-width:480px; }
+}
+.enroll__step { align-self:center; padding:24px 0;
+    @include mq(sm_up) { padding:24px 0 24px 40px; text-align:left; }}
+.enroll__step__title { font-size:18px; font-weight:$font-weight-semibold;
+    @include mq(sm_down) { margin:0 auto 4px; }}
+.enroll__step__subtitle { color:$color-gray; margin:0 auto;
+    @include mq(sm_up) { font-size:18px; margin:0; }
+    @include mq(sm_down) { margin:0 auto; }}
+.enroll__course-icon { height:64px;
+    &--lg { height:96px; margin:0 auto 24px; }
+}
+.enroll__course-info {
+    @include mq(sm_up) { align-items:center; display:grid; grid-column-gap:16px;
+        grid-template-columns:auto 64px; padding:16px 24px 16px 0; text-align:right; }
+}
+.enroll__course-info__text {
+    @include mq(sm_up) { color:$color-gray; font-size:14px; line-height:1.3; margin:0; }
+    @include mq(sm_down) { margin:16px auto 24px; }}
+.enroll__course-info__title { font-weight:$font-weight-semibold;
+    @include mq(sm_up) { color:$color-black; font-size:24px; }}
+.enroll__course-info__start-date { color:$color-orange; font-weight:$font-weight-semibold; }
+.enroll__course-info__old-price { display:inline-block; margin:0 4px 0 4px; position:relative;
+    &:after { @include transform(rotate(-20deg)); background-color:$color-red; content:''; display:block;
+        height:2px; margin:0; position:absolute; right:-3px; top:44%; width:88%; }
+}
+.enroll__callout { background-color:$color-gray-lightest; border-bottom:2px solid $color-gray-lightest;
+    padding:8px 40px; }
+.enroll__callout__text { margin:0 auto; }
+.enroll__body__grid {
+    @include mq(md_up) { align-items:center; display:grid; grid-column-gap:32px;
+        grid-template-columns:auto 240px; }
+}
+.enroll__cards { background-image:dl-url('main', 'images/bem-modules/enroll/enroll__cards.svg');
+    background-repeat:no-repeat; background-position:top center; background-size:contain; margin:32px auto 0;
+    padding:24px 0; width:260px;
+    @include mq(md_up) { background-position:top left; margin:0 -20px 0 0; }
+}
+.enroll__cards__text { color:$color-gray; margin:0 16px; overflow:hidden; text-overflow:ellipsis;
+    white-space:nowrap; width:208px; }
+.enroll__welcome { padding:24px 80px 48px;
+    @include mq(sm_down) { padding:32px 40px; }
+}
+.enroll__welcome__banner { margin:0 auto 48px;
+    @include mq(sm_up) {
+        background-image:dl-url('main', 'images/bem-modules/enroll/enroll__welcome__banner.svg');
+        background-repeat:no-repeat; background-position:top center; background-size:contain; padding:96px 0 0;
+    }
+    @include mq(md_up) { padding:120px 0 0; }
+    &--uxa {
+        @include mq(sm_up) {
+            background-image:dl-url('main', 'images/bem-modules/enroll/enroll__welcome__banner--uxa.svg');
+        }
+    }
+}
+.enroll__class-of { font-size:18px; font-weight:$font-weight-semibold; margin:24px auto 0;
+    @include mq(sm_down) { margin:40px auto 0; }
+}
+.enroll__tip-box { text-align:left; }

@@ -1,0 +1,36 @@
+.mentor-profile { }
+.mentor-profile__grid { margin:0 auto 80px;
+    @include mq(sm_up) { display:grid; grid-column-gap:48px; grid-template-columns:auto auto;
+        justify-content:center; }
+}
+.mentor-profile__text {
+    @include mq(sm_up) { text-align:left; }
+}
+.mentor-profile__name { font-size:40px; font-weight:$font-weight-semibold; margin:8px auto;
+    @include mq(sm_up) { font-size:48px; margin:4px 0; }
+}
+.mentor-profile__location { font-weight:$font-weight-semibold; margin:0 auto 8px;
+    @include mq(sm_up) { margin:0 0 8px; }
+}
+.mentor-profile__bio { margin:0 auto 16px;
+    @include mq(sm_up) { margin:0 0 8px; }
+}
+.mentor-profile__link-wrap { margin:0 auto;
+    @include mq(sm_up) { margin:0; }
+}
+.mentor-profile__link { color:$color-white; display:inline-block; font-weight:$font-weight-semibold;
+    margin:0 24px 8px 0;
+    &:hover { color:$color-white; opacity:.6; }
+    &--not-linked {
+        &:hover { opacity:1; }
+    }
+}
+.mentor-profile__link__icon { margin:0 8px 0 0;
+    &--hangouts {
+        background-image:dl-url('main', 'images/bem-modules/mentor-profile/mentor-profile__link__icon--hangouts.svg');
+        background-repeat:no-repeat; background-position:left 0; background-size:contain;
+        display:inline-block; height:16px; margin:0 8px -4px 0; width:14px; }
+}
+.mentor-profile__role { font-weight:$font-weight-semibold; }
+.mentor-profile__logo { @include border-radius(50%); @include box-shadow(0 4px 16px rgba(0, 0, 0, 0.1));
+    background-color:$color-white; height:64px; margin:0 auto -32px; width:64px; }

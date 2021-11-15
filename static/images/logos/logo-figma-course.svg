@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="64px" height="64px" viewBox="0 0 64 64" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.3 (51167) - http://www.bohemiancoding.com/sketch -->
+    <title>figma-101-logo</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="figma-101-landing-page-copy-2" transform="translate(-537.000000, -90.000000)">
+            <g id="figma-101-logo" transform="translate(537.000000, 90.000000)">
+                <rect id="Rectangle" fill="#8A86FF" x="0" y="0" width="64" height="64" rx="10"></rect>
+                <circle id="Oval-2-Copy-2" fill="#FFFFFF" cx="40" cy="32" r="8"></circle>
+                <path d="M24,24 L32,24 L32,40 L24,40 C19.581722,40 16,36.418278 16,32 L16,32 C16,27.581722 19.581722,24 24,24 Z" id="Rectangle-4" fill="#FFFFFF" opacity="0.699999988"></path>
+                <path d="M24,8 L32,8 L32,24 L24,24 C19.581722,24 16,20.418278 16,16 L16,16 C16,11.581722 19.581722,8 24,8 Z" id="Rectangle-4-Copy-2" fill="#FFFFFF" opacity="0.800000012"></path>
+                <path d="M32,8 L40,8 C44.418278,8 48,11.581722 48,16 L48,16 C48,20.418278 44.418278,24 40,24 L32,24 L32,8 Z" id="Rectangle-4-Copy-3" fill="#FFFFFF" opacity="0.900000036"></path>
+                <path d="M24,40 L32,40 L32,48 C32,52.418278 28.418278,56 24,56 L24,56 C19.581722,56 16,52.418278 16,48 L16,48 C16,43.581722 19.581722,40 24,40 Z" id="Rectangle-4-Copy" fill="#FFFFFF" opacity="0.600000024"></path>
+            </g>
+        </g>
+    </g>
+</svg>

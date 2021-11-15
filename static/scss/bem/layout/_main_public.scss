@@ -1,0 +1,57 @@
+.l-main { background-color:$color-gray-lightest; margin: 0 auto; padding:48px 0;
+    &--black { background-color:$color-black; color:$color-white; }
+    &--blue { background-color:$color-blue; color:$color-white; }
+    &--blue-dark { background-color:$color-blue-dark; color:$color-white; }
+    &--ocean { background-color:$color-blue-ocean; color:$color-white; }
+    &--purple { background-color:$color-purple; color:$color-white; }
+    &--purple-lightest { background-color:$color-purple-lightest; color:$color-white; }
+    &--white { background-color:$color-white; }
+    &--confetti {
+        @include mq(sm_up) { background-image:dl-url('main', 'images/bem-modules/main/main--confetti.svg');
+        background-position:center 32px; background-repeat:no-repeat; background-size:1135px 578px; }
+    }
+    &--cyber {
+        @include mq(md_up) {
+            background-image:dl-url('main', 'images/bem-modules/main/main--cyber.svg');
+            background-position:center 24px; background-repeat:no-repeat; background-size:1104px;
+        }
+    }
+    &--diamonds { background-image:dl-url('main', 'images/bem-modules/main/main--diamonds.svg');
+        background-position:top center; background-repeat:no-repeat; background-size:936px 882px;
+    }
+    &--droplets { background-image:dl-url('main', 'images/bem-modules/main/main--droplets.svg');
+        background-position:center -32px; background-repeat:no-repeat; background-size:750px 752px;
+    }
+    &--geo { background-image:dl-url('main', 'images/bem-modules/main/main--geo.png');
+        background-repeat:repeat; background-size:contain;
+    }
+    &--geo-blue { background-image:dl-url('main', 'images/bem-modules/main/main--geo-blue.svg');
+        background-repeat:no-repeat; background-position:center -120px; background-size:920px 760px;
+    }
+    &--geo-purple {
+        @include mq(sm_up) { background-image:dl-url('main', 'images/bem-modules/main/main--geo-purple.svg');
+            background-repeat:no-repeat; background-position:center -32px; background-size:960px 814px;
+        }
+    }
+    &--little-dude { overflow:visible; position:relative;
+        &:after { @include transform(translateX(-50%));
+            background-image:dl-url('main', 'images/ui/little-dude.svg'); background-position:top center;
+            background-repeat:no-repeat; background-size:contain; bottom:-5px; content:""; display:block;
+            height:62px; left:50%; position:absolute; width:112px;
+        }
+    }
+    &--little-tina { overflow:visible; padding-bottom:136px; position:relative;
+        &:after { @include transform(translateX(-50%));
+            background-image:dl-url('main', 'images/ui/little-tina.png'); background-position:top center;
+            background-repeat:no-repeat; background-size:contain; bottom:-6px; content:""; display:block;
+            height:134px; left:50%; position:absolute; width:160px;
+        }
+    }
+    &--shapes { background-image:dl-url('main', 'images/bem-modules/main/main--shapes.svg');
+        background-position:center center; background-repeat:no-repeat; background-size:950px 258px;
+    }
+    &--squares { background-image:dl-url('main', 'images/bem-modules/main/main--squares.svg');
+        background-position:center 160px; background-repeat:no-repeat; background-size:940px 295px;
+    }
+    &--full-height { min-height:100%; min-height:100vh; /*support for older browsers*/}
+}

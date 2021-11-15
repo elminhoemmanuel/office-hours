@@ -1,0 +1,27 @@
+/* slideup */
+@keyframes slideup {
+    0% { top: 0px; }
+    100% { top: -1050px; }
+}
+@-webkit-keyframes slideup {
+    0% { top: 0px; }
+    100% { top: -1050px; }
+}
+@-moz-keyframes slideup {
+    0% { top: 0px; }
+    100% { top: -1050px; }
+}
+
+/* fadein */
+@keyframes fadein {
+  0% { opacity:0; }
+  100% { opacity:1.0; }
+}
+@-webkit-keyframes fadein {
+  0% { opacity:0; }
+  100% { opacity:1.0; }
+}
+@-moz-keyframes fadein {
+  0% { opacity:0; }
+  100% { opacity:1.0; }
+}

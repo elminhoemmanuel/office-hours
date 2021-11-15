@@ -1,0 +1,13 @@
+.topbar-promo { background-color:$color-gray-darkest; color:$color-white; padding:0; position:relative;
+    text-align:center; }
+.topbar-promo__text { font-size:14px; font-weight:$font-weight-semibold; margin:0 auto; max-width:100%;
+    padding:16px 32px;
+}
+.topbar-promo__link { color:$color-teal;
+    &:hover { color:$color-teal-dark; }
+}
+.topbar-promo__close { @include transform(translateY(-50%)); color:$color-white; position:absolute;
+    right:16px; top:26px;
+    &:hover { color:$color-white; }
+    @include mq(sm_up) { top:50%; }
+}

@@ -1,0 +1,15 @@
+.avatar { display:block; margin:0 auto 20px; position:relative; width:144px;
+    &--lg { width:180px; }
+    &--sm { margin:0 auto 16px; width:96px;
+        .avatar__logo { height:32px; width:32px; }
+    }
+    &--xs { margin:0 auto 16px; width:72px;
+        .avatar__logo { height:24px; width:24px; }
+    }
+    &--xxs { margin:0 auto; width:48px; }
+    &--wide { height:144px; width:200px; }
+}
+.avatar__img { @include border-radius(50%); }
+.avatar__logo { @include border-radius(50%); @include box-shadow(0 4px 16px rgba(0, 0, 0, 0.1));
+    background-color:$color-white; bottom:0; height:48px; position:absolute; right:0; width:48px;
+}

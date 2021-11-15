@@ -1,0 +1,4 @@
+.horizontal-heading {
+    @include mq(sm_up) { align-items:center; display:grid; grid-column-gap:16px; grid-template-columns:auto auto;
+        justify-self:start; }
+}

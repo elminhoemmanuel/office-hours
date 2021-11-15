@@ -1,0 +1,19 @@
+.table { border:1px solid $color-violet-dark; color:$color-white; display:grid; grid-gap:0;
+    grid-template-columns:auto repeat(5, 1fr); grid-template-rows:repeat(7, auto);
+    &--mobile { border:none; grid-row-gap:32px; grid-template-columns:1fr; }
+}
+.table__item { align-content:center; border:1px solid $color-violet-dark; display:grid;
+    height:80px; padding:8px 16px;
+    &--heading { color:$color-violet; font-size:14px; font-weight:$font-weight-semibold; letter-spacing:.1em;
+        text-transform:uppercase; }
+    &--featured { background-color:$color-purple-light; }
+    &--yes { color:$color-teal; }
+    &--no { color:$color-red; }
+}
+.table__block { @include border-radius; background-color:$color-white; color:$color-black; padding:32px;
+    .table__item { border:none; height:auto; padding:8px 0; text-align:right;
+        &--heading { text-align:left; }
+        &--yes { color:$color-teal-dark; }
+    }
+}
+.table__block-grid { display:grid; grid-template-columns:auto auto; }

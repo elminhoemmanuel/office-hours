@@ -1,0 +1,6 @@
+.enroll-footer { display:flex; flex-direction:column-reverse;
+    @include mq(sm_up) { display:grid; grid-column-gap:32px; grid-template-columns:2fr 2fr 1fr; }}
+.enroll-footer__block { @include border-radius(4px); background-color:$color-white; color:$color-black;
+    display:grid; align-content:center; padding:16px 24px; margin:0 auto 32px; width:100%; }
+.enroll-footer__text { font-size:14px; margin:0 auto; text-align:left; }
+.enroll-footer__image { align-content:center; display:grid; justify-content:center; }

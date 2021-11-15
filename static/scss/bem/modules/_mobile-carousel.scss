@@ -1,0 +1,23 @@
+.mobile-carousel { padding-left:0; padding-right:0; }
+.mobile-carousel__container { margin-left:32px; margin-right:32px; }
+
+/* these classes get added when you add the mobile-carousel class */
+.slick-slider { padding-top:60px;
+    ul.slick-dots { @include transform(translateX(-50%)); left:50%; margin:0 auto; position:absolute;
+        top:20px;
+        li { cursor:pointer; display:inline-block; padding:5px; position:relative;
+            button { @include border-radius(50%); background:$color-blue-light; border:0; color:transparent;
+                cursor:pointer; display:block; font-size:0; height:11px; line-height:0; outline:none;
+                padding:5px; width:11px;
+            }
+            &.slick-active { button { background:$color-blue-dark; }}
+        }
+    }
+    .slick-track {
+        .slick-slide { height:auto;
+            &:focus { outline:0; }
+            .text-block-wrap { padding:0 38px; }
+        }
+    }
+}
+.mobile-carousel { @include mq(sm_up) { display:none !important; }}

@@ -1,0 +1,128 @@
+/* Returns the appropriate static URL for an asset */
+/* Currently ignores the app name */
+@function dl-url($app-name, $static-path-suffix) {
+
+    /* On AWS, django-libsass adds a static() sass function that evaluates */
+    /* using on our Django static files storage (i.e. Cloudfront) */
+    @if function-exists(static) {
+        @return url(static('#{$static-path-suffix}'))
+    }
+    @else {
+        @return url('/static/' + $static-path-suffix)
+    }
+}
+
+@mixin base-text ($font-size, $line-height, $font-weight) {
+    @include smooth-text; font-family:$base-font; font-size:$font-size; font-style:normal;
+    font-weight:$font-weight; line-height:$line-height; margin:0;
+}
+@mixin border-radius($radius:4px) {
+    border-radius:$radius;
+    -webkit-border-radius:$radius;
+    -moz-border-radius:$radius;
+}
+@mixin box-decoration-break($box-decoration-break) {
+    -webkit-box-decoration-break:$box-decoration-break;
+    -ms-box-decoration-break:$box-decoration-break;
+    -o-box-decoration-break:$box-decoration-break;
+    box-decoration-break:$box-decoration-break;
+}
+@mixin box-shadow($box-shadow...) {
+    box-shadow:$box-shadow;
+    -webkit-box-shadow:$box-shadow;
+    -moz-box-shadow:$box-shadow;
+}
+@mixin smooth-hover {
+    transition:0.2s ease;
+    -webkit-transition:0.2s ease;
+    -moz-transition:0.2s ease;
+    -o-transition:0.2s ease;
+}
+@mixin smooth-text {
+    -webkit-font-smoothing:antialiased;
+    text-rendering:optimizeLegibility;
+    -moz-osx-font-smoothing:grayscale;
+}
+@mixin transform($transform) {
+  -webkit-transform:$transform;
+  -moz-transform:$transform;
+  -ms-transform:$transform;
+  transform:$transform;
+}
+@mixin transition($property:all, $time:0.2s, $timing-function:ease) {
+    transition:$property $time $timing-function;
+    -moz-transition:$property $time $timing-function;
+    -webkit-transition:$property $time $timing-function;
+    -o-transition:$property $time $timing-function;
+}
+@mixin animation($name, $duration, $timing-function:linear, $iteration-count:1, $animation-fill-mode:none) {
+  animation: $name $duration $timing-function $iteration-count $animation-fill-mode;
+  -webkit-animation: $name $duration $timing-function $iteration-count $animation-fill-mode;
+  -moz-animation: $name $duration $timing-function $iteration-count $animation-fill-mode;
+}
+@mixin scrollbar($color:$color-gray) {
+  overflow-y:auto;
+  &::-webkit-scrollbar { -webkit-appearance:none; width:8px; }
+  &::-webkit-scrollbar-thumb { @include border-radius(4px); background-color:$color; }
+}
+
+/*************
+ Media queries
+**************/
+$xxs: $break-xxs;
+$xs: $break-xs;
+$sm: $break-sm;
+$md: $break-md;
+$lg: $break-lg;
+$xl: $break-xl;
+
+@mixin mq($canvas) {
+  @if $canvas == xs_up {
+    @media only screen and (min-width: $xs) { @content; }
+  }
+  @else if $canvas == sm_up {
+    @media only screen and (min-width: $sm) { @content; }
+  }
+  @else if $canvas == md_up {
+    @media only screen and (min-width: $md) { @content; }
+  }
+  @else if $canvas == lg_up {
+    @media only screen and (min-width: $lg) { @content; }
+  }
+  @else if $canvas == xl_up {
+    @media only screen and (min-width: $xl) { @content; }
+  }
+  @else if $canvas == xl_down {
+    @media only screen and (max-width: $xl - 1) { @content; }
+  }
+  @else if $canvas == lg_down {
+    @media only screen and (max-width: $lg - 1) { @content; }
+  }
+  @else if $canvas == md_down {
+    @media only screen and (max-width: $md - 1) { @content; }
+  }
+  @else if $canvas == sm_down {
+    @media only screen and (max-width: $sm - 1) { @content; }
+  }
+  @else if $canvas == xs_down {
+    @media only screen and (max-width: $xs - 1) { @content; }
+  }
+  @else if $canvas == xxs {
+    @media only screen and (max-width: $xxs - 1) { @content; }
+  }
+  @else if $canvas == xs {
+    @media only screen and (min-width: $xs) and (max-width: $sm - 1) { @content; }
+  }
+  @else if $canvas == sm {
+    @media only screen and (min-width: $sm) and (max-width: $md - 1) { @content; }
+  }
+  @else if $canvas == md {
+    @media only screen and (min-width: $md) and (max-width: $lg - 1) { @content; }
+  }
+  @else if $canvas == lg {
+    @media only screen and (min-width: $lg) and (max-width: $xl - 1) { @content; }
+  }
+  @else if $canvas == sm_xs {
+    @media only screen and (min-width: $xs) and (max-width: $md - 1) { @content; }
+  }
+}

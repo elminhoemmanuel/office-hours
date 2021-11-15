@@ -1,0 +1,7 @@
+.status-badge { @include border-radius; background-color:$color-gray;
+      color:$color-white; display:inline-block; font-size:14px; font-weight:$font-weight-semibold;
+      line-height:24px; margin:4px 0 2px; padding:0 8px; vertical-align:bottom;
+      &--approved { background-color:$color-teal-dark; }
+      &--mentor { background-color:$color-violet-light; }
+      &--sm { font-size:13px; line-height:20px; margin:0 0 1px; }
+}

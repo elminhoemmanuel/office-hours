@@ -1,0 +1,8 @@
+.slideshow-controls { align-items:center; display:grid; grid-auto-flow:column; grid-column-gap:16px;
+    grid-template-columns:48px auto 48px; justify-content:center; padding:0 0 48px 0;
+    @include mq(xs_up) { padding:0 0 128px 0; }
+    @include mq(sm) { bottom:56px; left:0; margin:0 32px; padding:0; position:absolute; width:200px; }
+    @include mq(md_up) { @include transform(translateX(-50%)); left:50%; margin:0 auto; padding:0;
+        position:absolute; bottom:56px; }
+}
+.slideshow-controls__progress { font-size:18px; font-weight:$font-weight-semibold; margin:0 auto; }

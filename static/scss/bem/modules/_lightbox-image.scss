@@ -1,0 +1,6 @@
+.lightbox-image { align-self:start; }
+.lightbox-image__image { @include border-radius; border:2px solid $color-gray-light; }
+
+/* Changes to Magnific Popup default styles */
+img.mfp-img { margin:0 auto; }
+.mfp-figure figure { margin:0; max-width:88vw; }

@@ -1,0 +1,19 @@
+.outcome { @include border-radius; background-color:$color-gray-lightest; margin:0 auto 64px; padding:0 24px 24px;
+    @include mq(xs_up){ margin:0 auto 32px; padding:24px; }
+}
+.outcome__grid {
+    @include mq(xs_up){ align-items:center; display:grid; grid-column-gap:32px; grid-template-columns:auto auto;
+    justify-content:start; }
+}
+.outcome__text-wrap {
+    @include mq(xs_up){ text-align:left; }
+}
+.outcome__text { font-size:24px;
+    @include mq(xs_down){ margin:16px auto; }
+}
+.outcome__company { margin:0 0 8px;
+    @include mq(xs_up){ display:inline-block; margin:4px 16px 0 0; }
+}
+.outcome__time { color:$color-gray;  margin:0;
+    @include mq(xs_up){ display:inline-block; }
+}

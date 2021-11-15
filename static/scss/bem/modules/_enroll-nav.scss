@@ -1,0 +1,12 @@
+.enroll-nav { color:$color-white; margin:0 0 16px;
+    &--grid { align-items:center; display:grid; grid-template-columns:130px auto;
+        justify-content:space-between; }
+}
+.enroll-nav__logo {}
+.enroll-nav__text { color:$color-white; font-weight:$font-weight-semibold;
+    &--link { &:hover { color:$color-white; opacity:0.6; }}
+    &--apply { font-weight:$font-weight-normal; margin:0 auto 32px; max-width:100%; }
+}
+.enroll-nav__link { color:$color-white; text-decoration:underline;
+    &:hover { color:$color-white; opacity:0.6; text-decoration:underline; }
+}

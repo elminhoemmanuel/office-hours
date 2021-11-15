@@ -1,0 +1,2957 @@
+<!DOCTYPE html>
+<html class="webp webp-alpha webp-animation webp-lossless">
+  <head>
+    <title>LUMA Design System | Designlab</title>
+
+    <meta name="viewport" content="width=device-width">
+    <meta name="description" content="Learn UI/UX design through hands-on projects and 1-on-1 mentorship from expert designers. Add design to your resume and level up your career.">
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script type="text/javascript" src="react/dist/hybrid.js"></script>
+    <script type="text/javascript">
+      function toggled(value) {
+        alert('You toggled: ' + value);
+      }
+
+      $(document).ready(function(){
+        var toggleExample = document.getElementById('toggle-example');
+        window.TOGGLE.initialize({
+          target: toggleExample,
+          id: toggleExample.id,
+          label: toggleExample.dataset.label,
+          toggled: toggled
+        });
+      });
+    </script>
+
+    <script src="https://use.typekit.net/rso4xgq.js" async=""></script>
+    <script>
+      (function(d) {
+        var config = {
+          kitId: 'rso4xgq',
+          scriptTimeout: 3000,
+          async: true
+        },
+          h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+      })(document);
+    </script>
+
+    <link href="/static/css/vendors/font-awesome.css" rel="stylesheet">
+    <link type="text/css" href="/static/css/packages/public/public.css" rel="stylesheet">
+
+    <link rel="icon" type="image/png" href="/static/images/logos/favicon.ico">
+  </head>
+  <body>
+    <a class="topbar-login u-hide-md-up" href="">
+      <p class="topbar-login__text" class="u-text-white">Login to course <i class="icon-arrow-right topbar-login__text__icon"></i></p>
+    </a>
+
+    <header class="l-header ">
+
+      <div class="l-container">
+
+        <nav class="nav">
+          <a class="nav__logo" href="/">
+            <img src="/static/images/logos/logo-designlab.svg" alt="Designlab">
+          </a>
+          <ul class="nav__list">
+            <li class="nav__list__item">
+              <a class="nav__link " href="" dl-mp-track="Static page: Top link clicked" properties="{'link': 'uxa', 'onPage': ''}">UX Academy</a>
+            </li>
+            <li class="nav__list__item">
+              <a class="nav__link " href="" dl-mp-track="Static page: Top link clicked" properties="{'link': 'outcomes', 'onPage': ''}">Outcomes</a>
+            </li>
+            <li class="nav__list__item">
+              <a class="nav__link " href="" dl-mp-track="Static page: Top link clicked" properties="{'link': 'courses', 'onPage': ''}">Courses</a>
+            </li>
+            <li class="nav__list__item">
+              <a class="nav__link " href="" dl-mp-track="Static page: Top link clicked" properties="{'link': 'blog', 'onPage': ''}">Blog</a>
+            </li>
+            <li class="nav__list__item">
+              <a class="nav__link " href="" dl-mp-track="Static page: Top link clicked" properties="{'link': 'mentors', 'onPage': ''}">Mentors</a>
+            </li>
+            <li class="nav__list__item">
+              <a class="nav__link " href="" dl-mp-track="Static page: Top link clicked" properties="{'link': 'about', 'onPage': ''}">About</a>
+            </li>
+            <li class="nav__list__item">
+              <a class="nav__link" href="" dl-mp-track="Static page: Top link clicked">Help</a>
+            </li>
+
+          </ul>
+          <div class="nav__cta">
+            <a href="" class="button button--sm button--white-hollow">Login</a>
+          </div>
+        </nav>
+
+      </div>
+
+
+      <div class="l-container">
+        <h1 class="display-lg">LUMA Design System</h1>
+        <p>Lightweight, Unified, Modular, Accessible</p>
+      </div>
+
+    </header>
+
+
+    <div class="l-main">
+
+      <div class="l-container">
+        <h1 class="heading">Colors</h1>
+      </div>
+      <div class="l-container l-container--grid-4">
+        <div>
+          <p>white</p>
+          <div style="background-color:#FFFFFF; height:100px; width:100%;"></div>
+        </div>
+        <div>
+          <p>white-transparent</p>
+          <div style="background-color:rgba(255,255,255,0.5); height:100px; width:100%;"></div>
+        </div>
+        <div>
+          <p>black</p>
+          <div style="background-color:#1B212D; height:100px; width:100%;"></div>
+        </div>
+        <div>
+          <p>black-transparent</p>
+          <div style="background-color:rgba(0,0,0,0.3); height:100px; width:100%;"></div>
+        </div>
+        <div>
+          <p>gray</p>
+          <div style="background-color:#8D9096; height:100px; width:100%;"></div>
+        </div>
+        <div>
+          <p>gray-darkest</p>
+          <div style="background-color:#313742; height:100px; width:100%;"></div>
+        </div>
+        <div>
+          <p>gray-light</p>
+          <div style="background-color:#E9E9E9; height:100px; width:100%;"></div>
+        </div>
+        <div>
+          <p>gray-lightest</p>
+          <div style="background-color:#F1F1F1; height:100px; width:100%;"></div>
+        </div>
+        <div>
+          <p>orange</p>
+          <div style="background-color:#F15B2A; height:100px; width:100%;"></div>
+        </div>
+        <div>
+          <p>orange-dark</p>
+          <div style="background-color:#CC491E; height:100px; width:100%;"></div>
+        </div>
+        <div>
+          <p>violet</p>
+          <div style="background-color:#9A66FF; height:100px; width:100%;"></div>
+        </div>
+        <div>
+          <p>violet-dark</p>
+          <div style="background-color:#6B47B2; height:100px; width:100%;"></div>
+        </div>
+        <div>
+          <p>violet-light</p>
+          <div style="background-color:#8A86FF; height:100px; width:100%;"></div>
+        </div>
+        <div>
+          <p>purple</p>
+          <div style="background-color:#2C2B4C; height:100px; width:100%;"></div>
+        </div>
+        <div>
+          <p>purple-light</p>
+          <div style="background-color:#36305E; height:100px; width:100%;"></div>
+        </div>
+        <div>
+          <p>purple-lightest</p>
+          <div style="background-color:#3E3C88; height:100px; width:100%;"></div>
+        </div>
+        <div>
+          <p>teal</p>
+          <div style="background-color:#3BF2DC; height:100px; width:100%;"></div>
+        </div>
+        <div>
+          <p>teal-dark</p>
+          <div style="background-color:#38C0B8; height:100px; width:100%;"></div>
+        </div>
+        <div>
+          <p>blue</p>
+          <div style="background-color:#287EB9; height:100px; width:100%;"></div>
+        </div>
+        <div>
+          <p>blue-dark</p>
+          <div style="background-color:#4C5EFF; height:100px; width:100%;"></div>
+        </div>
+        <div>
+          <p>blue-darkest</p>
+          <div style="background-color:#3D4BCF; height:100px; width:100%;"></div>
+        </div>
+        <div>
+          <p>blue-light</p>
+          <div style="background-color:#E0E6FF; height:100px; width:100%;"></div>
+        </div>
+        <div>
+          <p>gold</p>
+          <div style="background-color:#F8B100; height:100px; width:100%;"></div>
+        </div>
+        <div>
+          <p>red</p>
+          <div style="background-color:#FF3050; height:100px; width:100%;"></div>
+        </div>
+        <div>
+          <p>blue-ocean</p>
+          <div style="background-color:#1F2453; height:100px; width:100%;"></div>
+        </div>
+        <div>
+          <p>blue-ocean-light</p>
+          <div style="background-color:#2C326B; height:100px; width:100%;"></div>
+        </div>
+        <div>
+          <p>salmon</p>
+          <div style="background-color:#FF9E99; height:100px; width:100%;"></div>
+        </div>
+        <div>
+          <p>blue-facebook</p>
+          <div style="background-color:#3E5795; height:100px; width:100%;"></div>
+        </div>
+        <div>
+          <p>blue-twitter</p>
+          <div style="background-color:#5097F7; height:100px; width:100%;"></div>
+        </div>
+      </div>
+    </div>
+    <div class="l-main">
+
+      <div class="l-container">
+        <h1 class="heading">Typography</h1>
+      </div>
+      <div class="l-container">
+        <h2 class="heading">Heading - 32px semibold</h2>
+        <h2 class="subheading">Subheading - 24px semibold</h2>
+        <h2 class="display-xl">Display-xl - 64px light</h2>
+        <h2 class="display-lg">Display-lg - 48px light</h2>
+        <h2 class="display-md">Display-md - 40px light</h2>
+        <h2 class="display-sm">Display-sm - 18px semibold</h2>
+        <h2 class="display-xs">Display-xs - 16px semibold</h2>
+        <p>Paragraph - 16px regular. Learn UI/UX design through hands-on projects and 1-on-1 mentorship from expert designers. Add design to your resume and level up your career.</p>
+      </div>
+    </div>
+
+    <div class="l-main l-main--purple">
+
+      <div class="l-container">
+        <h1 class="heading">Accordion</h1>
+      </div>
+      <div class="l-container l-container--narrow">
+        <div>
+          <p>accordion (closed)</p>
+          <div class="accordion">
+            <div class="accordion__trigger">
+              <h3 class="accordion__heading">What are the prerequisites for UX Academy?</h3>
+            </div>
+            <div class="accordion__content u-hide">
+              <p class="accordion__text">We accept a limited number of students per cohort. The curriculum is intensive and rigorous, so you must demonstrate a firm foundation of basic design skills to be admitted to the course. We will assess the following things before offering you a place:</p>
+              <ul class="accordion__list">
+                <li class="accordion__list__item">The standard of either your final <a href="">Design 101</a> project, or—if you’re already a practising designer—the visual design work in your portfolio.</li>
+                <li class="accordion__list__item">Your level of English language skills. UX Academy is collaborative, and requires extensive communication between students, mentors, and the Designlab team.</li>
+                <li class="accordion__list__item">The level of commitment and motivation you demonstrate when talking about your goals in the UX Academy application.</li>
+              </ul>
+              <p class="accordion__text">We don’t require prior academic or industry experience, but you will be best placed to excel in the course if you have a strong background interest in design.</p>
+              <p class="accordion__text">Our most successful students often share the following qualities: passion, discipline, determination, courage, and empathy. These will get you far both in UX Academy, and the design world!</p>
+              <p class="accordion__text">You can find more detailed information about these requirements <a href="">in our Help Center</a>!</p>
+            </div>
+          </div>
+        </div>
+        <div>
+          <p>accordion (expanded)</p>
+          <div class="accordion">
+            <div class="accordion__trigger accordion__trigger--expanded">
+              <h3 class="accordion__heading">What are the prerequisites for UX Academy?</h3>
+            </div>
+            <div class="accordion__content">
+              <p class="accordion__text">We accept a limited number of students per cohort. The curriculum is intensive and rigorous, so you must demonstrate a firm foundation of basic design skills to be admitted to the course. We will assess the following things before offering you a place:</p>
+              <ul class="accordion__list">
+                <li class="accordion__list__item">The standard of either your final <a href="">Design 101</a> project, or—if you’re already a practising designer—the visual design work in your portfolio.</li>
+                <li class="accordion__list__item">Your level of English language skills. UX Academy is collaborative, and requires extensive communication between students, mentors, and the Designlab team.</li>
+                <li class="accordion__list__item">The level of commitment and motivation you demonstrate when talking about your goals in the UX Academy application.</li>
+              </ul>
+              <p class="accordion__text">We don’t require prior academic or industry experience, but you will be best placed to excel in the course if you have a strong background interest in design.</p>
+              <p class="accordion__text">Our most successful students often share the following qualities: passion, discipline, determination, courage, and empathy. These will get you far both in UX Academy, and the design world!</p>
+              <p class="accordion__text">You can find more detailed information about these requirements <a href="">in our Help Center</a>!</p>
+            </div>
+          </div>
+        </div>
+        <div>
+          <p>accordion--gray</p>
+          <div class="accordion accordion--gray">
+            <div class="accordion__trigger">
+              <h3 class="accordion__heading">How do I apply to UX Academy?</h3>
+            </div>
+            <div class="accordion__content u-hide">
+              <p class="accordion__text">As a first step, <a href="">get an information pack</a> for full details on the UX Academy journey. From there, go ahead and submit your application!</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="l-container l-container--grid-2 u-hide-sm-down">
+        <div>
+          <p>accordion (switches to accordion functionality on mobile)</p>
+          <div class="accordion">
+            <div class="accordion__image">
+              <img src="/static/images/course-description/learn-the-design-process.svg" alt="Learn the Design Process illustration">
+            </div>
+            <h3 class="accordion__heading accordion__heading--inner">Learn the Design Process</h3>
+            <p class="accordion__text">From ideation to handoff, work through a flow similar to what you’d find in an actual studio or company. You’ll bring your ideas to life as either a fully fledged webpage or app by the end of the course.</p>
+          </div>
+        </div>
+        <div>
+          <p>accordion--purple (switches to accordion functionality on mobile)</p>
+          <div class="accordion accordion--purple">
+            <div class="accordion__image">
+              <img src="/static/images/homepage/affordable.svg" alt="Wallet illustration">
+            </div>
+            <h3 class="accordion__heading accordion__heading--inner">Affordable education</h3>
+            <p class="accordion__text">We don’t believe that a great education should have to completely drain your bank account. We are proud to offer one of the most affordable options in the UX bootcamp space, and we offer convenient payment plans to fit anyone’s budget.</p>
+          </div>
+        </div>
+      </div>
+      <div class="l-container l-container--grid-2 u-hide-sm-up">
+        <div class="accordion">
+          <div class="accordion__trigger">
+            <h3 class="accordion__heading">Affordable education</h3>
+          </div>
+          <div class="accordion__content u-hide">
+            <div class="accordion__image"><img src="/static/images/homepage/affordable.svg" alt="Wallet illustration"></div>
+            <h3 class="accordion__heading accordion__heading--inner">Affordable education</h3>
+            <p class="accordion__text">We don’t believe that a great education should have to completely drain your bank account. We are proud to offer one of the most affordable options in the UX bootcamp space, and we offer convenient payment plans to fit anyone’s budget.</p>
+          </div>
+        </div>
+        <div class="accordion">
+          <div class="accordion__trigger">
+            <h3 class="accordion__heading">Challenging curriculum</h3>
+          </div>
+          <div class="accordion__content u-hide">
+            <div class="accordion__image"><img src="/static/images/homepage/curriculum.svg" alt="Curriculum illustration"></div>
+            <h3 class="accordion__heading accordion__heading--inner">Challenging curriculum</h3>
+            <p class="accordion__text">Our courses are designed to push you. Whether your goal is to pick up a few new skills or to launch yourself into a new career in UX design, our mentor-led process will give you the tools and motivation that you need to achieve your desired goal.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="l-main">
+
+      <div class="l-container">
+        <h1 class="heading">Avatar</h1>
+      </div>
+      <div class="l-container l-container--grid-4">
+        <div>
+          <p>avatar</p>
+          <div class="avatar">
+            <img class="avatar__img" src="/static/images/avatars/designlab-daniel.png" alt="Daniel">
+            <img class="avatar__logo" src="/static/images/logos/logo-designlab--square.svg" alt="Company logo for Designlab">
+          </div>
+        </div>
+        <div>
+          <p>avatar--lg</p>
+          <div class="avatar avatar--lg">
+            <img class="avatar__img" src="/static/images/avatars/designlab-daniel.png" alt="Daniel">
+          </div>
+        </div>
+        <div>
+          <p>avatar--sm</p>
+          <div class="avatar avatar--sm">
+            <img class="avatar__img" src="/static/images/avatars/designlab-daniel.png" alt="Daniel">
+            <img class="avatar__logo" src="/static/images/logos/logo-designlab--square.svg" alt="Company logo for Designlab">
+          </div>
+        </div>
+        <div>
+          <p>avatar--xs</p>
+          <div class="avatar avatar--xs">
+            <img class="avatar__img" src="/static/images/avatars/designlab-daniel.png" alt="Daniel">
+            <img class="avatar__logo" src="/static/images/logos/logo-designlab--square.svg" alt="Company logo for Designlab">
+          </div>
+        </div>
+        <div>
+          <p>avatar--wide</p>
+          <div class="avatar avatar--wide">
+            <img src="/static/images/bem-modules/avatar/avatar--wide.svg" alt="quesiton mark">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="l-main l-main--white">
+
+      <div class="l-container">
+        <h1 class="heading">Article</h1>
+      </div>
+      <div class="l-container">
+        <div class="article">
+          <div class="article__content">
+            <p><b>Gingerbread</b> marzipan cupcake oat cake tiramisu chocolate bar tootsie roll. Fruitcake jelly beans wafer pastry danish fruitcake cake. <em>Cupcake cake cheesecake candy canes.</em> Jelly carrot cake cotton candy jelly beans.</p>
+            <h2>H2 Croissant tootsie roll topping chocolate danish</h2>
+            <p>Jelly gingerbread oat cake bear claw chocolate lollipop tootsie roll croissant icing. <a href="">Danish chocolate</a> cake cotton candy croissant. Lollipop jelly muffin.</p>
+            <p>
+            <img alt="Design 101" src="https://storage.trydesignlab.com/blog/2018/design-101-18.png">
+            </p>
+            <p>Ordered list:</p>
+            <ol>
+              <li>Chocolate bar sweet cookie macaroon</li>
+              <li>Ice cream toffee toffee macaroon</li>
+              <li>Pie jelly-o gingerbread</li>
+            </ol>
+            <p>Unordered list:</p>
+            <ul>
+              <li>Chocolate bar sweet cookie macaroon</li>
+              <li>Ice cream toffee toffee macaroon</li>
+              <li>Pie jelly-o gingerbread</li>
+            </ul>
+            <p>Unordered list with paragraphs within list items:</p>
+            <ul>
+              <li><p>Danish gummi bears marzipan brownie bear claw.</p></li>
+              <li><p>Liquorice candy canes gummies. Chocolate cake cheesecake brownie danish topping candy canes apple pie.</p></li>
+              <li><p>Sweet carrot cake tootsie roll lollipop powder candy oat cake marzipan chupa chups. Macaroon caramels marzipan. Jelly beans sweet roll halvah gummies.</p></li>
+            </ul>
+            <h3>H3 Jelly beans sesame snaps ice cream cookie sweet gummies halvah brownie bonbon</h3>
+            <p>Cookie sweet dessert bonbon pudding topping. Candy canes chupa chups bear claw gingerbread caramels donut chupa chups pudding. Ice cream sweet roll dragée. Jelly sesame snaps candy cake jujubes bear claw.</p>
+            <blockquote>
+              <p>Sometimes me think, what is friend? And then me say: a friend is someone to share last cookie with.</p>
+            </blockquote>
+            <p class="attrib">Cookie Monster</p>
+            <p>This is an inline quote using the q element: <q>Bear claw ice cream soufflé cookie gingerbread candy toffee jelly beans.</q> Toffee icing apple pie gummies icing.</p>
+            <h2>Images with captions</h2>
+            <p>
+            <img alt="" src="https://storage.trydesignlab.com/blog/2019/58-forms-2a.png">
+            </p>
+            <p class="caption">This is an image with a caption. Add <b>class="caption"</b> to this paragraph</p>
+            <p>
+            <img alt="" class="full-width" src="https://storage.trydesignlab.com/blog/2018/inclusion/inclusive-header-7.png">
+            </p>
+            <p class="caption">This is a full-width image with a caption. Add <b>class="full-width"</b> to this image. Add <b>class="caption"</b> to this paragraph</p>
+            <p>
+            <img class="full-height" alt="Raoul Hausmann’s ABCD" src="https://storage.trydesignlab.com/blog/dada-8.jpg">
+            </p>
+            <p class="caption">This is a full-height image with a caption. Add <b>class="full-height"</b> to this image. Add <b>class="caption"</b> to this paragraph</p>
+          </div>
+          <div class="article__author">
+            <div class="person person--block person--block-gray">
+              <div class="avatar">
+                <img class="avatar__img" src="https://storage.trydesignlab.com/CACHE/images/profile_pics/Alexa/06a81bbd8166856a6ec33ba3910a86da.png" alt="author avatar">
+              </div>
+              <p class="person__name">Alexa Harrison</p>
+              <p class="person__role">Content Writer</p>
+              <p class="person__bio">Studied English at UMass; word wizard + marketing maven</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="l-main">
+
+      <div class="l-container u-pad-bottom-2x">
+        <h1 class="heading u-pad-bottom-2x">Article-info</h1>
+      </div>
+      <div class="l-container">
+        <div class="article-info">
+          <img class="article-info__image" src="https://storage.trydesignlab.com/blog/article-images/e747f72c.png">
+          <div class="article-info__text">
+            <p class="article-info__date">October 1st, 2019</p>
+            <p class="article-info__read-time"> <span class="u-diamond-spacer"></span> 10 minute read</p>
+            <div class="article-info__tags">
+              <div class="article-tag">
+                <a class="article-tag__name" href="">UX Design</a>
+              </div>
+            </div>
+            <p class="article-info__description"></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="l-main">
+
+      <div class="l-container">
+        <h1 class="heading">Article-tag</h1>
+      </div>
+      <div class="l-container">
+        <div class="article-tag">
+          <a class="article-tag__name" href="">Best of the Blog</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="l-main">
+
+      <div class="l-container">
+        <h1 class="heading">Benefit</h1>
+      </div>
+      <div class="l-container l-container--grid-3">
+        <div>
+          <p>benefit__icon--mentor</p>
+          <div class="benefit">
+            <div class="benefit__icon benefit__icon--mentor"></div>
+            <div class="benefit__text-box">
+              <h4 class="benefit__title">1:1 Mentorship</h4>
+              <p class="benefit__text">Master design with a professional at your side. Ask questions, discuss concepts, and more.</p>
+            </div>
+          </div>
+        </div>
+        <div>
+          <p>benefit__icon--curriculum</p>
+          <div class="benefit">
+            <div class="benefit__icon benefit__icon--curriculum"></div>
+            <div class="benefit__text-box">
+              <h4 class="benefit__title">Vetted Curriculum</h4>
+              <p class="benefit__text">Learn by doing with over 20 hours of project work to reinforce design principles.</p>
+            </div>
+          </div>
+        </div>
+        <div>
+          <p>benefit__icon--online</p>
+          <div class="benefit u-margin-bottom-rm">
+            <div class="benefit__icon benefit__icon--online"></div>
+            <div class="benefit__text-box">
+              <h4 class="benefit__title">Online and Flexible</h4>
+              <p class="benefit__text">Work on your projects at anytime—mornings, evenings, or weekends.</p>
+            </div>
+          </div>
+        </div>
+        <div>
+          <p>benefit__icon--deposit</p>
+          <div class="benefit">
+            <div class="benefit__icon benefit__icon--deposit"></div>
+            <div class="benefit__text-box">
+              <h4 class="benefit__title">UX Academy Deposit</h4>
+              <p class="benefit__text">Pay only your UX Academy deposit today. Design 101 is completely free.</p>
+            </div>
+          </div>
+        </div>
+        <div>
+          <p>benefit__icon--timeline</p>
+          <div class="benefit">
+            <div class="benefit__icon benefit__icon--timeline"></div>
+            <div class="benefit__text-box">
+              <h4 class="benefit__title">Timeline</h4>
+              <p class="benefit__text">You’ll start with Design 101. Upon successful review, you’ll begin UX Academy.</p>
+            </div>
+          </div>
+        </div>
+        <div>
+          <p>benefit__icon--guarantee</p>
+          <div class="benefit u-margin-bottom-rm">
+            <div class="benefit__icon benefit__icon--guarantee"></div>
+            <div class="benefit__text-box">
+              <h4 class="benefit__title">Course Guarantee</h4>
+              <p class="benefit__text">If you leave Design 101 at any time, we’ll refund your deposit completely.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="l-main">
+
+      <div class="l-container">
+        <h1 class="heading">Blog-card</h1>
+      </div>
+      <div class="l-container">
+        <p>blog-card</p>
+      </div>
+      <div class="l-container l-container--grid-3">
+        <div class="blog-card">
+          <a href="">
+            <img class="blog-card__image" src="https://storage.trydesignlab.com/CACHE/images/blog/article-images/ed98959b/3a544622226b12c4d6b47ab417c5f93f.png">
+          </a>
+          <div class="blog-card__body">
+            <a class="blog-card__title" href="">7 Reasons Why You Should Get Into UX Design</a>
+            <div class="blog-card__info">
+              <div class="blog-card__date">Nov 2016</div>
+              <div class="article-tag">
+                <a class="article-tag__name" href="">Best of the Blog</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="l-container">
+        <p>blog-card--wide-md</p>
+      </div>
+      <div class="l-container l-container--grid-3 l-container--grid-1-md">
+        <div class="blog-card blog-card--wide-md">
+          <a href="">
+            <img class="blog-card__image" src="https://storage.trydesignlab.com/CACHE/images/blog/article-images/ed98959b/3a544622226b12c4d6b47ab417c5f93f.png">
+          </a>
+          <div class="blog-card__body">
+            <a class="blog-card__title" href="">7 Reasons Why You Should Get Into UX Design</a>
+            <div class="blog-card__info">
+              <div class="blog-card__date">Nov 2016</div>
+              <div class="article-tag">
+                <a class="article-tag__name" href="">Best of the Blog</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="l-container">
+        <p>blog-card--featured</p>
+      </div>
+      <div class="l-container l-container--grid-2 l-container--grid-1-md">
+        <div class="blog-card blog-card--featured">
+          <a href="">
+            <img class="blog-card__image" src="https://storage.trydesignlab.com/CACHE/images/blog/article-images/ed98959b/3a544622226b12c4d6b47ab417c5f93f.png">
+          </a>
+          <div class="blog-card__body">
+            <a class="blog-card__title blog-card__title--lg" href="">7 Reasons Why You Should Get Into UX Design</a>
+            <div class="blog-card__info">
+              <div class="blog-card__date">Nov 2016</div>
+              <div class="article-tag">
+                <a class="article-tag__name" href="">Best of the Blog</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="blog-card blog-card--featured">
+          <a href="">
+            <img class="blog-card__image" src="https://storage.trydesignlab.com/CACHE/images/blog/article-images/ed98959b/3a544622226b12c4d6b47ab417c5f93f.png">
+          </a>
+          <div class="blog-card__body">
+            <a class="blog-card__title blog-card__title--lg" href="">7 Reasons Why You Should Get Into UX Design</a>
+            <div class="blog-card__info">
+              <div class="blog-card__date">Nov 2016</div>
+              <div class="article-tag">
+                <a class="article-tag__name" href="">Best of the Blog</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="l-container">
+        <p>blog-card--featured blog-card--featured-sm</p>
+      </div>
+      <div class="l-container l-container--grid-3 l-container--grid-1-md">
+        <div class="blog-card blog-card--featured blog-card--featured-sm">
+          <a href="">
+            <img class="blog-card__image" src="https://storage.trydesignlab.com/CACHE/images/blog/article-images/ed98959b/3a544622226b12c4d6b47ab417c5f93f.png">
+          </a>
+          <div class="blog-card__body">
+            <a class="blog-card__title" href="">7 Reasons Why You Should Get Into UX Design</a>
+            <div class="blog-card__info">
+              <div class="blog-card__date">Nov 2016</div>
+              <div class="article-tag">
+                <a class="article-tag__name" href="">Best of the Blog</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="blog-card blog-card--featured blog-card--featured-sm">
+          <a href="">
+            <img class="blog-card__image" src="https://storage.trydesignlab.com/CACHE/images/blog/article-images/ed98959b/3a544622226b12c4d6b47ab417c5f93f.png">
+          </a>
+          <div class="blog-card__body">
+            <a class="blog-card__title" href="">7 Reasons Why You Should Get Into UX Design</a>
+            <div class="blog-card__info">
+              <div class="blog-card__date">Nov 2016</div>
+              <div class="article-tag">
+                <a class="article-tag__name" href="">Best of the Blog</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="blog-card blog-card--featured blog-card--featured-sm">
+          <a href="">
+            <img class="blog-card__image" src="https://storage.trydesignlab.com/CACHE/images/blog/article-images/ed98959b/3a544622226b12c4d6b47ab417c5f93f.png">
+          </a>
+          <div class="blog-card__body">
+            <a class="blog-card__title" href="">7 Reasons Why You Should Get Into UX Design</a>
+            <div class="blog-card__info">
+              <div class="blog-card__date">Nov 2016</div>
+              <div class="article-tag">
+                <a class="article-tag__name" href="">Best of the Blog</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="l-main">
+
+      <div class="l-container">
+        <h1 class="heading">Blog-cta</h1>
+      </div>
+      <div class="l-container">
+        <div class="blog-cta">
+          <h2 class="blog-cta__heading u-text-narrow">Get your free 80-page design history ebook!</h2>
+          <div class="blog-cta__grid">
+            <ul class="blog-cta__list">
+              <li class="blog-cta__list__item"><span class="blog-cta__list__bullet-point">Learn the history of Dada, Brutalism, and Bauhaus</span></li>
+              <li class="blog-cta__list__item"><span class="blog-cta__list__bullet-point">Discover how each movement offers 5 lessons for us today</span></li>
+              <li class="blog-cta__list__item"><span class="blog-cta__list__bullet-point">Get up to speed in under an hour of reading time</span></li>
+            </ul>
+            <img class="blog-cta__image" src="//storage.trydesignlab.com/blog/ebook-image.png">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="l-main">
+
+      <div class="l-container">
+        <h1 class="heading">Blurb</h1>
+      </div>
+      <div class="l-container l-container--grid-4">
+        <div>
+          <p>blurb</p>
+          <div class="blurb">
+            <p class="blurb__text">Built product at Venmo &amp; Grubwithus; graduated from UPenn</p>
+            <p class="blurb__likes">Things I like:<span class="blurb__likes__emojis">🏀 🌄 📷</span></p>
+          </div>
+        </div>
+        <div>
+          <p>blurb--purple</p>
+          <div class="blurb blurb--purple">
+            <p class="blurb__text">“The confidence I came out with really propelled me into the job hunt. I received several offers in just a month.”</p>
+
+            <a class="blurb__link" href="" dl-mp-track="Homepage: Success story clicked" properties="{successStorySlug: 'from-customer-service-to-ux-designer-at-microsoft'}">Read Wendy's story</a>
+
+          </div>
+        </div>
+        <div>
+          <p>blurb--white</p>
+          <div class="blurb blurb--white">
+            <p class="blurb__text">“UX Academy was great. It helped give me the kick start that I needed to learn all the basic design concepts.”</p>
+            <a class="blurb__link blurb__link--violet" href="">Read Sammy's story</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="l-main">
+
+      <div class="l-container">
+        <h1 class="heading">Button</h1>
+      </div>
+      <div class="l-container l-container--grid-4">
+        <div>
+          <p>button</p>
+          <button class="button">Enroll now</button>
+        </div>
+        <div>
+          <p>button--black-hollow</p>
+          <button class="button button--black-hollow">Enroll now</button>
+        </div>
+        <div>
+          <p>button--blue</p>
+          <button class="button button--blue">Enroll now</button>
+        </div>
+        <div>
+          <p>button--blue-hollow</p>
+          <button class="button button--blue-hollow">Enroll now</button>
+        </div>
+        <div>
+          <p>button--gray-hollow</p>
+          <button class="button button--gray-hollow">Enroll now</button>
+        </div>
+        <div>
+          <p>button--social-facebook</p>
+          <button class="button button--social-facebook">Enroll now</button>
+        </div>
+        <div>
+          <p>button--social-twitter</p>
+          <button class="button button--social-twitter">Enroll now</button>
+        </div>
+        <div>
+          <p>button--teal-hollow</p>
+          <button class="button button--teal-hollow">Enroll now</button>
+        </div>
+        <div>
+          <p>button--violet</p>
+          <button class="button button--violet">Enroll now</button>
+        </div>
+        <div>
+          <p>button--violet-hollow</p>
+          <button class="button button--violet-hollow">Enroll now</button>
+        </div>
+        <div>
+          <p>button--white</p>
+          <button class="button button--white">Enroll now</button>
+        </div>
+        <div>
+          <p>button--white-holow</p>
+          <button class="button button--white-hollow">Enroll now</button>
+        </div>
+        <div>
+          <p>button--lg</p>
+          <button class="button button--lg">Enroll now</button>
+        </div>
+        <div>
+          <p>button--sm</p>
+          <button class="button button--sm">Enroll now</button>
+        </div>
+        <div>
+          <p>button--form</p>
+          <button class="button button--form">Enroll now</button>
+        </div>
+        <div>
+          <p>button--loading</p>
+          <button class="button button--loading">Enroll now</button>
+        </div>
+        <div>
+          <p>button--disabled</p>
+          <button class="button button--disabled">Enroll now</button>
+        </div>
+        <div>
+          <p>button--block</p>
+          <button class="button button--block">Enroll now</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="l-main">
+
+      <div class="l-container">
+        <h1 class="heading">Button-row</h1>
+      </div>
+      <div class="l-container l-container--narrowest">
+        <div class="button-row">
+          <a href="" class="button button--white">I’m ready to enroll</a>
+          <a href="" class="button button--white-hollow">See all courses</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="l-main">
+
+      <div class="l-container">
+        <h1 class="heading">Course-card</h1>
+      </div>
+      <div class="l-container l-container--grid-3">
+        <div>
+          <p>course-card</p>
+          <a class="course-card" href="">
+            <div class="course-card__header">
+              <img class="course-card__header__icon" src="https://storage.trydesignlab.com/content_icons/course-types/course-icon-design-101.png">
+              <h2 class="course-card__course-name">Design 101</h2>
+            </div>
+            <p class="course-card__description">New to design? Start here, with this crash course that covers concepts of visual design like color theory, typography, <span class="u-text-nobreak">and layout.</span></p>
+          </a>
+        </div>
+        <div>
+          <p>course-card__header__icon--lg</p>
+          <a class="course-card" href="">
+            <div class="course-card__header">
+              <img class="course-card__header__icon course-card__header__icon--lg" src="/static/images/logos/logo-uxa.svg">
+              <h2 class="display-md u-margin-bottom-rm">UX Academy</h2>
+            </div>
+            <p class="course-card__description">Kickstart your career as a product designer. Includes entry to our Design 101 foundation course, followed by 6-9 months of rigorous, mentor-led skills training and <span class="u-text-nobreak">career coaching.</span></p>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="l-main">
+
+      <div class="l-container">
+        <h1 class="heading">Course-intro</h1>
+      </div>
+      <div class="l-container">
+        <div class="course-intro">
+          <img class="course-intro__icon" src="https://storage.trydesignlab.com/content_icons/course-types/course-icon-design-101.png">
+          <div class="course-intro__text-block">
+            <h1 class="course-intro__heading">
+              Unlock Your Creativity With Design 101
+            </h1>
+            <div class="course-intro__inner-grid">
+              <p class="course-intro__description">
+              Remember what it was like to draw as a kid? Capture that creative spirit with our introduction to visual design. Working 1-on-1 with an expert mentor, you’ll learn key concepts, and see what life’s like as a designer. Perfect for boosting your resume, or kick-starting a new career.
+              </p>
+              <div class="course-intro__badge">
+                <i class="icon-gear course-intro__badge__icon"></i>
+                <p class="course-intro__badge__text">No software experience required</p>
+              </div>
+              <div class="form u-pad-bottom-md">
+                <p class="form__heading u-text-100">Curious? Get your syllabus &amp; learn more!</p>
+                <form class="form__inline-wrap">
+                  <div class="form__form-group">
+                    <label class="form__label">Enter your email address</label>
+                    <input class="form__input" placeholder="e.g. robin@trydesignlab.com">
+                  </div>
+                  <button class="button button--form">Get the syllabus</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="l-main l-main--purple">
+
+      <div class="l-container">
+        <h1 class="heading">Course-spec</h1>
+      </div>
+      <div class="l-container l-container--grid-3">
+        <div>
+          <p>course-spec</p>
+          <a class="course-spec" href="" target="_blank">
+            <div class="course-spec__rating u-text-teal">
+              <i class="icon-star"></i>
+              <i class="icon-star"></i>
+              <i class="icon-star"></i>
+              <i class="icon-star"></i>
+              <i class="icon-star"></i>
+            </div>
+            <p class="course-spec__title u-text-white">Rated 4.8 out of 5<br>on Course Report</p>
+          </a>
+        </div>
+        <div>
+          <p>course-spec--block</p>
+          <a class="course-spec course-spec--block" href="" target="_blank">
+            <div class="course-spec__rating">
+              <i class="icon-star"></i>
+              <i class="icon-star"></i>
+              <i class="icon-star"></i>
+              <i class="icon-star"></i>
+              <i class="icon-star"></i>
+            </div>
+            <p class="course-spec__title">Rated 4.8 out of 5<br>on Course Report</p>
+          </a>
+        </div>
+        <div>
+          <p>course-spec--block course-spec--gray</p>
+          <a class="course-spec course-spec--block course-spec--gray" href="" target="_blank">
+            <div class="course-spec__rating">
+              <i class="icon-star"></i>
+              <i class="icon-star"></i>
+              <i class="icon-star"></i>
+              <i class="icon-star"></i>
+              <i class="icon-star"></i>
+            </div>
+            <p class="course-spec__title">Average review 4.9/5</p>
+            <p class="course-spec__subtext">Reviews by SwitchUp</p>
+          </a>
+        </div>
+        <div>
+          <p>with course-spec__inner-block</p>
+          <div class="course-spec">
+            <p class="course-spec__title">Average review 4.9/5</p>
+            <div class="course-spec__inner-block">
+              <div class="course-spec__rating">
+                <i class="icon-star"></i>
+                <i class="icon-star"></i>
+                <i class="icon-star"></i>
+                <i class="icon-star"></i>
+                <i class="icon-star"></i>
+              </div>
+            </div>
+            <a class="course-spec__subtext" href="" target="_blank">Reviews by SwitchUp</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="l-main">
+
+      <div class="l-container">
+        <h1 class="heading">Download-card</h1>
+      </div>
+      <div class="l-container l-container--grid-3">
+        <div class="download-card">
+          <div class="download-card__body">
+            <img class="download-card__image" src="/static/images/resources/poster-color-theory--preview.png">
+            <div class="download-card__text">
+              <h2 class="download-card__heading">Color Theory</h2>
+              <p class="download-card__description">This poster is a quick overview of some key concepts and terms in color theory. Always nice to have a reminder!</p>
+            </div>
+          </div>
+          <div class="download-card__footer">
+            <a class="button button--blue-hollow" href="" target="_blank">Download</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="l-main">
+
+      <div class="l-container">
+        <h1 class="heading">Enroll</h1>
+      </div>
+      <div class="l-container">
+        <div class="enroll">
+          <div class="enroll__header">
+            <div class="enroll__step">
+              <h1 class="enroll__step__title">Create your account</h1>
+              <h2 class="enroll__step__subtitle">Create your account and become a student</h2>
+            </div>
+            <div class="enroll__course-info">
+              <img class="enroll__course-icon u-hide-sm-up" src="https://storage.trydesignlab.com/content_icons/course-types/course-icon-design-101.png">
+              <img class="enroll__course-icon u-hide-sm-up u-pad-left-sm" src="/static/images/ui/badge-switchup.png">
+              <p class="enroll__course-info__text">Signing up for<br class="u-hide-sm-down"> <span class="enroll__course-info__title">Design 101<br></span>for <span class="enroll__course-info__old-price">$499</span> $399</p>
+              <img class="enroll__course-icon u-hide-sm-down" src="https://storage.trydesignlab.com/content_icons/course-types/course-icon-design-101.png">
+            </div>
+          </div>
+          <div class="enroll__body enroll__body--grid">
+            <div class="enroll__body__column enroll__body__column--wide">
+              <div class="form-progress">
+                <div class="form-progress__steps">
+                  <div class="form-progress__step form-progress__step--current">1</div>
+                  <div class="form-progress__step">2</div>
+                </div>
+              </div>
+              <form class="form u-pad-top-md" name="userForm" novalidate="">
+                <div class="form__form-group u-pad-top-xs">
+                  <label class="form__label" for="email">Enter your email address</label>
+                  <input class="form__input" name="email" type="email" placeholder="e.g. robin@trydesignlab.com">
+                </div>
+                <button type="submit" class="button">Continue</button>
+                <p class="form__button-label">Submitting the form on this page means you agree<br>to our <a href="" target="_blank">Terms of Service</a> and <a href="/privacy/" target="_blank">Privacy Policy</a></p>
+
+                <p class="u-pad-top-sm u-margin-bottom-rm">Already have an account? <a href="">Login here</a>.</p>
+              </form>
+            </div>
+            <div class="enroll__body__column enroll__body__column--border-left u-hide-sm-down">
+              <h3 class="display-xs u-text-gray u-text-align-left u-pad-bottom-sm u-pad-top-rm">This 4-week online course includes</h3>
+              <div class="benefit">
+                <div class="benefit__icon benefit__icon--mentor"></div>
+                <div class="benefit__text-box">
+                  <h4 class="benefit__title">1:1 Mentorship</h4>
+                  <p class="benefit__text">Master design with a professional at your side. Ask questions, discuss concepts, and more.</p>
+                </div>
+              </div>
+              <div class="benefit">
+                <div class="benefit__icon benefit__icon--curriculum"></div>
+                <div class="benefit__text-box">
+                  <h4 class="benefit__title">Vetted Curriculum</h4>
+                  <p class="benefit__text">Learn by doing with over 20 hours of project work to reinforce design principles.</p>
+                </div>
+              </div>
+              <div class="benefit u-margin-bottom-rm">
+                <div class="benefit__icon benefit__icon--online"></div>
+                <div class="benefit__text-box">
+                  <h4 class="benefit__title">Online and Flexible</h4>
+                  <p class="benefit__text">Work on your projects at anytime—mornings, evenings, or weekends.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="l-main">
+
+      <div class="l-container">
+        <h1 class="heading">Enroll-footer</h1>
+      </div>
+      <div class="l-container">
+        <div class="enroll-footer">
+          <div class="enroll-footer__block">
+            <p class="enroll-footer__text">Your card info is sent securely to Stripe. We won't charge your card until the course start date. Also, Designlab comes with a <b>100% money-back guarantee</b> — get a refund if you don't love the course.</p>
+          </div>
+          <div class="enroll-footer__block">
+            <div class="success-story">
+              <div class="success-story__grid success-story__grid--xs">
+                <img class="success-story__image" src="/static/images/avatars/student-maddy.png">
+                <div class="success-story__text-box">
+                  <p class="success-story__name success-story__name--xs">Maddy K.</p>
+                  <p class="success-story__quote">“Being a Designlab student was one of the best decisions I have made.”</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="enroll-footer__block u-hide-sm-down">
+            <a href="" target="_blank"><img class="enroll-footer__image" src="/static/images/ui/badge-switchup.png"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="l-main l-main--blue">
+
+      <div class="l-container">
+        <h1 class="heading">Enroll-nav</h1>
+      </div>
+      <div class="l-container">
+        <p>enroll-nav</p>
+        <div class="enroll-nav">
+          <p class="enroll-nav__text">Copyright 20-- Designlab <a class="enroll-nav__link" href="" target="_blank">Privacy Policy</a></p>
+        </div>
+      </div>
+      <div class="l-container">
+        <p>enroll-nav--grid</p>
+        <div class="enroll-nav enroll-nav--grid">
+          <a class="enroll-nav__logo" href="" target="_blank">
+            <img src="/static/images/logos/logo-designlab.svg" alt="Designlab">
+          </a>
+          <a class="enroll-nav__text enroll-nav__text--link" href="" target="_blank">Got questions?</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="l-main">
+
+      <div class="l-container">
+        <h1 class="heading">Filter</h1>
+      </div>
+      <div class="l-container">
+        <div class="filter">
+          <div class="filter__button-wrap">
+            <button class="filter__button filter__button--selected">Design 101</button>
+            <button class="filter__button">UI Design</button>
+            <button class="filter__button">UX Research &amp; Strategy</button>
+            <button class="filter__button">UX: Interaction Design</button>
+          </div>
+          <div class="filter__section">
+            <!--filter content goes here. clicking filter buttons will change content here.-->
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="l-main l-main--black">
+
+      <div class="l-container">
+        <h1 class="heading">Footer-nav</h1>
+      </div>
+      <div class="l-container">
+        <nav class="footer-nav">
+          <ul class="footer-nav__list">
+            <li class="footer-nav__list__item">
+              <a class="footer-nav__link" href="">
+                <img src="/static/images/logos/logo-designlab.svg" class="footer-nav__logo" alt="Designlab">
+              </a>
+            </li>
+            <li class="footer-nav__list__item">
+              <a href="" class="social-share"><i class="icon-twitter"></i></a>
+              <a href="" class="social-share"><i class="icon-facebook"></i></a>
+            </li>
+          </ul>
+          <ul class="footer-nav__list">
+            <li class="footer-nav__list__item">
+              <a class="footer-nav__link" href="">Courses</a>
+            </li>
+            <li class="footer-nav__list__item">
+              <a class="footer-nav__link" href="">Mentors</a>
+            </li>
+            <li class="footer-nav__list__item">
+              <a class="footer-nav__link" href="">Testimonials</a>
+            </li>
+            <li class="footer-nav__list__item">
+              <a class="footer-nav__link" href="">UX Academy</a>
+            </li>
+            <li class="footer-nav__list__item">
+              <a class="footer-nav__link" href="">Perks</a>
+            </li>
+            <li class="footer-nav__list__item">
+              <a class="footer-nav__link" href="">About</a>
+            </li>
+            <li class="footer-nav__list__item">
+              <a class="footer-nav__link" href="">Help</a>
+            </li>
+          </ul>
+          <ul class="footer-nav__list">
+            <li class="footer-nav__list__item">
+              <a class="footer-nav__link" href="">Blog</a>
+            </li>
+            <li class="footer-nav__list__item">
+              <a class="footer-nav__link" href="">Become a Mentor</a>
+            </li>
+            <li class="footer-nav__list__item">
+              <a class="footer-nav__link" href="">Become an Affiliate</a>
+            </li>
+            <li class="footer-nav__list__item">
+              <a class="footer-nav__link" href="">Learn Photoshop</a>
+            </li>
+            <li class="footer-nav__list__item">
+              <a class="footer-nav__link" href="">Learn Sketch</a>
+            </li>
+            <li class="footer-nav__list__item">
+              <a class="footer-nav__link" href="">Learn Figma</a>
+            </li>
+            <li class="footer-nav__list__item">
+              <a class="footer-nav__link" href="">Design Resources</a>
+            </li>
+            <li class="footer-nav__list__item">
+              <a class="footer-nav__link" href="">Talent</a>
+            </li>
+            <li class="footer-nav__list__item">
+              <a class="footer-nav__link" href="">Privacy Policy</a>
+            </li>
+            <li class="footer-nav__list__item">
+              <a class="footer-nav__link" href="">Terms of Service</a>
+            </li>
+          </ul>
+          <div></div>
+          <div></div>
+          <div class="footer-nav__badge">
+            <a href=""><img class="footer-nav__badge__image" src="/static/images/ui/badge-switchup.png"></a>
+
+          </div>
+        </nav>
+      </div>
+    </div>
+
+    <div class="l-main l-main--black">
+
+      <div class="l-container">
+        <h1 class="heading">Footer-simple</h1>
+      </div>
+      <div class="l-container">
+        <nav class="footer-simple">
+          <a class="footer-simple__logo" href="">
+            <img src="/static/images/logos/logo-designlab.svg" alt="Designlab">
+          </a>
+          <div class="footer-simple__course-logo">
+            <img src="/static/images/logos/logo-figma-course.svg">
+          </div>
+          <a class="footer-simple__link footer-simple__link--right" href="">Privacy Policy</a>
+        </nav>
+      </div>
+    </div>
+
+    <div class="l-main">
+
+      <div class="l-container">
+        <h1 class="heading">Form</h1>
+      </div>
+      <div class="l-container l-container--narrow">
+        <h2 class="form__heading">Form__heading</h2>
+        <h2 class="form__subheading">Form__subheading</h2>
+        <p class="form__price">form__price $499</p>
+        <p class="form__helper-text">form__helper-text</p>
+        <form class="form">
+          <div class="form__form-group">
+            <label class="form__label" for="email">Form__label</label>
+            <input class="form__input" name="email" type="email" placeholder="form__input">
+          </div>
+          <div class="form__form-group">
+            <label class="form__label form__label--error" for="email">Form__label--error</label>
+            <input class="form__input form__input--error" name="email" type="email" placeholder="form__input--error">
+          </div>
+          <div class="form__form-group">
+            <label class="form__label" for="email">Form__label</label>
+            <input class="form__input" name="email" type="email" placeholder="form__input">
+            <label class="form__label form__label--error form__label--below" for="email">Form__label--error Form__label--below</label>
+          </div>
+          <div class="form__form-group">
+            <label class="form__label form__label--error" for="email">Form__input--error-icon</label>
+            <input class="form__input form__input--error-icon" name="email" type="email" placeholder="form__input--error-icon">
+          </div>
+          <div class="form__form-group">
+            <label class="form__label" for="email">Form__input--success-icon</label>
+            <input class="form__input form__input--success-icon" name="email" type="email" placeholder="form__input--success-icon">
+          </div>
+          <div class="form__form-group">
+            <label class="form__label" for="email">Form__label__icon <img class="form__label__icon" src="/static/images/bem-modules/form/form__label__icon--creditcards.svg"></label>
+            <input class="form__input" name="email" type="email" placeholder="form__input">
+          </div>
+          <div class="form__form-group">
+            <label class="form__label" for="track-dropdown">Form__select</label>
+            <select class="form__select" id="track-dropdown">
+              <option label="Option 1" value="Option 1">Option 1</option>
+              <option label="Option 2" value="Option 2">Option 2</option>
+              <option label="Option 3" value="Option 3">Option 3</option>
+            </select>
+          </div>
+          <div class="form__form-group">
+            <label class="form__label" for="textarea">Form__textarea</label>
+            <input class="form__textarea" placeholder="form__textarea">
+          </div>
+          <div class="form__form-group">
+            <label class="form__label u-text-align-center" for="radio">Form__radio</label>
+            <div class="form__radio">
+              <div class="form__radio__option">
+                <input type="radio" name="radio">
+                <label class="form__radio__label" for="yes">Yes</label>
+              </div>
+              <div class="form__radio__option">
+                <input type="radio" name="radio">
+                <label class="form__radio__label" for="no">No</label>
+              </div>
+            </div>
+          </div>
+          <p>form__divider</p>
+          <hr class="form__divider">
+          <div class="form__form-group u-text-align-center">
+            <label class="form__label u-text-align-center" form-name="profileForm" field-name="profilePic">Form__pic-preview</label>
+            <div class="form__pic-preview form__pic-preview--default"></div>
+            <div class="form__file-upload">
+              <button class="button">Upload file</button>
+              <input class="form__file-upload__hidden-field" type="file" name="profilePic" value="Choose Photo">
+              <p class="form__button-label">This is a form__button-label.<br>You can use this to add more info about submititng the form.</p>
+            </div>
+          </div>
+          <div class="form__form-group form__form-group--narrow">
+            <p>form__form-group--narrow</p>
+            <label class="form__label" for="email">Form__label</label>
+            <input class="form__input" name="email" type="email" placeholder="form__input">
+          </div>
+          <div class="form__form-group form__form-group--center-sm">
+            <p>form__form-group--center-sm (visible on small screens)</p>
+            <label class="form__label" for="email">Form__label</label>
+            <input class="form__input" name="email" type="email" placeholder="form__input">
+          </div>
+          <div class="form__form-group form__form-group--center-md">
+            <p>form__form-group--center-md (visible on medium screens)</p>
+            <label class="form__label" for="email">Form__label</label>
+            <input class="form__input" name="email" type="email" placeholder="form__input">
+          </div>
+          <div class="form__form-group form__form-group--pad-width">
+            <p>form__form-group--pad-width<br>(adds additional padding on width on medium and up screens)</p>
+            <label class="form__label" for="email">Form__label</label>
+            <input class="form__input" name="email" type="email" placeholder="form__input">
+          </div>
+        </form>
+      </div>
+      <div class="l-container l-container--narrow">
+        <div class="form">
+          <p>form__inline-wrap</p>
+          <form class="form__inline-wrap">
+            <div class="form__form-group">
+              <label class="form__label">Enter your email address</label>
+              <input class="form__input" placeholder="e.g. robin@trydesignlab.com">
+            </div>
+            <button class="button button--form">Get the syllabus</button>
+          </form>
+        </div>
+      </div>
+      <div class="l-container">
+        <div class="form">
+          <p>form__inline-wrap--narrow</p>
+          <form class="form__inline-wrap form__inline-wrap--narrow">
+            <div class="form__form-group">
+              <label class="form__label">Enter your email address</label>
+              <input class="form__input" placeholder="e.g. robin@trydesignlab.com">
+            </div>
+            <button class="button button--form">Get the syllabus</button>
+          </form>
+        </div>
+      </div>
+      <div class="l-container">
+        <div class="form">
+          <p>form__inline-wrap--wide-cta</p>
+          <form class="form__inline-wrap form__inline-wrap--wide-cta">
+            <div class="form__form-group">
+              <label class="form__label">Enter your email address</label>
+              <input class="form__input" placeholder="e.g. robin@trydesignlab.com">
+            </div>
+            <button class="button button--form">Get the syllabus</button>
+          </form>
+        </div>
+      </div>
+      <div class="l-container">
+        <p>form--narrow</p>
+        <form class="form form--narrow">
+          <div class="form__form-group">
+            <label class="form__label" for="username">Choose your username</label>
+            <input class="form__input" name="username" type="text" placeholder="e.g. robinbuckley">
+          </div>
+          <div class="form__form-group">
+            <label class="form__label" for="password">Choose your password</label>
+            <input class="form__input" name="password" type="password" placeholder="********">
+          </div>
+          <button type="submit" dl-ladda-button="" ladda-loading="loading" data-style="slide-down" class="ladda-button button">
+            <span class="ladda-label">Continue</span>
+            <span class="ladda-spinner"></span></button>
+        </form>
+      </div>
+      <div class="l-container">
+        <p>form__success-image and form__success-text</p>
+        <div class="form">
+          <div class="form__block">
+            <div class="form__success-image"></div>
+            <h1 class="form__success-text">Thanks for signing up!</h1>
+          </div>
+        </div>
+      </div>
+      <div class="l-container l-container--narrow">
+        <p>form__block--white</p>
+        <div class="form">
+          <div class="form__block form__block--white">
+            <div class="form__form-group">
+              <label class="form__label" for="email">Form__label</label>
+              <input class="form__input" name="email" type="email" placeholder="form__input">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="l-container l-container--narrow">
+        <p>form--dark<br>form__block--black</p>
+        <div class="form form--dark">
+          <div class="form__block form__block--black">
+            <div class="form__form-group">
+              <label class="form__label" for="email">Form__label</label>
+              <input class="form__input" name="email" type="email" placeholder="form__input">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="l-container l-container--narrow">
+        <p>form--dark<br>form__block--purple<br>form__block--pad-lg</p>
+        <form class="form form--dark">
+          <div class="form__block form__block--purple form__block--pad-lg">
+            <div class="form__form-group">
+              <label class="form__label" for="email">Form__label</label>
+              <input class="form__input" name="email" type="email" placeholder="form__input">
+            </div>
+          </div>
+        </form>
+      </div>
+      <div class="l-container l-container--narrow">
+        <p>form--dark<br>form__block--ocean</p>
+        <div class="form form--dark">
+          <div class="form__block form__block--ocean">
+            <div class="form__form-group">
+              <label class="form__label" for="email">Form__label</label>
+              <input class="form__input" name="email" type="email" placeholder="form__input">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="l-container l-container--narrowest">
+        <p class="u-pad-bottom-lg">form__block--white<br>form__block--little-dude</p>
+        <form class="form">
+          <div class="form__block form__block--white form__block--little-dude">
+            <div class="form__form-group">
+              <label class="form__label" for="email">Form__label</label>
+              <input class="form__input" name="email" type="email" placeholder="form__input">
+            </div>
+          </div>
+        </form>
+      </div>
+      <div class="l-container l-container--narrow">
+        <p>form__grid--2</p>
+        <form class="form">
+          <div class="form__grid form__grid--2">
+            <div class="form__form-group">
+              <label class="form__label" for="input1">Form__label</label>
+              <input class="form__input" name="input1" type="text" placeholder="form__input">
+            </div>
+            <div class="form__form-group">
+              <label class="form__label" for="input2">Form__label</label>
+              <input class="form__input" name="input2" type="text" placeholder="form__input">
+            </div>
+          </div>
+        </form>
+      </div>
+      <div class="l-container l-container--narrow">
+        <p>form__grid--2-1</p>
+        <form class="form">
+          <div class="form__grid form__grid--2-1">
+            <div class="form__form-group">
+              <label class="form__label" for="input1">Form__label</label>
+              <input class="form__input" name="input1" type="text" placeholder="form__input">
+            </div>
+            <div class="form__form-group">
+              <label class="form__label" for="input2">Form__label</label>
+              <input class="form__input" name="input2" type="text" placeholder="form__input">
+            </div>
+          </div>
+        </form>
+      </div>
+      <div class="l-container l-container--narrow">
+        <p>form__grid--1-2</p>
+        <form class="form">
+          <div class="form__grid form__grid--1-2">
+            <div class="form__form-group">
+              <label class="form__label" for="input1">Form__label</label>
+              <input class="form__input" name="input1" type="text" placeholder="form__input">
+            </div>
+            <div class="form__form-group">
+              <label class="form__label" for="input2">Form__label</label>
+              <input class="form__input" name="input2" type="text" placeholder="form__input">
+            </div>
+          </div>
+        </form>
+      </div>
+      <div class="l-container">
+        <p>form__grid--3</p>
+        <form class="form">
+          <div class="form__grid form__grid--3">
+            <div class="form__form-group">
+              <label class="form__label" for="input1">Form__label</label>
+              <input class="form__input" name="input1" type="text" placeholder="form__input">
+            </div>
+            <div class="form__form-group">
+              <label class="form__label" for="input2">Form__label</label>
+              <input class="form__input" name="input2" type="text" placeholder="form__input">
+            </div>
+            <div class="form__form-group">
+              <label class="form__label" for="input3">Form__label</label>
+              <input class="form__input" name="input3" type="text" placeholder="form__input">
+            </div>
+          </div>
+        </form>
+      </div>
+      <div class="l-container">
+        <p>form__grid--inner<br>form__grid--gutter-sm</p>
+        <form class="form">
+          <div class="form__grid form__grid--2 form__grid--gutter-sm">
+            <div class="form__form-group">
+              <label class="form__label" for="input1">Form__label</label>
+              <input class="form__input" name="input1" type="text" placeholder="form__input">
+            </div>
+            <div class="form__grid form__grid--inner">
+              <div class="form__form-group">
+                <label class="form__label" for="input2">Form__label</label>
+                <input class="form__input" name="input2" type="text" placeholder="form__input">
+              </div>
+              <div class="form__form-group">
+                <label class="form__label" for="input3">Form__label</label>
+                <input class="form__input" name="input3" type="text" placeholder="form__input">
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <div class="l-main">
+
+      <div class="l-container">
+        <h1 class="heading">Form-progress</h1>
+      </div>
+      <div class="l-container">
+        <div class="form-progress">
+          <div class="form-progress__steps">
+            <div class="form-progress__step form-progress__step--current">1</div>
+            <div class="form-progress__step">2</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="l-main">
+
+      <div class="l-container">
+        <h1 class="heading">Formstack-embed</h1>
+      </div>
+      <div class="l-container">
+        <div class="formstack-embed">
+          <a href="" target="_blank"><img class="formstack-embed__header-image" src="/static/images/logos/logo-uxa.svg"></a>
+          <div class="formstack-embed__block">
+            [flatpage content for Formstack form goes here]
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="l-main">
+
+      <div class="l-container">
+        <h1 class="heading">Horizontal-heading</h1>
+      </div>
+      <div class="l-container">
+        <div class="horizontal-heading">
+          <div class="inline-icon inline-icon--stack-sm">
+            <img src="https://storage.trydesignlab.com/blog/category-images/19/icon-dark_UDcnjS5.svg" class="inline-icon__icon">
+            <h2 class="inline-icon__heading">Tips &amp; Tutorials</h2>
+          </div>
+          <a class="button button--gray-hollow u-grid-justify-end" href="">View all</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="l-main">
+
+      <div class="l-container">
+        <h1 class="heading">Info-block</h1>
+      </div>
+      <div class="l-container l-container--grid-4">
+        <div class="info-block">
+          <div class="info-block__image">
+            <img src="/static/images/partnerships/rigorous-up-to-date.svg" alt="Rigorous and up-to-date curriculum illustration">
+          </div>
+          <p class="info-block__text">Rigorous, up-to-date curriculum covering UX, UI, and product design</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="l-main">
+
+      <div class="l-container">
+        <h1 class="heading">Info-card</h1>
+      </div>
+      <div class="l-container l-container--grid-2 l-container--grid-1-md l-container--narrow-md">
+        <div>
+          <p>info-card</p>
+          <div class="info-card">
+            <div class="info-card__content">
+              <h1 class="info-card__heading u-pad-bottom-xs">How To Become A Designer in&nbsp;2020</h1>
+              <p>To help you navigate the different course options, we’ve broken down curriculum, teaching styles, prerequisites, start dates, career track vs. non-career track courses, online vs. face-to-face approaches, and mentor-led vs. instructor-led methods.</p>
+            </div>
+            <div class="info-card__cta-wrap">
+              <a class="button button--blue-hollow" href="">Get the ebook</a>
+            </div>
+          </div>
+        </div>
+        <div>
+          <p>info-card__head</p>
+          <div class="info-card">
+            <div class="info-card__content">
+              <div class="info-card__head">
+                <img class="info-card__head__image" src="https://storage.trydesignlab.com/content_icons/course-types/course-icon-design-101.png" alt="Design 101 course icon">
+                <div class="info-card__head__text">
+                  <h1 class="info-card__heading">Design 101</h1>
+                  <p class="info-card__subheading">Perfect for design beginners</p>
+                </div>
+              </div>
+              <p>Looking to supercharge your design skills? Learn the basic principles of visual design, work on a series of projects, &amp; improve in just 4 weeks.</p>
+            </div>
+            <div class="info-card__cta-wrap">
+              <a href="" class="button button--gray-hollow">Learn more</a>
+              <a href="" class="button">Enroll now</a>
+            </div>
+          </div>
+        </div>
+        <div>
+          <p>info-card__head--sm-image</p>
+          <div class="info-card">
+            <div class="info-card__content">
+              <div class="info-card__head info-card__head--sm-image">
+                <img class="info-card__head__image" src="/static/images/logos/logo-figma-course.svg" alt="Figma email course icon">
+                <div class="info-card__head__text">
+                  <h1 class="info-card__heading">Figma 101</h1>
+                </div>
+              </div>
+              <p>When it comes to design software, Figma is the cool new kid on the block. It combines the simplicity of Sketch with real-time collaboration features and powerful extra tools. Even better, it runs in your web browser, meaning you can use it on any computer.</p>
+            </div>
+            <div class="info-card__cta-wrap">
+              <a class="button button--blue-hollow u-margin-top-rm" href="">Get started</a>
+            </div>
+          </div>
+        </div>
+        <div>
+          <p>info-card__cta-wrap--stretch</p>
+          <div class="info-card">
+            <div class="info-card__content">
+              <div class="info-card__head">
+                <img class="info-card__head__image" src="https://storage.trydesignlab.com/content_icons/course-types/course-icon-design-101.png" alt="Design 101 course icon">
+                <div class="info-card__head__text">
+                  <h1 class="info-card__heading">Design 101</h1>
+                  <p class="info-card__subheading">Perfect for design beginners</p>
+                </div>
+              </div>
+              <p>Looking to supercharge your design skills? Learn the basic principles of visual design, work on a series of projects, &amp; improve in just 4 weeks.</p>
+            </div>
+            <div class="info-card__cta-wrap info-card__cta-wrap--stretch">
+              <p class="info-card__date">Starts Nov. 1st</p>
+              <a href="" class="button">Enroll with $25 discount</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="l-main">
+
+      <div class="l-container">
+        <h1 class="heading">Inline-icon</h1>
+      </div>
+      <div class="l-container">
+        <div class="inline-icon inline-icon--stack-sm">
+          <img src="https://storage.trydesignlab.com/blog/category-images/19/icon-dark_UDcnjS5.svg" class="inline-icon__icon">
+          <h2 class="inline-icon__heading">Tips &amp; Tutorials</h2>
+        </div>
+      </div>
+    </div>
+
+    <div class="l-main">
+
+      <div class="l-container">
+        <h1 class="heading">Job-listing</h1>
+      </div>
+      <div class="l-container">
+        <div class="job-listing">
+          <h1>Senior Full-Stack Developer</h1>
+          <h4>(Remote + Part-Time)</h4>
+          <p>Do you love the flexibility and freedom of working remote, but want to make sure you're a valued member of a small team whose voice will be heard? Do you know Django and React like the back of your hand?</p>
+          <p>Get in touch!</p>
+          <p>Designlab is looking for a talented full-stack developer to help us improve and expand our rapidly-growing online education platform. We're a nimble, product-driven team focused on building the best experience in the world for creative skills training, and thousands of students across the globe have already advanced their design skills and changed careers by taking our award-winning online courses.</p>
+
+          <h2>You</h2>
+          <ul>
+            <li>Care about details, never hesitate to ask clarifying questions, and proactively anticipate corner cases</li>
+            <li>Have excellent written communication skills</li>
+            <li>Have experience building and deploying entire web applications from scratch</li>
+            <li>Have 5+ years of experience working with Django</li>
+            <li>Have 5+ years of experience working with a front-end application framework</li>
+            <li>Have experience building applications with React/Redux</li>
+          </ul>
+
+          <h2>Responsibilities</h2>
+          <ul>
+            <li>Work directly with our co-founder/CTO and our small engineering team to augment our software development efforts.</li>
+            <li>Participate in code reviews on PRs -- we care about readability, consistency, and generally shipping great code that works 😎</li>
+            <li>Ship early and often — add exciting new features and investigate/fix critical bugs in the web application that powers our popular online courses.</li>
+            <li>Improve the codebase by constantly looking for places to make things faster, cleaner, clearer.</li>
+          </ul>
+
+          <h2>Perks</h2>
+          <ul>
+            <li>Work from anywhere!</li>
+            <li>Set your own work schedule</li>
+            <li>Play an important role on a talented, mission-driven team building a product that’s innovating in the online education space with thousands of paying customers around the world</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="l-main">
+
+      <div class="l-container">
+        <h1 class="heading">Lightbox-image</h1>
+      </div>
+      <div class="l-container l-container--grid-3">
+        <div class="lightbox-image " dl-image-lightbox="">
+          <a class="lightbox-image__link" href="">
+            <img class="lightbox-image__image" src="https://storage.trydesignlab.com/mentor_work/dl-1_nwNYHVp.png">
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="l-main">
+
+      <div class="l-container">
+        <h1 class="heading">List</h1>
+      </div>
+      <div class="l-container l-container--narrow">
+        <div>
+          <p>list</p>
+          <ul class="list">
+            <li class="list__item">Use a clear, high-resolution photo</li>
+            <li class="list__item">Upload a JPG or PNG, no GIFs :)</li>
+          </ul>
+        </div>
+        <div>
+          <p>list--check-list</p>
+          <ul class="list list--check-list">
+            <li class="list__item">Work with an expert <span class="u-text-nobreak">design mentor</span></li>
+            <li class="list__item">Connect with a community <span class="u-text-nobreak">of peers</span></li>
+            <li class="list__item">Create a stunning <span class="u-text-nobreak">design portfolio</span></li>
+            <li class="list__item">Work with your own <span class="u-text-nobreak">Career Coach</span></li>
+          </ul>
+        </div>
+        <div>
+          <p>list--bullet-blue</p>
+          <ul class="list list--bullet-blue">
+            <li class="list__item"><strong>Learn a professional workflow</strong> that allows you to build layouts and edit photos non-destructively.</li>
+            <li class="list__item"><strong>Master core Photoshop skills</strong> including adjustment layers, smart filters, image masks, photo enhancements, and keyboard shortcuts.</li>
+            <li class="list__item"><strong>Create your own web layout and GIFs</strong> to share with friends or add to your portfolio!</li>
+          </ul>
+        </div>
+        <div>
+          <p>list--droplet</p>
+          <ul class="list list--droplet">
+            <li class="list__item"><strong>Learn how to use all of Figma’s core features,</strong> including interface basics, keyboard shortcuts, and shape tools</li>
+            <li class="list__item"><strong>Cover advanced tips and tricks,</strong> understanding vector networks, Boolean commands, and libraries</li>
+            <li class="list__item"><strong>Design your own mobile app,</strong> and make prototypes to present and share</li>
+          </ul>
+        </div>
+        <div>
+          <p>list--sketch</p>
+          <ul class="list list--sketch">
+            <li class="list__item"><strong>Master key skills</strong> like how to navigate Sketch's interface, create shapes &amp; symbols, and manage a professional workflow.</li>
+            <li class="list__item"><strong>Apply your knowledge</strong> through a daily hands-on tutorial, free downloadable templates, and a Sketch cheat sheet.</li>
+            <li class="list__item"><strong>Learn advanced techniques</strong> that most intro courses don’t cover!</li>
+          </ul>
+        </div>
+        <div>
+          <p>list--center</p>
+          <ul class="list list--center">
+            <li class="list__item">Use a clear, high-resolution photo</li>
+            <li class="list__item">Upload a JPG or PNG, no GIFs :)</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="l-main l-main--purple">
+
+      <div class="l-container">
+        <h1 class="heading">Mentor-profile</h1>
+      </div>
+      <div class="l-container">
+        <div class="mentor-profile">
+          <div class="mentor-profile__grid">
+            <div class="avatar avatar--lg">
+              <img class="avatar__img" src="https://storage.trydesignlab.com/CACHE/images/profile_pics/AFE4B168-A2CF-40DF-A63B-6AC47B6EECD8/3102be747489e4ec49e201f66fe0adbe.png">
+            </div>
+            <div class="mentor-profile__text">
+              <span class="status-badge status-badge--mentor status-badge--sm">Mentor</span>
+              <h1 class="mentor-profile__name">Patrick Multani</h1>
+              <p class="mentor-profile__location">Based in Berlin</p>
+              <p class="mentor-profile__bio">👋 I am here to help you by listening actively, asking questions and giving feedback. My background lies in user centred design and I am currently working as a product designer here at Designlab.</p>
+              <div class="mentor-profile__link-wrap">
+                <a class="mentor-profile__link" href="" target="_blank"><span class="mentor-profile__link__icon"><i class="icon-globe"></i></span>Portfolio</a>
+                <a class="mentor-profile__link" href="" target="_blank"><span class="mentor-profile__link__icon"><i class="icon-dribbble"></i></span>Dribbble</a>
+                <a class="mentor-profile__link" href="" target="_blank"><span class="mentor-profile__link__icon"><i class="icon-twitter"></i></span>Twitter</a>
+              </div>
+            </div>
+          </div>
+          <p class="mentor-profile__role">Product Designer at Designlab</p>
+          <img class="mentor-profile__logo" src="https://storage.trydesignlab.com/mentor_company_logos/DL.png">
+        </div>
+      </div>
+    </div>
+
+    <div class="l-main">
+
+      <div class="l-container">
+        <h1 class="heading">More-box</h1>
+      </div>
+      <div class="l-container">
+        <p>more-box<br>more-box--span-sm-up (full-width on screens small and up)</p>
+        <div class="more-box more-box--span-sm-up">
+          <p class="more-box__text">More Student Perks <span class="u-text-nobreak">coming soon!</span></p>
+        </div>
+      </div>
+      <div class="l-container">
+        <p>more-box<br>more-box--grid-lg (horizontal layout)<br>more-box--span-sm-up (full-width on screens small and up)</p>
+        <div class="more-box more-box--grid-lg more-box--span-sm-up">
+          <img class="more-box__image" src="/static/images/bem-modules/more-box/more-box__image--square-white.svg">
+          <p class="more-box__text u-text-white">More Courses <br>coming soon!</p>
+        </div>
+      </div>
+      <div class="l-container">
+        <p>more-box<br>more-box--span-md-up (full-width on screens medium and up)</p>
+        <div class="more-box more-box--span-md-up">
+          <img class="more-box__image" src="/static/images/bem-modules/more-box/more-box__image.svg">
+          <p class="more-box__text">More Resources <span class="u-text-nobreak">coming soon!</span></p>
+        </div>
+      </div>
+    </div>
+
+    <div class="l-main l-main--purple">
+
+      <div class="l-container">
+        <h1 class="heading">Nav</h1>
+      </div>
+      <div class="l-container">
+        <p>nav</p>
+        <nav class="nav">
+          <a class="nav__logo" href="">
+            <img src="/static/images/logos/logo-designlab.svg" alt="Designlab">
+          </a>
+          <ul class="nav__list">
+            <li class="nav__list__item">
+              <a class="nav__link " href="" dl-mp-track="Static page: Top link clicked" properties="{'link': 'courses', 'onPage': ''}">Courses</a>
+            </li>
+            <li class="nav__list__item">
+              <a class="nav__link " href="" dl-mp-track="Static page: Top link clicked" properties="{'link': 'mentors', 'onPage': ''}">Mentors</a>
+            </li>
+            <li class="nav__list__item">
+              <a class="nav__link " href="" dl-mp-track="Static page: Top link clicked" properties="{'link': 'testimonials', 'onPage': ''}">Testimonials</a>
+            </li>
+            <li class="nav__list__item">
+              <a class="nav__link " href="" dl-mp-track="Static page: Top link clicked" properties="{'link': 'uxa', 'onPage': ''}">UX Academy</a>
+            </li>
+            <li class="nav__list__item">
+              <a class="nav__link " href="" dl-mp-track="Static page: Top link clicked" properties="{'link': 'blog', 'onPage': ''}">Blog</a>
+            </li>
+            <li class="nav__list__item">
+              <a class="nav__link " href="" dl-mp-track="Static page: Top link clicked" properties="{'link': 'about', 'onPage': ''}">About</a>
+            </li>
+            <li class="nav__list__item">
+              <a class="nav__link" href="" dl-mp-track="Static page: Top link clicked">Help</a>
+            </li>
+
+          </ul>
+          <div class="nav__cta">
+
+            <a href="" class="button button--sm">Go to course</a>
+
+          </div>
+        </nav>
+      </div>
+      <div class="l-container">
+        <p>nav--simple</p>
+        <nav class="nav nav--simple">
+          <a class="nav__logo" href="">
+            <img src="/static/images/logos/logo-designlab.svg" alt="Designlab">
+          </a>
+        </nav>
+      </div>
+    </div>
+
+    <div class="l-main">
+
+      <div class="l-container">
+        <h1 class="heading">Nav-secondary</h1>
+      </div>
+      <div class="l-container u-hide-md-up">
+        <p>nav-secondary</p>
+        <nav class="nav-secondary ">
+          <ul class="nav-secondary__list">
+            <li class="nav-secondary__list__item">
+              <a class="nav-secondary__link" href="">Course Overview</a>
+            </li>
+            <li class="nav-secondary__list__item">
+              <a class="nav-secondary__link" href="">Expert Mentors</a>
+            </li>
+            <li class="nav-secondary__list__item">
+              <a class="nav-secondary__link" href="">What You’ll Learn</a>
+            </li>
+            <li class="nav-secondary__list__item">
+              <a class="nav-secondary__link" href="">Student Success Stories</a>
+            </li>
+            <li class="nav-secondary__list__item">
+              <a class="nav-secondary__link" href="">Projects</a>
+            </li>
+            <li class="nav-secondary__list__item">
+              <a class="nav-secondary__link" href="">FAQ</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="l-container u-hide-md-down">
+        <p>nav-secondary</p>
+        <nav class="nav-secondary">
+          <ul class="nav-secondary__list nav-secondary__list--horizontal">
+            <li class="nav-secondary__list__item">
+              <a class="nav-secondary__link" data-href="">Course Overview</a>
+            </li>
+            <li class="nav-secondary__list__item">
+              <a class="nav-secondary__link" data-href="">Expert Mentors</a>
+            </li>
+            <li class="nav-secondary__list__item">
+              <a class="nav-secondary__link" data-href="">What You’ll Learn</a>
+            </li>
+            <li class="nav-secondary__list__item">
+              <a class="nav-secondary__link" data-href="">Student Success Stories</a>
+            </li>
+            <li class="nav-secondary__list__item">
+              <a class="nav-secondary__link" data-href="">Projects</a>
+            </li>
+            <li class="nav-secondary__list__item">
+              <a class="nav-secondary__link" data-href="">FAQ</a>
+            </li>
+            <li class="nav-secondary__list__item nav-secondary__list__item--hide-default">
+              <a class="button" href="">Enroll</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+
+    <div class="l-main">
+
+      <div class="l-container">
+        <h1 class="heading">Partner-quote</h1>
+      </div>
+      <div class="l-container">
+        <div class="partner-quote">
+          <div class="partner-quote__logo">
+            <img class="partner-quote__logo__image" src="/static/images/logos-external/logo-intrepid--black.svg" alt="Intrepid logo">
+          </div>
+          <div class="partner-quote__text-box">
+            <p>“We have been incredibly pleased from the candidates coming out of Designlab. They have been extraordinarily well-prepared and have consistently demonstrated a high level of talent. Designlab is our preferred <span class="u-text-nobreak">design bootcamp!”</span></p>
+            <p class="partner-quote__attribution">Intrepid</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="l-main">
+
+      <div class="l-container">
+        <h1 class="heading">Person</h1>
+      </div>
+      <div class="l-container l-container--grid-4">
+        <div>
+          <p>person</p>
+          <div class="person">
+            <div class="avatar">
+              <img class="avatar__img" src="/static/images/avatars/designlab-harish.png" alt="team member avatar of Harish">
+            </div>
+            <p class="person__name">Harish Venkatesan</p>
+            <p class="person__role">Founder/CEO</p>
+          </div>
+        </div>
+        <div>
+          <p>person with person__long, person__location, and person__bio</p>
+          <div class="person">
+            <div class="avatar">
+              <img class="avatar__img" src="/static/images/avatars/designlab-harish.png" alt="team member avatar of Harish">
+            </div>
+            <p class="person__name">Harish Venkatesan</p>
+            <p class="person__role">Founder/CEO</p>
+            <p class="person__long">Mentor since 2014</p>
+            <p class="person__location">New York, NY</p>
+            <p class="person__bio">Built product at Venmo &amp; Grubwithus; graduated from UPenn</p>
+          </div>
+        </div>
+        <div>
+          <p>person--block</p>
+          <div class="person person--block">
+            <div class="avatar">
+              <img class="avatar__img" src="/static/images/avatars/designlab-harish.png" alt="team member avatar of Harish">
+            </div>
+            <p class="person__name">Harish Venkatesan</p>
+            <p class="person__role">Founder/CEO</p>
+          </div>
+        </div>
+        <div>
+          <p>person--block<br>person--block-gray</p>
+          <div class="person person--block person--block-gray">
+            <div class="avatar">
+              <img class="avatar__img" src="/static/images/avatars/designlab-harish.png" alt="team member avatar of Harish">
+            </div>
+            <p class="person__name">Harish Venkatesan</p>
+            <p class="person__role">Founder/CEO</p>
+          </div>
+        </div>
+        <div>
+          <p>person--block<br>person--block-gray-border</p>
+          <div class="person person--block person--block-gray-border">
+            <div class="avatar">
+              <img class="avatar__img" src="/static/images/avatars/designlab-harish.png" alt="team member avatar of Harish">
+            </div>
+            <p class="person__name">Harish Venkatesan</p>
+            <p class="person__role">Founder/CEO</p>
+          </div>
+        </div>
+        <div>
+          <p>person--block<br>person--link (hover effect)</p>
+          <div class="person person--block person--link">
+            <div class="avatar">
+              <img class="avatar__img" src="/static/images/avatars/designlab-harish.png" alt="team member avatar of Harish">
+            </div>
+            <p class="person__name">Harish Venkatesan</p>
+            <p class="person__role">Founder/CEO</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="l-main">
+
+      <div class="l-container">
+        <h1 class="heading">Policy</h1>
+      </div>
+      <div class="l-container">
+        <div class="policy">
+          <div class="policy__heading">
+            <h2 class="heading u-text-violet u-margin-bottom-xs">Designlab Student Agreement</h2>
+            <h2 class="policy__updated u-margin-top-rm u-text-align-center">Agreed by Edgar Salazar on </h2>
+          </div>
+          <div class="policy__markdown">
+            <h2 id="graduation">GRADUATION REQUIREMENTS</h2>
+            <p>UX Academy is a rigorous academic program. In order to graduate, you must meet the following requirements.</p>
+            <h3>1. Meet academic requirements</h3>
+            <h4>Complete all the assigned coursework each week</h4>
+            <p>You must complete 100% of the assigned readings &amp; projects with mentor approval according to the course schedule, and submit iterations for projects based on mentor feedback.</p>
+            <h4>Pass the following skills checkpoints:</h4>
+            <ul>
+              <li><strong>Objective project assessments for each project</strong> according to a skills rubric. You are responsible for ensuring all of your coursework is approved by your mentor.</li>
+              <li><b>Two Phase 1 formal checkpoints:</b>
+                <ul>
+                  <li><strong>A mid-phase Progress Report</strong>, where your mentor will evaluate your course progress and skills development</li>
+                  <li><strong>An end-of-phase Progress Report</strong>, where your mentor will ascertain your overall development and ability to proceed to Phase 2. If your work does not meet the required quality by the end of Phase 1, you will be asked to repeat work and develop your skills before moving on to Phase 2.</li>
+                </ul>
+              </li>
+              <li><strong>A formal portfolio review at the end of Phase 2 (known as the “Panel Review”)</strong>. You must pass this review in order to graduate from the program and enter Career Services. If you do not wish to enter Career Services, you must still pass the review in order to graduate.
+                <ul>
+                  <li>In the case that your portfolio does not pass the review, you will be allotted additional time and mentor sessions to prep and polish your portfolio. You will remain in this prep phase until you and your mentor determine you are ready to submit for another review.</li>
+                </ul>
+              </li>
+            </ul>
+            <table class="guarantee-table">
+              <tbody>
+                <tr>
+                  <th></th>
+                  <th align="center">All students in <span class="u-text-nobreak">Career Services</span></th>
+                  <th align="center">To remain eligible for the Tuition Reimbursement Guarantee</th>
+                </tr>
+                <tr>
+                  <td>
+                    <h4>Set up a Huntr Board</h4>
+                    <p>When you start Career Services, you’ll receive an invitation to set up your job hunting board. You must accept the invite, set up your account, and share your board with your career coach.</p>
+                  </td>
+                  <td align="center"><i class="icon-ok"></i></td>
+                  <td align="center"><i class="icon-ok"></i></td>
+                </tr>
+                <tr>
+                  <td>
+                    <h4>Respond to Coach communications</h4>
+                    <p>You must respond to all Coach communications within 48 hours</p>
+                  </td>
+                  <td align="center"><i class="icon-ok"></i></td>
+                  <td align="center"><i class="icon-ok"></i></td>
+                </tr>
+                <tr>
+                  <td>
+                    <h4>Attend weekly Coaching sessions</h4>
+                    <p>You must attend Coach sessions every week for the first 18 weeks. You may not forfeit any Coach sessions.</p>
+                  </td>
+                  <td align="center"><i class="icon-ok"></i></td>
+                  <td align="center"><i class="icon-ok"></i></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="policy__cta u-hide-sm-down">
+            <h2 class="policy__cta__heading">Let's get started!</h2>
+            <form action="." method="post">
+              <input type="hidden" name="csrfmiddlewaretoken" value="OBWGfKp8aSIcr72cfWO81a54F9hJ2mBdrgnye36FQ9L9hAj4q0CuICuMFWgZewid">
+              <button class="button button--lg" type="submit">I agree</button>
+              <p class="policy__disclaimer">By selecting “I agree” above, I certify that I have read and agreed to the above information. Any questions concerning these policies have been discussed.</p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="l-main">
+
+      <div class="l-container">
+        <h1 class="heading">Press-logo</h1>
+      </div>
+      <div class="l-container l-container--grid-3">
+        <div class="u-grid-image">
+          <img class="press-logo" src="/static/images/logos-external/logo-fast-company.png" alt="Fast Company">
+        </div>
+      </div>
+    </div>
+
+    <div class="l-main">
+
+      <div class="l-container">
+        <h1 class="heading">Pricing</h1>
+      </div>
+      <div class="l-container l-container--narrow">
+        <div class="pricing">
+          <p class="pricing__text">Pricing <span class="pricing__new-price"><span class="pricing__new-price__symbol">$</span>399</span> <span class="pricing__old-price"><span class="pricing__old-price__symbol">$</span>499</span> for four weeks</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="l-main">
+
+      <div class="l-container">
+        <h1 class="heading">Process-step</h1>
+      </div>
+      <div class="l-container l-container--grid-3">
+        <div class="process-step">
+          <div class="process-step__header">
+            <div class="process-step__number-wrap">
+              <span class="process-step__number">01</span>
+            </div>
+            <img class="process-step__image" src="/static/images/ux-academy/process-application.svg">
+          </div>
+          <div class="process-step__text">
+            <h4 class="process-step__heading">Online Application</h4>
+            <p>Take 10-15 minutes to complete a simple application form and tell us about <span class="u-text-nobreak">your goals.</span></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="l-main">
+
+      <div class="l-container">
+        <h1 class="heading">Project-preview</h1>
+      </div>
+      <div class="l-container l-container--wide">
+        <div class="project-preview">
+          <div class="project-preview__comment-box project-preview__comment-box--left u-hide-sm-down start-animation" dl-add-class-on-scroll="" class-to-add="start-animation" threshold="0.25">
+            <a class="project-preview__person" href="">
+              <img class="project-preview__person__image" src="/static/images/avatars/mentor-qaid.jpg" alt="Qa’id Jacobs">
+              <h2 class="project-preview__person__name">
+                Qa’id
+                <span class="status-badge status-badge--mentor status-badge--sm">Mentor</span>
+              </h2>
+            </a>
+            <p class="project-preview__status">Status updated<br><span class="status-badge status-badge--approved">Approved</span></p>
+            <p>Sooo good! I think you've got a great design here. Clear, direct, balanced. Since your CTAs are the most important behavioral triggers in this design, I think they could use a bit more emphasis. The contrast of the color you've chosen for those buttons is harmonious with the overall design and manages to capture attention—nicely done.</p>
+          </div>
+          <div class="project-preview__project">
+            <img src="/static/images/course-description/project-design101.png" alt="final project by Cella">
+          </div>
+          <div class="project-preview__comment-box project-preview__comment-box--right u-hide-sm-down start-animation" dl-add-class-on-scroll="" class-to-add="start-animation" threshold="0.25">
+            <div class="project-preview__person">
+              <img class="project-preview__person__image" src="/static/images/avatars/student-cella.jpg" alt="Cella">
+              <h2 class="project-preview__person__name">Cella</h2>
+            </div>
+            <h2 class="display-xs">Process</h2>
+            <p>As you can see, the color palette I ended up going with is completely different than the pastel style tile that I thought could work. I had a hard time making the colors work with the illustrations I used due to them also being lighter in color as well. In the end, I ended up choosing colors more in line with my initial style tile that are a bit bolder.</p>
+            <h2 class="display-xs">Feedback</h2>
+            <p>You mentioned red being a color I should be careful with, does it work okay here?</p>
+          </div>
+        </div>
+        <div class="accordion accordion--gray u-hide-sm-up">
+          <div class="accordion__trigger">
+            <h3 class="accordion__heading">Read about Cella's work</h3>
+          </div>
+          <div class="accordion__content u-hide">
+            <div class="project-preview">
+              <div class="project-preview__comment-box">
+                <div class="project-preview__person">
+                  <img src="/static/images/avatars/student-cella.jpg" alt="Cella">
+                  <h2 class="project-preview__person__name">Cella</h2>
+                </div>
+                <h2 class="display-xs">Process</h2>
+                <p>As you can see, the color palette I ended up going with is completely different than the pastel style tile that I thought could work. I had a hard time making the colors work with the illustrations I used due to them also being lighter in color as well. In the end, I ended up choosing colors more in line with my initial style tile that are a bit bolder.</p>
+                <h2 class="display-xs">Feedback</h2>
+                <p>You mentioned red being a color I should be careful with, does it work okay here?</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="accordion accordion--gray u-hide-sm-up">
+          <div class="accordion__trigger">
+            <h3 class="accordion__heading">Read mentor feedback</h3>
+          </div>
+          <div class="accordion__content u-hide">
+            <div class="project-preview">
+              <div class="project-preview__comment-box">
+                <div class="project-preview__person">
+                  <a class="project-preview__person__image" href="">
+                    <img src="/static/images/avatars/mentor-qaid.jpg" alt="Qa’id Jacobs">
+                  </a>
+                  <h2 class="project-preview__person__name">Qa’id</h2>
+                </div>
+                <p class="project-preview__status">
+                Status updated<br><span class="status-badge status-badge--approved">Approved</span>
+                </p>
+                <p>Sooo good! I think you've got a great design here. Clear, direct, balanced. Since your CTAs are the most important behavioral triggers in this design, I think they could use a bit more emphasis. The contrast of the color you've chosen for those buttons is harmonious with the overall design and manages to capture attention—nicely done.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="l-main">
+
+      <div class="l-container">
+        <h1 class="heading">Quote</h1>
+      </div>
+      <div class="l-container  l-container--grid-2">
+        <div class="quote">
+          <img class="quote__image" src="/static/images/logos-external/logo-agi.png">
+          <div class="quote__text-block">
+            <p class="quote__text">Many jobs require Photoshop skills, and this is especially true with design roles such as graphic designer, web designer, or user interface designer.</p>
+            <p class="quote__author">— American Graphics Institute</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="l-main l-main--white">
+
+      <div class="l-container">
+        <h1 class="heading">Quote-block</h1>
+      </div>
+      <div class="l-container l-container--narrow">
+        <div class="quote-block">
+          <div class="quote-block__text">
+            <p>“Patrick helped me advance my knowledge of the design tools, especially Figma which I was struggling to learn.  He also recommended and demoed additional apps that are really cool.   He is patient and provides constructive feedback.  Great mentor overall!”</p>
+          </div>
+          <p class="quote-block__attribution">- <span class="u-text-semibold">Lisa E</span>, Design 101</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="l-main">
+
+      <div class="l-container">
+        <h1 class="heading">Resource</h1>
+      </div>
+      <div class="l-container">
+        <p>resource</p>
+        <div class="resource">
+          <h4 class="resource__heading">
+            <span>
+              <img class="resource__icon" src="https://storage.trydesignlab.com/lesson_icons/resource-type-web.svg">
+            </span>
+            <a href="" class="resource__link">Web Resource Example</a>
+          </h4>
+          <div class="resource__description"><p>A short description about this resource.</p></div>
+        </div><!-- /resource -->
+        <div class="resource">
+          <h4 class="resource__heading">
+            <span>
+              <img class="resource__icon" src="https://storage.trydesignlab.com/lesson_icons/resource-type-book.svg">
+            </span>
+            <a href="" class="resource__link">Book Resource Example</a>
+          </h4>
+          <div class="resource__description"><p>A short description about this resource.</p></div>
+        </div><!-- /resource -->
+        <div class="resource">
+          <h4 class="resource__heading">
+            <span>
+              <img class="resource__icon" src="https://storage.trydesignlab.com/lesson_icons/resource-type-video.svg">
+            </span>
+            <a href="" class="resource__link">Video Resource Example</a>
+          </h4>
+          <div class="resource__description"><p>A short description about this resource.</p></div>
+        </div><!-- /resource -->
+        <div class="resource">
+          <h4 class="resource__heading">
+            <span>
+              <img class="resource__icon" src="https://storage.trydesignlab.com/lesson_icons/resource-type-audio.svg">
+            </span>
+            <a href="" class="resource__link">Audio Resource Example</a>
+          </h4>
+          <div class="resource__description"><p>A short description about this resource.</p></div>
+        </div><!-- /resource -->
+      </div>
+      <div class="l-container">
+        <p>resource--no-icon</p>
+        <div class="resource resource--no-icon">
+          <h4 class="resource__heading">
+            <a href="" class="resource__link">Interested in design?</a>
+          </h4>
+          <div class="resource__description">
+            <p>Check out this post about how grids work in graphic design.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="l-main">
+
+      <div class="l-container">
+        <h1 class="heading">Review</h1>
+      </div>
+      <div class="l-container l-container--grid-2">
+        <div class="review">
+          <div class="review__image">
+            <img src="/static/images/logos-external/logo-course-report.png" alt="Course Report">
+          </div>
+          <div class="review__text-box">
+            <p class="review__name">Course Report</p>
+            <p class="review__rating">
+            ★ ★ ★ ★ ★ Avg Rating: 4.98 (41 reviews)
+            </p>
+            <p class="review__quote">The cost of this course is phenomenal vis a vis to what I've learned and covered in just four weeks.</p>
+            <p class="review__link"><a href="" target="_blank">Read more</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="l-main l-main--purple">
+
+      <div class="l-container">
+        <h1 class="heading">Social-share</h1>
+      </div>
+      <div class="l-container">
+        <p>social-share</p>
+        <a href="" class="social-share"><i class="icon-twitter"></i></a>
+        <a href="" class="social-share"><i class="icon-facebook"></i></a>
+      </div>
+      <div class="l-container">
+        <p>social-share--lg</p>
+        <a href="" class="social-share social-share--lg"><i class="icon-twitter"></i></a>
+        <a href="" class="social-share social-share--lg"><i class="icon-facebook-sign"></i></a>
+      </div>
+    </div>
+
+    <div class="l-main">
+
+      <div class="l-container">
+        <h1 class="heading">Stat</h1>
+      </div>
+      <div class="l-container l-container--grid-2">
+        <div class="stat stat--left">
+          <p class="stat__title stat__title--top">Students Enrolled</p>
+          <div class="stat__grid">
+            <img class="stat__icon" src="/static/images/about/stat-students.svg">
+            <p class="stat__number">3,000+</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="l-main">
+
+      <div class="l-container">
+        <h1 class="heading">Status-badge</h1>
+      </div>
+      <div class="l-container l-container--grid-4">
+        <div>
+          <p>status-badge</p>
+          <span class="status-badge">Prep</span>
+        </div>
+        <div>
+          <p>status-badge--approved</p>
+          <span class="status-badge status-badge--approved">Approved</span>
+        </div>
+        <div>
+          <p>status-badge--mentor</p>
+          <span class="status-badge status-badge--mentor">Mentor</span>
+        </div>
+        <div>
+          <p>status-badge--mentor<br>status-badge--sm</p>
+          <span class="status-badge status-badge--mentor status-badge--sm">Mentor</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="l-main">
+
+      <div class="l-container">
+        <h1 class="heading">Success-story</h1>
+      </div>
+      <div class="l-container l-container--narrowest">
+        <div class="success-story">
+          <div class="success-story__grid success-story__grid--sm">
+            <div class="avatar avatar--sm">
+              <img class="avatar__img" src="/static/images/avatars/student-cella.jpg" alt="Cella">
+            </div>
+            <div class="success-story__text-box">
+              <p class="success-story__name">Cella</p>
+              <p class="success-story__role"><b>Current Role:</b> Developer</p>
+              <p class="success-story__experience"><b>Design Experience:</b> Beginner</p>
+            </div>
+          </div>
+          <p class="success-story__flavor-text">“I truly believe that learning design makes you a better developer.”</p>
+          <p>I'm a developer, but have always been interested in design.  My interest in UX had grown in the past year and I truly believe that learning design makes you a better developer.</p>
+          <p>I was initially interested in taking a Designlab course to give me an introduction to design, but the most exciting part was being paired with an incredible mentor. Qa’id’s insight gave me so many ideas of how to better collaborate with my team, while the course taught me how to speak their language. I highly recommend Designlab to anyone who wants to be an aspiring designer or developers who want to become better collaborators!</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="l-main l-main--purple">
+
+      <div class="l-container">
+        <h1 class="heading">Tab</h1>
+      </div>
+      <div class="l-container">
+        <div class="tab">
+          <div class="tab__link-group">
+            <a class="tab__link tab__link--active">
+              <h2 class="tab__title u-hide-sm-down">Tab 1</h2>
+              <h2 class="tab__title u-hide-sm-up">1</h2>
+            </a>
+            <a class="tab__link tab__link--inactive1">
+              <h2 class="tab__title u-hide-sm-down">Tab 2</h2>
+              <h2 class="tab__title u-hide-sm-up">2</h2>
+            </a>
+            <a class="tab__link tab__link--inactive2">
+              <h2 class="tab__title u-hide-sm-down">Tab 3</h2>
+              <h2 class="tab__title u-hide-sm-up">3</h2>
+            </a>
+          </div>
+          <div class="tab__body tab__body--corner-fix-left">
+            [tab 1 content]
+          </div>
+          <div class="tab__body u-hide">
+            [tab 2 content]
+          </div>
+          <div class="tab__body u-hide">
+            [tab 3 content]
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="l-main l-main--purple">
+
+      <div class="l-container">
+        <h1 class="heading">Table</h1>
+      </div>
+      <div class="l-container">
+        <div class="table u-hide-sm-down">
+          <div class="table__item table__item--heading"> </div>
+          <div class="table__item table__item--heading">Online or offline</div>
+          <div class="table__item table__item--heading">Price</div>
+          <div class="table__item table__item--heading">Group Crits</div>
+          <div class="table__item table__item--heading">Job Guarantee</div>
+          <div class="table__item table__item--heading">Career Services</div>
+
+          <div class="table__item table__item--featured table__item--heading">Designlab UX Academy</div>
+          <div class="table__item table__item--featured">Online</div>
+          <div class="table__item table__item--featured">$$6,749</div>
+          <div class="table__item table__item--featured table__item--yes"><i class="icon-ok"></i></div>
+          <div class="table__item table__item--featured table__item--yes"><i class="icon-ok"></i></div>
+          <div class="table__item table__item--featured table__item--yes"><i class="icon-ok"></i></div>
+
+          <div class="table__item table__item--heading">Bloc Designer Track</div>
+          <div class="table__item">Online</div>
+          <div class="table__item">$8,500</div>
+          <div class="table__item table__item--yes"><i class="icon-ok"></i></div>
+          <div class="table__item table__item--yes"><i class="icon-ok"></i></div>
+          <div class="table__item table__item--yes"><i class="icon-ok"></i></div>
+
+          <div class="table__item table__item--heading">CareerFoundry<br>“Certified UX Designer”</div>
+          <div class="table__item">Online</div>
+          <div class="table__item">$6,999</div>
+          <div class="table__item table__item--no"><i class="icon-remove"></i></div>
+          <div class="table__item table__item--yes"><i class="icon-ok"></i></div>
+          <div class="table__item table__item--yes"><i class="icon-ok"></i></div>
+
+          <div class="table__item table__item--heading">Designation</div>
+          <div class="table__item">Offline</div>
+          <div class="table__item">$15,800</div>
+          <div class="table__item">N/A</div>
+          <div class="table__item table__item--no"><i class="icon-remove"></i></div>
+          <div class="table__item table__item--yes"><i class="icon-ok"></i></div>
+
+          <div class="table__item table__item--heading">General Assembly</div>
+          <div class="table__item">Offline</div>
+          <div class="table__item">$13,950</div>
+          <div class="table__item">N/A</div>
+          <div class="table__item table__item--no"><i class="icon-remove"></i></div>
+          <div class="table__item table__item--no"><i class="icon-remove"></i></div>
+
+          <div class="table__item table__item--heading">Tradecraft</div>
+          <div class="table__item">Offline</div>
+          <div class="table__item">$14,000</div>
+          <div class="table__item">N/A</div>
+          <div class="table__item table__item--no"><i class="icon-remove"></i></div>
+          <div class="table__item table__item--yes"><i class="icon-ok"></i></div>
+        </div>
+
+        <div class="table table--mobile u-hide-sm-up">
+          <div class="table__block">
+            <div class="subheading">Designlab UX Academy</div>
+            <div class="table__block-grid">
+              <div class="table__item table__item--heading">Online or offline</div>
+              <div class="table__item">Online</div>
+              <div class="table__item table__item--heading">Price</div>
+              <div class="table__item">$6,749</div>
+              <div class="table__item table__item--heading">Group Crits</div>
+              <div class="table__item table__item--yes"><i class="icon-ok"></i></div>
+              <div class="table__item table__item--heading">Job Guarantee</div>
+              <div class="table__item table__item--yes"><i class="icon-ok"></i></div>
+              <div class="table__item table__item--heading">Career Services</div>
+              <div class="table__item table__item--yes"><i class="icon-ok"></i></div>
+            </div>
+          </div>
+          <div class="table__block">
+            <div class="subheading">Bloc Designer Track</div>
+            <div class="table__block-grid">
+              <div class="table__item table__item--heading">Online or offline</div>
+              <div class="table__item">Online</div>
+              <div class="table__item table__item--heading">Price</div>
+              <div class="table__item">$8,500</div>
+              <div class="table__item table__item--heading">Group Crits</div>
+              <div class="table__item table__item--yes"><i class="icon-ok"></i></div>
+              <div class="table__item table__item--heading">Job Guarantee</div>
+              <div class="table__item table__item--yes"><i class="icon-ok"></i></div>
+              <div class="table__item table__item--heading">Career Services</div>
+              <div class="table__item table__item--yes"><i class="icon-ok"></i></div>
+            </div>
+          </div>
+
+          <div class="table__block">
+            <div class="subheading">CareerFoundry “Certified UX Designer”</div>
+            <div class="table__block-grid">
+              <div class="table__item table__item--heading">Online or offline</div>
+              <div class="table__item">Online</div>
+              <div class="table__item table__item--heading">Price</div>
+              <div class="table__item">$6,999</div>
+              <div class="table__item table__item--heading">Group Crits</div>
+              <div class="table__item table__item--no"><i class="icon-remove"></i></div>
+              <div class="table__item table__item--heading">Job Guarantee</div>
+              <div class="table__item table__item--yes"><i class="icon-ok"></i></div>
+              <div class="table__item table__item--heading">Career Services</div>
+              <div class="table__item table__item--yes"><i class="icon-ok"></i></div>
+            </div>
+          </div>
+
+          <div class="table__block">
+            <div class="subheading">Designation</div>
+            <div class="table__block-grid">
+              <div class="table__item table__item--heading">Online or offline</div>
+              <div class="table__item">Offline</div>
+              <div class="table__item table__item--heading">Price</div>
+              <div class="table__item">$15,800</div>
+              <div class="table__item table__item--heading">Group Crits</div>
+              <div class="table__item">N/A</div>
+              <div class="table__item table__item--heading">Job Guarantee</div>
+              <div class="table__item table__item--no"><i class="icon-remove"></i></div>
+              <div class="table__item table__item--heading">Career Services</div>
+              <div class="table__item table__item--yes"><i class="icon-ok"></i></div>
+            </div>
+          </div>
+
+          <div class="table__block">
+            <div class="subheading">General Assembly</div>
+            <div class="table__block-grid">
+              <div class="table__item table__item--heading">Online or offline</div>
+              <div class="table__item">Offline</div>
+              <div class="table__item table__item--heading">Price</div>
+              <div class="table__item">$13,950</div>
+              <div class="table__item table__item--heading">Group Crits</div>
+              <div class="table__item">N/A</div>
+              <div class="table__item table__item--heading">Job Guarantee</div>
+              <div class="table__item table__item--no"><i class="icon-remove"></i></div>
+              <div class="table__item table__item--heading">Career Services</div>
+              <div class="table__item table__item--no"><i class="icon-remove"></i></div>
+            </div>
+          </div>
+
+          <div class="table__block">
+            <div class="subheading">Tradecraft</div>
+            <div class="table__block-grid">
+              <div class="table__item table__item--heading">Online or offline</div>
+              <div class="table__item">Offline</div>
+              <div class="table__item table__item--heading">Price</div>
+              <div class="table__item">$14,000</div>
+              <div class="table__item table__item--heading">Group Crits</div>
+              <div class="table__item">N/A</div>
+              <div class="table__item table__item--heading">Job Guarantee</div>
+              <div class="table__item table__item--no"><i class="icon-remove"></i></div>
+              <div class="table__item table__item--heading">Career Services</div>
+              <div class="table__item table__item--yes"><i class="icon-ok"></i></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="l-main">
+
+      <div class="l-container">
+        <h1 class="heading">Template-download</h1>
+      </div>
+      <div class="l-container">
+        <div class="template-download">
+          <div class="template-download__left">
+            <img class="u-hide-md-down" src="/static/images/resources/template-persona.svg" alt="Persona illustration">
+          </div>
+          <div class="template-download__right">
+            <h2 class="subheading">Persona Template</h2>
+            <p>Personas are a great artifact that help you synthesize and present research findings about your target users to members on your team.</p>
+            <p class="u-text-semibold">Download and start using the Persona Template file for</p>
+            <div class="template-download__link-grid">
+
+              <a class="template-download__download-link" href=""><img class="template-download__download-link__icon" src="/static/images/logos-external/logo-sketch.svg" alt="Sketch logo">Sketch</a>
+              <a class="template-download__download-link" href=""><img class="template-download__download-link__icon" src="/static/images/logos-external/logo-illustrator.svg" alt="Adobe Illustrator icon">Illustrator</a>
+              <a class="template-download__download-link" href=""><img class="template-download__download-link__icon" src="/static/images/logos-external/logo-photoshop.svg" alt="Adobe Photoshop icon">Photoshop</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="l-main">
+
+      <div class="l-container">
+        <h1 class="heading">Testimonial</h1>
+      </div>
+      <div class="l-container l-container--grid-2">
+        <div>
+          <p>testimonial with person</p>
+          <div class="testimonial">
+            <p class="testimonial__text">I would not trade in my experiences with UX Academy for anything. I met so many different people all around the world and was able to pick up concepts so quickly and easily.</p>
+          </div>
+          <div class="person">
+            <div class="avatar avatar--sm">
+              <img class="avatar__img" src="/static/images/avatars/designlab-harish.png" alt="team member avatar of Harish">
+              <img class="avatar__logo" src="/static/images/logos/logo-designlab--square.svg" alt="Company logo for Designlab">
+            </div>
+            <p class="person__name">Harish Venkatesan</p>
+            <p class="person__role">Founder/CEO</p>
+            <p class="person__long">Mentor since 2014</p>
+          </div>
+        </div>
+        <div>
+          <p>testimonial--ocean with person</p>
+          <div class="testimonial testimonial--ocean">
+            <p class="testimonial__text">I would not trade in my experiences with UX Academy for anything. I met so many different people all around the world and was able to pick up concepts so quickly and easily.</p>
+          </div>
+          <div class="person">
+            <div class="avatar avatar--sm">
+              <img class="avatar__img" src="/static/images/avatars/designlab-harish.png" alt="team member avatar of Harish">
+              <img class="avatar__logo" src="/static/images/logos/logo-designlab--square.svg" alt="Company logo for Designlab">
+            </div>
+            <p class="person__name">Harish Venkatesan</p>
+            <p class="person__role">Founder/CEO</p>
+            <p class="person__long">Mentor since 2014</p>
+          </div>
+        </div>
+        <div>
+          <p>testimonial--blue-light with person</p>
+          <div class="testimonial testimonial--blue-light">
+            <p class="testimonial__text">I would not trade in my experiences with UX Academy for anything. I met so many different people all around the world and was able to pick up concepts so quickly and easily.</p>
+          </div>
+          <div class="person">
+            <div class="avatar avatar--sm">
+              <img class="avatar__img" src="/static/images/avatars/designlab-harish.png" alt="team member avatar of Harish">
+              <img class="avatar__logo" src="/static/images/logos/logo-designlab--square.svg" alt="Company logo for Designlab">
+            </div>
+            <p class="person__name">Harish Venkatesan</p>
+            <p class="person__role">Founder/CEO</p>
+          </div>
+        </div>
+        <div>
+          <p>testimonial--blue-light-fill with person</p>
+          <div class="testimonial testimonial--blue-light-fill">
+            <p class="testimonial__text">I would not trade in my experiences with UX Academy for anything. I met so many different people all around the world and was able to pick up concepts so quickly and easily.</p>
+          </div>
+          <div class="person">
+            <div class="avatar avatar--sm">
+              <img class="avatar__img" src="/static/images/avatars/designlab-harish.png" alt="team member avatar of Harish">
+              <img class="avatar__logo" src="/static/images/logos/logo-designlab--square.svg" alt="Company logo for Designlab">
+            </div>
+            <p class="person__name">Harish Venkatesan</p>
+            <p class="person__role">Founder/CEO</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="l-main l-main--purple" id="toggle">
+
+      <div class="l-container">
+        <h1 class="heading">Toggle</h1>
+      </div>
+      <div class="l-container">
+        <div id="toggle-example" data-label="This is an example label"></div>
+      </div>
+    </div>
+
+    <div class="l-main">
+
+      <div class="l-container">
+        <h1 class="heading">Timetable</h1>
+      </div>
+      <div class="l-container l-container--grid-4 l-container--gutter-sm u-pad-top-rm u-pad-bottom-md">
+        <div class="timetable">
+          <h1 class="timetable__title">Week 1</h1>
+          <h2 class="display-xs">Learning to See Design</h2>
+          <p>Start to see like a designer by learning what good design is. Take a walk through design history and learn the principles of what makes something beautiful and functional.</p>
+          <h2 class="display-xs">Ideating and Sketching</h2>
+          <p>Select your course project and start generating ideas! You’ll start by sketching your ideas and building a brand through logo creation.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="l-main">
+
+      <div class="l-container">
+        <h1 class="heading">Tooltip</h1>
+      </div>
+      <div class="l-container" dl-tooltip="">
+        <p>Hover over the icon to see the tooltip <i class="icon-question-sign u-hide-md-down" title="This message is added to the title attribute of the element"></i></p>
+      </div>
+    </div>
+
+    <div class="l-main">
+
+      <div class="l-container">
+        <h1 class="heading">Topbar-login</h1>
+      </div>
+      <div class="l-container">
+        <p>Normally hidden on medium and up screens</p>
+        <p>User is logged in</p>
+        <a class="topbar-login" href="">
+          <p class="topbar-login__text">Login to course <i class="icon-arrow-right topbar-login__text__icon"></i></p>
+        </a>
+      </div>
+      <div class="l-container">
+        <p>User is not logged in</p>
+        <a class="topbar-login" href="">
+          <p class="topbar-login__text">Go to course <i class="icon-arrow-right topbar-login__text__icon"></i></p>
+        </a>
+      </div>
+    </div>
+
+    <div class="l-main">
+
+      <div class="l-container">
+        <h1 class="heading">Topbar-promo</h1>
+      </div>
+      <div class="l-container">
+        <div class="topbar-promo">
+          <p class="topbar-promo__text">Our next UX Academy Open House webinar starts in <b>6 days, 20 hours 0 minute, and 42 seconds.</b> <a class="topbar-promo__link" target="_blank" href="">Register for free</a> before spots run out!</p>
+          <a class="topbar-promo__close"><i class="icon-remove"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="l-main">
+
+      <div class="l-container">
+        <h1 class="heading">Top-article</h1>
+      </div>
+      <div class="l-container">
+        <div class="top-article">
+          <a href=""><img class="top-article__image" src="https://storage.trydesignlab.com/blog/article-images/3e555055.png"></a>
+          <div class="top-article__text-box">
+            <h2 class="top-article__title"><a class="top-article__link" href="">How to Leverage Your Experience for a Career Switch to UX Design</a></h2>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="l-main">
+
+      <div class="l-container">
+        <h1 class="heading">Upcoming-cohort</h1>
+      </div>
+      <div class="l-container">
+        <div class="upcoming-cohort">
+          <p class="upcoming-cohort__label u-hide-md-up">November 2019 cohort</p>
+          <h3 class="upcoming-cohort__cohort-name">Roboto</h3>
+          <p class="upcoming-cohort__label u-hide-md-down">November 2019 cohort</p>
+          <div class="upcoming-cohort__timeline">
+            <div class="upcoming-cohort__date-marker upcoming-cohort__date-marker--solid"></div>
+            <div class="upcoming-cohort__timeline__group">
+              <p class="upcoming-cohort__label">Design 101 begins</p>
+              <p class="upcoming-cohort__date">Oct 4th, 2019</p>
+            </div>
+            <div class="upcoming-cohort__date-marker upcoming-cohort__date-marker--solid"></div>
+            <div class="upcoming-cohort__timeline__group">
+              <p class="upcoming-cohort__label">Design 101 ends</p>
+              <p class="upcoming-cohort__date">Nov 1st, 2019</p>
+            </div>
+            <div class="upcoming-cohort__date-marker upcoming-cohort__date-marker--solid"></div>
+            <div class="upcoming-cohort__timeline__group">
+              <p class="upcoming-cohort__label">UX Academy begins</p>
+              <p class="upcoming-cohort__date">Nov 18th, 2019</p>
+            </div>
+            <div class="upcoming-cohort__date-marker upcoming-cohort__date-marker--dashed"></div>
+            <div class="upcoming-cohort__timeline__group">
+              <p class="upcoming-cohort__label">Graduation full-time</p>
+              <p class="upcoming-cohort__date">Mar 2nd, 2020</p>
+            </div>
+            <div class="upcoming-cohort__date-marker"></div>
+            <div class="upcoming-cohort__timeline__group">
+              <p class="upcoming-cohort__label">Graduation part-time</p>
+              <p class="upcoming-cohort__date">Jun 1st, 2020</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="l-main">
+
+      <div class="l-container">
+        <h1 class="heading">Upcoming-course</h1>
+      </div>
+      <div class="l-container">
+        <div class="upcoming-course">
+          <div class="upcoming-course__grid">
+            <p class="upcoming-course__date">Nov 1st 2019</p>
+            <img class="upcoming-course__arrow" src="/static/images/ui/arrow-right-blue.svg">
+            <p class="upcoming-course__date">Nov 29th 2019</p>
+            <a class="button button--blue button--sm u-hide-xs-down" href="/web-design-course/enroll/">Enroll</a>
+          </div>
+          <a class="button button--blue button--block u-hide-xs-up" href="/web-design-course/enroll/">Enroll</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="l-main">
+
+      <div class="l-container">
+        <h1 class="heading">Video</h1>
+      </div>
+      <div class="l-container l-container--grid-2">
+        <div class="video">
+          <video class="video__player" poster="https://storage.trydesignlab.com/email-courses/figma-101/figma-course-video.png" autoplay="" muted="" loop="">
+            <source src="https://storage.trydesignlab.com/email-courses/figma-101/figma-course-video.mp4" type="video/mp4">
+            <source src="https://storage.trydesignlab.com/email-courses/figma-101/figma-course-video.webm" type="video/webm">
+          </video>
+        </div>
+      </div>
+    </div>
+
+
+
+
+    <footer class="l-footer">
+
+
+
+      <div class="l-container">
+        <nav class="footer-nav">
+          <ul class="footer-nav__list">
+            <li class="footer-nav__list__item">
+              <a class="footer-nav__link" href="">
+                <img src="/static/images/logos/logo-designlab.svg" class="footer-nav__logo" alt="Designlab">
+              </a>
+            </li>
+            <li class="footer-nav__list__item">
+              <a href="" class="social-share"><i class="icon-twitter"></i></a>
+              <a href="" class="social-share"><i class="icon-facebook"></i></a>
+            </li>
+          </ul>
+          <ul class="footer-nav__list">
+            <li class="footer-nav__list__item">
+              <a class="footer-nav__link" href="">UX Academy</a>
+            </li>
+            <li class="footer-nav__list__item">
+              <a class="footer-nav__link" href="">Outcomes</a>
+            </li>
+            <li class="footer-nav__list__item">
+              <a class="footer-nav__link" href="">Courses</a>
+            </li>
+            <li class="footer-nav__list__item">
+              <a class="footer-nav__link" href="">Mentors</a>
+            </li>
+            <li class="footer-nav__list__item">
+              <a class="footer-nav__link u-text-nobreak" href="">Testimonials</a>
+            </li>
+            <li class="footer-nav__list__item">
+              <a class="footer-nav__link" href="">Blog</a>
+            </li>
+          </ul>
+          <ul class="footer-nav__list">
+            <li class="footer-nav__list__item">
+              <a class="footer-nav__link" href="">Learn Photoshop</a>
+            </li>
+            <li class="footer-nav__list__item">
+              <a class="footer-nav__link" href="">Learn Sketch</a>
+            </li>
+            <li class="footer-nav__list__item">
+              <a class="footer-nav__link" href="">Learn Figma</a>
+            </li>
+            <li class="footer-nav__list__item">
+              <a class="footer-nav__link" href="">Design Resources</a>
+            </li>
+            <li class="footer-nav__list__item">
+              <a class="footer-nav__link" href="">Perks</a>
+            </li>
+          </ul>
+          <ul class="footer-nav__list">
+            <li class="footer-nav__list__item">
+              <a class="footer-nav__link" href="">Become a Mentor</a>
+            </li>
+            <li class="footer-nav__list__item">
+              <a class="footer-nav__link" href="">Become an Affiliate</a>
+            </li>
+            <li class="footer-nav__list__item">
+              <a class="footer-nav__link" href="">Talent</a>
+            </li>
+          </ul>
+          <ul class="footer-nav__list">
+            <li class="footer-nav__list__item">
+              <a class="footer-nav__link" href="">Privacy Policy</a>
+            </li>
+            <li class="footer-nav__list__item">
+              <a class="footer-nav__link" href="">Terms of Service</a>
+            </li>
+            <li class="footer-nav__list__item">
+              <a class="footer-nav__link" href="">About</a>
+            </li>
+            <li class="footer-nav__list__item">
+              <a class="footer-nav__link" href="">Help</a>
+            </li>
+          </ul>
+          <div class="footer-nav__badge">
+            <a href="">
+              <picture>
+                <source srcset="/static/images/ui/badge-switchup.webp" type="image/webp">
+                <source srcset="/static/images/ui/badge-switchup.png" type="image/png">
+                <img class="footer-nav__badge__image" src="/static/images/ui/badge-switchup.png" alt="SwitchUp Best Web Design Course">
+              </picture>
+            </a>
+
+          </div>
+        </nav>
+
+        <p class="u-text-white-transparent u-pad-top-md u-text-wide">Questions about UX Academy? <span class="u-text-nobreak">We've got answers!</span> <a class="u-link-white-transparent u-text-nobreak">Schedule a call with Admissions</a></p>
+
+      </div>
+    </footer>
+  </body>
+</html>

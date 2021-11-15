@@ -1,0 +1,11 @@
+.footer-simple { align-items:center; display:grid; grid-template-columns:1fr 1fr 1fr; }
+.footer-simple__link { color:$color-white; font-size:16px;
+    &:hover { color:$color-white; }
+    &--right { justify-self:right; }
+}
+.footer-simple__logo { width:128px;
+    @include mq(sm_down) { width:112px; }
+}
+.footer-simple__course-logo { justify-self:center; width:64px;
+    @include mq(sm_down) { width:48px; }
+}
